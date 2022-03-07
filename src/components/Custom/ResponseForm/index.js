@@ -44,11 +44,8 @@ function ResponseForm() {
           <MKBox width="100%" component="form" method="post" autocomplete="off">
             <MKBox p={3}>
               <Grid container spacing={3}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12}>
                   <CheckboxFormGroup />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput variant="standard" label="Last Name" fullWidth />
                 </Grid>
                 <Grid item xs={12}>
                   <MKInput variant="standard" type="email" label="Email Address" fullWidth />

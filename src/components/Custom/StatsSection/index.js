@@ -24,13 +24,16 @@ class StatsSection extends Component {
           
         series: [{
           name: 'Confirmed',
-          data: [44, 55, 41, 67]
+          data: [44, 55, 41, 67],
+          color: "#4CAF50"
         }, {
-          name: 'Invited',
-          data: [13, 23, 20, 8]
+          name: 'No Response',
+          data: [13, 23, 20, 8],
+          color: "#1A73E8"
         }, {
           name: 'Declined',
-          data: [11, 17, 15, 15]
+          data: [11, 17, 15, 15],
+          color: "#fb8c00"
         }],
         options: {
           chart: {
@@ -38,12 +41,26 @@ class StatsSection extends Component {
             height: 350,
             stacked: true,
             toolbar: {
-              show: true
+              show: false
             },
             zoom: {
-              enabled: true
+              enabled: false
             }
           },
+          title: {
+            text: "Attendee RSVP",
+            align: 'left',
+            margin: 10,
+            offsetX: 0,
+            offsetY: 0,
+            floating: false,
+            style: {
+              fontSize:  '14px',
+              fontWeight:  'bold',
+              fontFamily:  undefined,
+              color:  '#263238'
+            },
+        },
           responsive: [{
             breakpoint: 480,
             options: {
