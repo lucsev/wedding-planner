@@ -12,7 +12,7 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-
+/* eslint-disable */
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -45,6 +45,26 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
+
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      "Brush Script MT",
+      "-apple-system",
+      "BlinkMacSystemFont",
+      "Segoe UI",
+      "Roboto",
+      "Helvetica Neue",
+      "Arial",
+      "sans-serif",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+    ].join(","),
+  },
+});
 
 function Presentation() {
   return (
@@ -85,15 +105,18 @@ function Presentation() {
             >
               We&apos;re getting married!{" "}
             </MKTypography>
+            <ThemeProvider theme={theme}>
             <MKTypography
               variant="body1"
               color="white"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
+              sx={{ fontSize: 26, color: "#FFFFFF" }}
             >
               Ashley & Lucas
             </MKTypography>
+            </ThemeProvider>
           </Grid>
         </Container>
       </MKBox>
