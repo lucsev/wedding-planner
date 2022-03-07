@@ -69,6 +69,7 @@ const theme = createTheme({
 function Presentation() {
   return (
     <>
+    {/*
       <DefaultNavbar
         routes={routes}
         action={{
@@ -79,6 +80,7 @@ function Presentation() {
         }}
         sticky
       />
+      */}
       <MKBox
         minHeight="75vh"
         width="100%"
