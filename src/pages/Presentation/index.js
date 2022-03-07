@@ -49,6 +49,7 @@ import bgImage from "assets/images/bg-presentation.jpg";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import ResponseForm from "components/Custom/ResponseForm";
+import StatsSection from "components/Custom/StatsSection";
 
 const theme = createTheme({
   typography: {
@@ -136,6 +137,7 @@ function Presentation() {
         }}
       >
         <ResponseForm />
+        <StatsSection />
         <Counters />
         <Information />
         <DesignBlocks />
