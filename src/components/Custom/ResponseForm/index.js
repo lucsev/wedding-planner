@@ -36,7 +36,7 @@ function ResponseForm() {
       <Container>
         <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
           <MKTypography variant="h3" mb={1}>
-            Contact Us
+            RSVP
           </MKTypography>
         </Grid>
         <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
@@ -44,7 +44,17 @@ function ResponseForm() {
             <MKBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                  <MKInput variant="standard" label="First Name" fullWidth />
+                <Switch checked={false} onChange={handleChecked} />
+                <MKTypography
+                    variant="button"
+                    fontWeight="regular"
+                    color="text"
+                    ml={-1}
+                    sx={{ cursor: "pointer", userSelect: "none" }}
+                    onClick={handleChecked}
+                  >
+                    &nbsp;&nbsp;Person No 1.&nbsp;
+                  </MKTypography>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <MKInput variant="standard" label="Last Name" fullWidth />
