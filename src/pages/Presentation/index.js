@@ -48,6 +48,8 @@ import bgImage from "assets/images/bg-presentation.jpg";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+import ResponseForm from "components/Custom/ResponseForm";
+
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -133,6 +135,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        <ResponseForm />
         <Counters />
         <Information />
         <DesignBlocks />
