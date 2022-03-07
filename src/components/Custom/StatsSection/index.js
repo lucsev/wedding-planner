@@ -21,22 +21,62 @@ class StatsSection extends Component {
     super(props);
 
     this.state = {
-      options: {
-        chart: {
-          id: "basic-bar"
+          
+        series: [{
+          name: 'Confirmed',
+          data: [44, 55, 41, 67]
+        }, {
+          name: 'Invited',
+          data: [13, 23, 20, 8]
+        }, {
+          name: 'Declined',
+          data: [11, 17, 15, 15]
+        }],
+        options: {
+          chart: {
+            type: 'bar',
+            height: 350,
+            stacked: true,
+            toolbar: {
+              show: true
+            },
+            zoom: {
+              enabled: true
+            }
+          },
+          responsive: [{
+            breakpoint: 480,
+            options: {
+              legend: {
+                position: 'bottom',
+                offsetX: -10,
+                offsetY: 0
+              }
+            }
+          }],
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              borderRadius: 10
+            },
+          },
+          xaxis: {
+            type: 'string',
+            categories: ['UK Friends', 'UK Family', 'ES Friends', 'ES Family'
+            ],
+          },
+          legend: {
+            position: 'right',
+            offsetY: 40
+          },
+          fill: {
+            opacity: 1
+          }
         },
-        xaxis: {
-          categories: ['UK Friends', 'UK Family', 'ES Friends', 'ES Family']
-        }
-      },
-      series: [
-        {
-          name: "series-1",
-          data: [30, 40, 45, 50]
-        }
-      ]
-    };
-  }
+      
+      
+      };
+    }
 
   render() {
     return (
@@ -47,17 +87,9 @@ class StatsSection extends Component {
                         Stats
                     </MKTypography>
                 </Grid>
-                <div className="app">
-                <div className="row">
-                    <div className="mixed-chart">
-                        <Chart
-                            options={this.state.options}
-                            series={this.state.series}
-                            type="bar"
-                            width="500" />
-                    </div>
-                </div>
-            </div>
+                <div id="chart">
+  <Chart options={this.state.options} series={this.state.series} type="bar" height={350} />
+</div>
             </Container>
         </MKBox></>
     );
