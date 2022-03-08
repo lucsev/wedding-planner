@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/Custom/PXL_20211015_180007358.jpg";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -90,7 +90,7 @@ function Presentation() {
         sx={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
