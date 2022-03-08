@@ -96,11 +96,27 @@ class StatsSection extends Component {
     }
 
   componentDidMount() {
-    console.log("It did run!");
     const apiUrl = '/api/stats';
     fetch(apiUrl)
       .then((response) => response.json())
-      .then((data) => console.log('This is your data2', data));
+      .then((data) => {
+      console.log('Stats: ', data);
+      const newSeries = [{
+        name: 'Confirmed',
+        data: [data.UK.Friends.confirmedYes, data.UK.Family.confirmedYes, data.ES.Friends.confirmedYes, data.ES.Family.confirmedYes],
+        color: "#4CAF50"
+      }, {
+        name: 'No Response',
+        data: [data.UK.Friends.notConfirmed, data.UK.Family.notConfirmed, data.ES.Friends.notConfirmed, data.ES.Family.notConfirmed],
+        color: "#1A73E8"
+      }, {
+        name: 'Declined',
+        data: [data.UK.Friends.confirmedNo, data.UK.Family.confirmedNo, data.ES.Friends.confirmedNo, data.ES.Family.confirmedNo],
+        color: "#fb8c00"
+      }];
+      console.log(newSeries);
+      this.setState({ series: newSeries })
+    });
   }
 
   render() {
