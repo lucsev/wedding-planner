@@ -8,6 +8,9 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 { /*import FormHelperText from '@mui/material/FormHelperText';*/}
 import Checkbox from '@mui/material/Checkbox';
 
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+
 export default function CheckboxesGroup() {
   const [state, setState] = React.useState({
     gilad: false,
@@ -29,6 +32,20 @@ export default function CheckboxesGroup() {
       <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
         <FormLabel focused={false}>Who is coming?</FormLabel>
         
+        <FormControl>
+        <FormLabel focused={false} id="demo-radio-buttons-group-label">Person 1</FormLabel>
+        <RadioGroup
+          row
+          aria-labelledby="demo-radio-buttons-group-label"
+          name="radio-buttons-group"
+        >
+          <FormControlLabel value="no" control={<Radio />} label="No" />
+          <FormControlLabel value="notsure" control={<Radio />} label="Not sure yet" />
+          <FormControlLabel value="yes" control={<Radio />} label="Yes" />
+        </RadioGroup>
+      </FormControl>
+
+      { /*
         <FormGroup>
           <FormControlLabel
             control={
@@ -49,7 +66,7 @@ export default function CheckboxesGroup() {
             label="Person 3"
           />
         </FormGroup>
-        { /* <FormHelperText>The helper text</FormHelperText> */}
+         <FormHelperText>The helper text</FormHelperText> */}
       </FormControl>
     </Box>
   );
