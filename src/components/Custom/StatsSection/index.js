@@ -95,9 +95,14 @@ class StatsSection extends Component {
       },
       donationsChart: {
         series: [{
-          name: 'GBP',
+          name: 'Friends',
           data: [44, 55, 41, 67],
           color: "#4CAF50"
+        },
+        {
+          name: 'Family',
+          data: [44, 55, 41, 67],
+          color: "#1A73E8"
         }],
         options: {
           chart: {
@@ -180,9 +185,14 @@ class StatsSection extends Component {
       }];
 
       const donationsNewSeries = [{
-        name: 'GBP',
-        data: [3000, 2000, 300, 200],
+        name: 'Friends',
+        data: [1000, 1500, 150, 100],
         color: "#4CAF50"
+      },
+      {
+        name: 'Family',
+        data: [3000, 2000, 300, 200],
+        color: "#1A73E8"
       }];
 
       this.setState(prevState => ({
