@@ -95,6 +95,14 @@ class StatsSection extends Component {
       };
     }
 
+  componentDidMount() {
+    console.log("It did run!");
+    const apiUrl = '/api/stats';
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => console.log('This is your data2', data));
+  }
+
   render() {
     return (
         <><MKBox component="section" py={12}>

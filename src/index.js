@@ -17,6 +17,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
+import { makeServer } from './mirageJSServer';
+
+if (process.env.NODE_ENV === "development") {
+  makeServer({ environment: "development" })
+}
 
 ReactDOM.render(
   <BrowserRouter>
