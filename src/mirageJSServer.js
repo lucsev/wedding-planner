@@ -45,7 +45,22 @@ export function makeServer() {
                 }
             }
         }
-      })
+      });
+
+      this.get("/rsvp", () => {
+        return {
+            "attendees": [
+              {"guestID": 1, "firstName":"Mr. A", "isAttending": null},
+              {"guestID": 2, "firstName":"Mr. B", "isAttending": null},
+              {"guestID": 3, "firstName":"Mr. C", "isAttending": null}
+            ],
+            "canDonate": true,
+            "specialRequests": null,
+            "country": "UK",
+            "consentToShowNameInAttendeeList": null,
+            "amountDonatedLocalCurrency": 200
+          }
+      });
     },
   });
   return server;

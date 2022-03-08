@@ -13,6 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+/* eslint-disable */
+
 import { useState } from "react";
 
 // @mui material components
@@ -27,10 +29,25 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
 
+import { useSearchParams } from 'react-router-dom';
+import { useEffect } from 'react';
+
 function ResponseForm() {
   const [checked, setChecked] = useState(true);
 
   const handleChecked = () => setChecked(!checked);
+
+  const [searchParams] = useSearchParams();
+  console.log(`The code is:${searchParams.get('code')}`);
+
+  useEffect(() => {
+    const apiUrl = '/api/rsvp';
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+      console.log('GET RSVP: ', data);
+    });
+  }, []);
 
   return (
     <MKBox component="section" py={12}>
