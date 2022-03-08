@@ -21,7 +21,7 @@ class StatsSection extends Component {
     super(props);
 
     this.state = {
-          
+        rsvpChart: {
         series: [{
           name: 'Confirmed',
           data: [44, 55, 41, 67],
@@ -92,7 +92,70 @@ class StatsSection extends Component {
         },
       
       
-      };
+      },
+      donationsChart: {
+        series: [{
+          name: 'GBP',
+          data: [44, 55, 41, 67],
+          color: "#4CAF50"
+        }],
+        options: {
+          chart: {
+            type: 'bar',
+            height: 350,
+            stacked: true,
+            toolbar: {
+              show: false
+            },
+            zoom: {
+              enabled: false
+            }
+          },
+          title: {
+            text: "Wedding Donations",
+            align: 'left',
+            margin: 10,
+            offsetX: 0,
+            offsetY: 0,
+            floating: false,
+            style: {
+              fontSize:  '14px',
+              fontWeight:  'bold',
+              fontFamily:  undefined,
+              color:  '#263238'
+            },
+        },
+          responsive: [{
+            breakpoint: 480,
+            options: {
+              legend: {
+                position: 'bottom',
+                offsetX: -10,
+                offsetY: 0
+              }
+            }
+          }],
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              borderRadius: 10
+            },
+          },
+          xaxis: {
+            type: 'string',
+            categories: ['UK', 'ES', 'UK Per Person', 'ES Per Person'],
+          },
+          legend: {
+            position: 'right',
+            offsetY: 40
+          },
+          fill: {
+            opacity: 1
+          }
+        },
+      
+      
+      }};
     }
 
   componentDidMount() {
@@ -101,7 +164,8 @@ class StatsSection extends Component {
       .then((response) => response.json())
       .then((data) => {
       console.log('Stats: ', data);
-      const newSeries = [{
+      
+      const rsvpNewSeries = [{
         name: 'Confirmed',
         data: [data.UK.Friends.confirmedYes, data.UK.Family.confirmedYes, data.ES.Friends.confirmedYes, data.ES.Family.confirmedYes],
         color: "#4CAF50"
@@ -114,8 +178,17 @@ class StatsSection extends Component {
         data: [data.UK.Friends.confirmedNo, data.UK.Family.confirmedNo, data.ES.Friends.confirmedNo, data.ES.Family.confirmedNo],
         color: "#fb8c00"
       }];
-      console.log(newSeries);
-      this.setState({ series: newSeries })
+
+      const donationsNewSeries = [{
+        name: 'GBP',
+        data: [3000, 2000, 300, 200],
+        color: "#4CAF50"
+      }];
+
+      this.setState(prevState => ({
+        rsvpChart: { ...prevState.rsvpChart, series: rsvpNewSeries  },
+        donationsChart: { ...prevState.donationsChart, series: donationsNewSeries  }
+      }));
     });
   }
 
@@ -129,7 +202,8 @@ class StatsSection extends Component {
                     </MKTypography>
                 </Grid>
                 <div id="chart">
-  <Chart options={this.state.options} series={this.state.series} type="bar" height={350} />
+  <Chart options={this.state.rsvpChart.options} series={this.state.rsvpChart.series} type="bar" height={350} />
+  <Chart options={this.state.donationsChart.options} series={this.state.donationsChart.series} type="bar" height={350} />
 </div>
             </Container>
         </MKBox></>
