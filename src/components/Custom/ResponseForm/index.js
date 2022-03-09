@@ -40,12 +40,15 @@ function ResponseForm() {
   const [searchParams] = useSearchParams();
   console.log(`The code is:${searchParams.get('code')}`);
 
+  const [getRsvpData, setGetRsvpData] = useState();
+
   useEffect(() => {
     const apiUrl = '/api/rsvp';
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
-      console.log('GET RSVP: ', data);
+        setGetRsvpData(data);
+        console.log('GET RSVP: ', data);
     });
   }, []);
 
@@ -62,7 +65,7 @@ function ResponseForm() {
             <MKBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12}>
-                  <CheckboxFormGroup />
+                  <CheckboxFormGroup rsvpData={getRsvpData} />
                 </Grid>
                 <Grid item xs={12}>
                   <MKInput variant="standard" type="email" label="Email Address" fullWidth />

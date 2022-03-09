@@ -11,7 +11,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 
-export default function CheckboxesGroup() {
+export default function CheckboxesGroup(rsvpData) {
   const [state, setState] = React.useState({
     gilad: false,
     jason: false,
@@ -27,23 +27,28 @@ export default function CheckboxesGroup() {
 
   const { gilad, jason, antoine } = state;
 
+  console.log('Radio group:', rsvpData.rsvpData);
+
   return (
     <Box sx={{ display: 'flex' }}>
       <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
         <FormLabel focused={false}>Who is coming?</FormLabel>
-        
-        <FormControl>
-        <FormLabel focused={false} id="demo-radio-buttons-group-label">Person 1</FormLabel>
-        <RadioGroup
-          row
-          aria-labelledby="demo-radio-buttons-group-label"
-          name="radio-buttons-group"
-        >
-          <FormControlLabel value="no" control={<Radio />} label="No" />
-          <FormControlLabel value="notsure" control={<Radio />} label="Not sure yet" />
-          <FormControlLabel value="yes" control={<Radio />} label="Yes" />
-        </RadioGroup>
-      </FormControl>
+        {console.log("Rendered group")}
+        {rsvpData.rsvpData?.attendees?.map((attendee, index) =>
+          <FormControl key={index}>
+          <FormLabel focused={false} id="demo-radio-buttons-group-label">{attendee.firstName}</FormLabel>
+          <RadioGroup
+            row
+            aria-labelledby="demo-radio-buttons-group-label"
+            name="radio-buttons-group"
+          >
+            <FormControlLabel value="no" control={<Radio />} label="No" />
+            <FormControlLabel value="notsure" control={<Radio />} label="Not sure" />
+            <FormControlLabel value="yes" control={<Radio />} label="Yes" />
+          </RadioGroup>
+        </FormControl>
+
+        )}        
 
       { /*
         <FormGroup>
