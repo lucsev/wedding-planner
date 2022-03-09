@@ -50,6 +50,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import ResponseForm from "components/Custom/ResponseForm";
 import StatsSection from "components/Custom/StatsSection";
+import SimpleAccordion from "components/Custom/SimpleAccordion";
 
 const theme = createTheme({
   typography: {
@@ -136,6 +137,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        <SimpleAccordion />
         <ResponseForm />
         <StatsSection />
         <Counters />
