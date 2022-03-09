@@ -41,21 +41,20 @@ function ResponseForm() {
   const [searchParams] = useSearchParams();
   console.log(`The code is:${searchParams.get('code')}`);
 
-  const [getRsvpData, setGetRsvpData] = useState();
+  const [rsvpData, setrsvpData] = useState();
 
   useEffect(() => {
     const apiUrl = '/api/rsvp';
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
-        setGetRsvpData(data);
+        setrsvpData(data);
         // console.log('GET RSVP: ', data);
     });
   }, []);
 
-  const [formResponses, setFormResponses] = useState({});
   const handleAtendeeChange = (guestID, isAttending) => {
-    var newState = formResponses;
+    var newState = rsvpData;
 
     const index = newState.attendees ? newState.attendees.findIndex(object => object.guestID === guestID) : -1;
     const newValue = {"guestID": guestID, "isAttending": isAttending};
@@ -65,7 +64,7 @@ function ResponseForm() {
     }
     else { newState.attendees[index] = newValue }
     // console.log(newState);
-    setFormResponses(newState);
+    setrsvpData(newState);
   };
 
   // console.log("Form responses", formResponses);
@@ -83,7 +82,7 @@ function ResponseForm() {
             <MKBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12}>
-                  <CheckboxFormGroup rsvpData={getRsvpData} handleAtendeeChange={handleAtendeeChange} />
+                  <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
                 </Grid>
                 <Grid item xs={12}>
                   <MKInput variant="standard" type="email" label="Email Address" fullWidth />
