@@ -47,6 +47,7 @@ export default function CheckboxFormGroup({rsvpData, handleAtendeeChange}) {
             aria-labelledby="demo-radio-buttons-group-label"
             name="radio-buttons-group"
             onChange={e=>handleRadioChange(attendee.guestID, e.target.value)}
+            defaultValue={attendee.isAttending}
           >
             <FormControlLabel value="no" control={<Radio />} label="No" />
             <FormControlLabel value="notsure" control={<Radio />} label="Not sure" />

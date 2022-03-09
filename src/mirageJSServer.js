@@ -51,8 +51,8 @@ export function makeServer() {
         return {
             "attendees": [
               {"guestID": 1, "firstName":"Mr. A", "isAttending": null},
-              {"guestID": 2, "firstName":"Mr. B", "isAttending": null},
-              {"guestID": 3, "firstName":"Mr. C", "isAttending": null}
+              {"guestID": 2, "firstName":"Mr. B", "isAttending": "yes"},
+              {"guestID": 3, "firstName":"Mr. C", "isAttending": "notsure"}
             ],
             "canDonate": true,
             "specialRequests": null,
