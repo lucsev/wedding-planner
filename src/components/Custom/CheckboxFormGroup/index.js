@@ -25,6 +25,10 @@ export default function CheckboxesGroup(rsvpData) {
     });
   };
 
+  const handleRadioChange = (attendingValue, guestID) => {
+    console.log(attendingValue," " , guestID);
+  };
+
   const { gilad, jason, antoine } = state;
 
   console.log('Radio group:', rsvpData.rsvpData);
@@ -35,12 +39,13 @@ export default function CheckboxesGroup(rsvpData) {
         <FormLabel focused={false}>Who is coming?</FormLabel>
         {console.log("Rendered group")}
         {rsvpData.rsvpData?.attendees?.map((attendee, index) =>
-          <FormControl key={index}>
+          <FormControl key={attendee.guestID}>
           <FormLabel focused={false} id="demo-radio-buttons-group-label">{attendee.firstName}</FormLabel>
           <RadioGroup
             row
             aria-labelledby="demo-radio-buttons-group-label"
             name="radio-buttons-group"
+            onChange={e=>handleRadioChange(e.target.value, attendee.guestID)}
           >
             <FormControlLabel value="no" control={<Radio />} label="No" />
             <FormControlLabel value="notsure" control={<Radio />} label="Not sure" />
@@ -50,28 +55,6 @@ export default function CheckboxesGroup(rsvpData) {
 
         )}        
 
-      { /*
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Checkbox checked={gilad} onChange={handleChange} name="gilad" />
-            }
-            label="Person 1"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox checked={jason} onChange={handleChange} name="jason" />
-            }
-            label="Person 2"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox checked={antoine} onChange={handleChange} name="antoine" />
-            }
-            label="Person 3"
-          />
-        </FormGroup>
-         <FormHelperText>The helper text</FormHelperText> */}
       </FormControl>
     </Box>
   );
