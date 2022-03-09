@@ -31,6 +31,7 @@ import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
 
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import { useCallback } from 'react';
 
 function ResponseForm() {
   const [checked, setChecked] = useState(true);
@@ -48,9 +49,26 @@ function ResponseForm() {
       .then((response) => response.json())
       .then((data) => {
         setGetRsvpData(data);
-        console.log('GET RSVP: ', data);
+        // console.log('GET RSVP: ', data);
     });
   }, []);
+
+  const [formResponses, setFormResponses] = useState({});
+  const handleAtendeeChange = (guestID, isAttending) => {
+    var newState = formResponses;
+
+    const index = newState.attendees ? newState.attendees.findIndex(object => object.guestID === guestID) : -1;
+    const newValue = {"guestID": guestID, "isAttending": isAttending};
+    if(index === -1) {
+      if(!newState.attendees) { newState.attendees = []; }
+      newState.attendees.push(newValue);
+    }
+    else { newState.attendees[index] = newValue }
+    // console.log(newState);
+    setFormResponses(newState);
+  };
+
+  // console.log("Form responses", formResponses);
 
   return (
     <MKBox component="section" py={12}>
@@ -65,7 +83,7 @@ function ResponseForm() {
             <MKBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12}>
-                  <CheckboxFormGroup rsvpData={getRsvpData} />
+                  <CheckboxFormGroup rsvpData={getRsvpData} handleAtendeeChange={handleAtendeeChange} />
                 </Grid>
                 <Grid item xs={12}>
                   <MKInput variant="standard" type="email" label="Email Address" fullWidth />
