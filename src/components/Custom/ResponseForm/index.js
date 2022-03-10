@@ -32,8 +32,11 @@ import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
+import i18n from 'i18n';
 
 function ResponseForm() {
+  const { t } = useTranslation();
   const [checked, setChecked] = useState(true);
 
   const handleChecked = () => setChecked(!checked);
@@ -50,6 +53,7 @@ function ResponseForm() {
       .then((data) => {
         setrsvpData(data);
         // console.log('GET RSVP: ', data);
+        if(data.country == "ES") { i18n.changeLanguage("es"); }
     });
   }, []);
 
@@ -74,7 +78,7 @@ function ResponseForm() {
       <Container>
         <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
           <MKTypography variant="h3" mb={1}>
-            RSVP
+          {t('rsvpTitle')}
           </MKTypography>
         </Grid>
         <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>

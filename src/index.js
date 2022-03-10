@@ -19,6 +19,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "App";
 import { makeServer } from './mirageJSServer';
 
+import './i18n';
+
 if (process.env.NODE_ENV === "development") {
   makeServer({ environment: "development" })
 }
