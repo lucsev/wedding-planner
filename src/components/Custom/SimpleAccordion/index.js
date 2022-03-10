@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -10,15 +11,13 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import translations from "public/translations/translations"
+import i17n from 'i18n';
+import i18next from "i18next";
 
-export default function SimpleAccordion() {
-
-  const [accordionState] = React.useState({
-    "accordionTranslations": [{"id": 1, "summary": "Do guests have to arrange their own transportation and lodging?", "details": "Yes. However, we have some suggestions (link to  suggestions question)"},
-      {"id": 2, "summary": "false", "details": "false"},
-      {"id": 3, "summary": "false", "details": "false"}
-    ]
-  });
+export default function SimpleAccordion({appLanguage}) {
+  
+  const accordionTranslations = translations[appLanguage].translation.faqAccordion;
 
   return (
     <>
@@ -31,18 +30,18 @@ export default function SimpleAccordion() {
         </Grid>
         <Grid container item xs={12}>
         <div>
-        {accordionState?.accordionTranslations?.map((translation) =>
-          <Accordion key={translation.id}>
+        {accordionTranslations?.map((translation, index) =>
+          <Accordion key={index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id={translation.id}
           >
-            <Typography>{translation.summary}</Typography>
+            <Typography>{translation.title}</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            {translation.details}
+            {translation.detail}
             </Typography>
           </AccordionDetails>
         </Accordion>

@@ -35,14 +35,14 @@ import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18n';
 
-function ResponseForm() {
+export default function ResponseForm({appLanguage, setAppLanguage}) {
   const { t } = useTranslation();
   const [checked, setChecked] = useState(true);
 
   const handleChecked = () => setChecked(!checked);
 
   const [searchParams] = useSearchParams();
-  console.log(`The code is:${searchParams.get('code')}`);
+  // console.log(`The code is:${searchParams.get('code')}`);
 
   const [rsvpData, setrsvpData] = useState();
 
@@ -53,7 +53,10 @@ function ResponseForm() {
       .then((data) => {
         setrsvpData(data);
         // console.log('GET RSVP: ', data);
-        if(data.country == "ES") { i18n.changeLanguage("es"); }
+        if(data.country == "ES") {
+          i18n.changeLanguage("es");
+          setAppLanguage("es");
+        }
     });
   }, []);
 
@@ -120,5 +123,3 @@ function ResponseForm() {
     </MKBox>
   );
 }
-
-export default ResponseForm;

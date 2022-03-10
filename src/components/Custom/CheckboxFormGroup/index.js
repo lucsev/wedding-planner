@@ -10,8 +10,10 @@ import Checkbox from '@mui/material/Checkbox';
 
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
+import { useTranslation } from 'react-i18next';
 
 export default function CheckboxFormGroup({rsvpData, handleAtendeeChange}) {
+  const { t } = useTranslation();
   const [state, setState] = React.useState({
     gilad: false,
     jason: false,
@@ -38,7 +40,7 @@ export default function CheckboxFormGroup({rsvpData, handleAtendeeChange}) {
   return (
     <Box sx={{ display: 'flex' }}>
       <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
-        <FormLabel focused={false}>Who is coming?</FormLabel>
+        <FormLabel focused={false}>{t('rsvpWhosComing')}</FormLabel>
         {rsvpData?.attendees?.map((attendee, index) =>
           <FormControl key={attendee.guestID}>
           <FormLabel focused={false} id="demo-radio-buttons-group-label">{attendee.firstName}</FormLabel>
@@ -49,9 +51,9 @@ export default function CheckboxFormGroup({rsvpData, handleAtendeeChange}) {
             onChange={e=>handleRadioChange(attendee.guestID, e.target.value)}
             defaultValue={attendee.isAttending}
           >
-            <FormControlLabel value="no" control={<Radio />} label="No" />
-            <FormControlLabel value="notsure" control={<Radio />} label="Not sure" />
-            <FormControlLabel value="yes" control={<Radio />} label="Yes" />
+            <FormControlLabel value="no" control={<Radio />} label={t('rsvpResponseNo')} />
+            <FormControlLabel value="notsure" control={<Radio />} label={t('rsvpResponseNotSure')} />
+            <FormControlLabel value="yes" control={<Radio />} label={t('rsvpResponseYes')} />
           </RadioGroup>
         </FormControl>
 

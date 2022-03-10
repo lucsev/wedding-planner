@@ -13,6 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+/* eslint-disable */
+
 import { useEffect } from "react";
 
 // react-router components
@@ -29,8 +31,11 @@ import Presentation from "layouts/pages/presentation";
 // Material Kit 2 React routes
 import routes from "routes";
 
+import { useState } from 'react';
+
 export default function App() {
   const { pathname } = useLocation();
+  const [appLanguage, setAppLanguage] = useState("en");
 
   // Setting page scroll to 0 when changing the route
   useEffect(() => {
@@ -56,7 +61,7 @@ export default function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
-        <Route path="/presentation" element={<Presentation />} />
+        <Route path="/presentation" element={<Presentation appLanguage={appLanguage} setAppLanguage={setAppLanguage} />} />
         <Route path="*" element={<Navigate to="/presentation" />} />
       </Routes>
     </ThemeProvider>

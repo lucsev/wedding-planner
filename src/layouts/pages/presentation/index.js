@@ -14,8 +14,10 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
+/* eslint-disable */
+
 import Presentation from "pages/Presentation";
 
-export default function PresentationPage() {
-  return <Presentation />;
+export default function PresentationPage({appLanguage, setAppLanguage}) {
+  return <Presentation appLanguage={appLanguage} setAppLanguage={setAppLanguage} />;
 }

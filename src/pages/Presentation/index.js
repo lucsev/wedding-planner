@@ -70,8 +70,9 @@ const theme = createTheme({
   },
 });
 
-function Presentation() {
+export default function Presentation({appLanguage, setAppLanguage}) {
   return (
+    
     <>
     {/*
       <DefaultNavbar
@@ -137,9 +138,9 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <SimpleAccordion />
-        <ResponseForm />
-        <StatsSection />
+        <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
+        <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage}/>
+        <StatsSection appLanguage={appLanguage} />
         <Counters />
         <Information />
         <DesignBlocks />
@@ -253,4 +254,3 @@ function Presentation() {
   );
 }
 
-export default Presentation;
