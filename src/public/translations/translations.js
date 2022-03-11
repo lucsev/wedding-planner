@@ -17,14 +17,23 @@ const translations = {
         {"title": "Do guests have to arrange their own transportation and lodging?", "detail": "Yes. However, we have some suggestions (link to suggestions question)"},
         {"title": "What wedding gifts are appropriate?", "detail": "Due to our situation, we ask that you avoid physical gifts where possible. <strong>However</strong>, we would be delighted if you could give a donation to help us bring our first child to this world. We will need £30-50k per child, but we don't expect to fund it all with donations!"}
       ],
-      "statsTitle": "Stats"
+      "statsTitle": "Stats",
+      "statsRsvpChartTitle": "RSVP",
+      "statsRsvpChartConfirmedYes": "Confirmed",
+      "statsRsvpChartConfirmedNo": "Declined",
+      "statsRsvpChartUnconfirmed": "Unconfirmed",
+      "statsDonationsChartTitle": "Donations",
+      statsDonationsChartUKPerPerson: "UK Per Person",
+      statsDonationsChartESPerPerson: "ES Per Person",
+      statsDonationsChartFriends: "Amigos",
+      statsDonationsChartFamily: "Familia"
     }
   },
   es: {
     translation: {
       "mainTitle": "¡Nos casamos!",
       "mainSignature": "Ashley & Lucas",
-      "rsvpTitle": "Confirmación de asistencia",
+      "rsvpTitle": "Confirmación de Asistencia",
       "rsvpWhosComing": "¿Quién va a venir?",
       "rsvpResponseNo": "No",
       "rsvpResponseNotSure": "Inseguro",
@@ -35,7 +44,20 @@ const translations = {
         {"title": "¿Tienen los invitados que organizar su propio transporte y alojamiento?", "detail": "Sí. Pero tenemos algunas sugerencias (link to suggestions question)"},
         {"title": "¿Qué regalos de boda son apropiados?", "detail": "Debido a nuestra situación, os pedimos evitar regalos físicos en lo posible. <strong>Sin embargo</strong>, estaríamos encantados si pudieras hacer una donación para ayudarnos a traer a nuestro primer hijo al mundo. Necesitaremos 30-50 mil libras por hijo, ¡pero no esperamos financiarlo todo con donaciones!"}
       ],
-      "statsTitle": "Estadísticas"
+      "statsTitle": "Estadísticas",
+      "statsRsvpChartTitle": "Confirmación de Asistencia",
+      "statsRsvpChartConfirmedYes": "Confirmado",
+      "statsRsvpChartConfirmedNo": "Rechazado ",
+      "statsRsvpChartUnconfirmed": "No confirmado",
+      "statsRsvpChartUKFriends": "Amigos UK",
+      "statsRsvpChartUKFamily": "Familia UK",
+      "statsRsvpChartESFriends": "Amigos ES",
+      "statsRsvpChartESFamily": "Familia ES",
+      "statsDonationsChartTitle": "Donaciones",
+      statsDonationsChartUKPerPerson: "UK Por Persona",
+      statsDonationsChartESPerPerson: "ES Por Persona",
+      statsDonationsChartFriends: "Amigos",
+      statsDonationsChartFamily: "Familia"
     }
   }
 };

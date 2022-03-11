@@ -15,24 +15,34 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
-class StatsSection extends Component {
-  constructor(props) {
-    super(props);
+export default function StatsSection ({appLanguage}) {
 
-    this.state = {
+  const { t } = useTranslation();
+  const [state, setState] = useState();
+
+  useEffect(() => {
+    const apiUrl = '/api/stats';
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+      console.log('Stats: ', data);
+
+      setState({
         rsvpChart: {
         series: [{
-          name: 'Confirmed',
-          data: [44, 55, 41, 67],
+          name: t('statsRsvpChartConfirmedYes'),
+          data: [data.UK.Friends.confirmedYes, data.UK.Family.confirmedYes, data.ES.Friends.confirmedYes, data.ES.Family.confirmedYes],
           color: "#4CAF50"
         }, {
-          name: 'No Response',
-          data: [13, 23, 20, 8],
+          name: t('statsRsvpChartUnconfirmed'),
+          data: [data.UK.Friends.notConfirmed, data.UK.Family.notConfirmed, data.ES.Friends.notConfirmed, data.ES.Family.notConfirmed],
           color: "#1A73E8"
         }, {
-          name: 'Declined',
-          data: [11, 17, 15, 15],
+          name: t('statsRsvpChartConfirmedNo'),
+          data: [data.UK.Friends.confirmedNo, data.UK.Family.confirmedNo, data.ES.Friends.confirmedNo, data.ES.Family.confirmedNo],
           color: "#fb8c00"
         }],
         options: {
@@ -48,7 +58,7 @@ class StatsSection extends Component {
             }
           },
           title: {
-            text: "Attendee RSVP",
+            text: t('statsRsvpChartTitle'),
             align: 'left',
             margin: 10,
             offsetX: 0,
@@ -79,8 +89,7 @@ class StatsSection extends Component {
           },
           xaxis: {
             type: 'string',
-            categories: ['UK Friends', 'UK Family', 'ES Friends', 'ES Family'
-            ],
+            categories: [t('statsRsvpChartUKFriends'), t('statsRsvpChartUKFamily'), t('statsRsvpChartESFriends'), t('statsRsvpChartESFamily') ],
           },
           legend: {
             position: 'right',
@@ -95,12 +104,12 @@ class StatsSection extends Component {
       },
       donationsChart: {
         series: [{
-          name: 'Friends',
+          name: t('statsDonationsChartFriends'),
           data: [44, 55, 41, 67],
           color: "#4CAF50"
         },
         {
-          name: 'Family',
+          name: t('statsDonationsChartFamily'),
           data: [44, 55, 41, 67],
           color: "#1A73E8"
         }],
@@ -117,7 +126,7 @@ class StatsSection extends Component {
             }
           },
           title: {
-            text: "Wedding Donations",
+            text: t('statsDonationsChartTitle'),
             align: 'left',
             margin: 10,
             offsetX: 0,
@@ -148,7 +157,7 @@ class StatsSection extends Component {
           },
           xaxis: {
             type: 'string',
-            categories: ['UK', 'ES', 'UK Per Person', 'ES Per Person'],
+            categories: ['UK', 'ES', t('statsDonationsChartUKPerPerson'), t('statsDonationsChartESPerPerson') ],
           },
           legend: {
             position: 'right',
@@ -160,65 +169,30 @@ class StatsSection extends Component {
         },
       
       
-      }};
-    }
-
-  componentDidMount() {
-    const apiUrl = '/api/stats';
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-      console.log('Stats: ', data);
-      
-      const rsvpNewSeries = [{
-        name: 'Confirmed',
-        data: [data.UK.Friends.confirmedYes, data.UK.Family.confirmedYes, data.ES.Friends.confirmedYes, data.ES.Family.confirmedYes],
-        color: "#4CAF50"
-      }, {
-        name: 'No Response',
-        data: [data.UK.Friends.notConfirmed, data.UK.Family.notConfirmed, data.ES.Friends.notConfirmed, data.ES.Family.notConfirmed],
-        color: "#1A73E8"
-      }, {
-        name: 'Declined',
-        data: [data.UK.Friends.confirmedNo, data.UK.Family.confirmedNo, data.ES.Friends.confirmedNo, data.ES.Family.confirmedNo],
-        color: "#fb8c00"
-      }];
-
-      const donationsNewSeries = [{
-        name: 'Friends',
-        data: [1000, 1500, 150, 100],
-        color: "#4CAF50"
-      },
-      {
-        name: 'Family',
-        data: [3000, 2000, 300, 200],
-        color: "#1A73E8"
-      }];
-
-      this.setState(prevState => ({
-        rsvpChart: { ...prevState.rsvpChart, series: rsvpNewSeries  },
-        donationsChart: { ...prevState.donationsChart, series: donationsNewSeries  }
-      }));
+      }
     });
-  }
 
-  render() {
-    return (
-        <><MKBox component="section" py={12}>
-            <Container>
-                <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
-                    <MKTypography variant="h3" mb={1}>
-                        Stats
-                    </MKTypography>
-                </Grid>
-                <div id="chart">
-  <Chart options={this.state.rsvpChart.options} series={this.state.rsvpChart.series} type="bar" height={350} />
-  <Chart options={this.state.donationsChart.options} series={this.state.donationsChart.series} type="bar" height={350} />
+    });
+  }, []);
+
+  return (
+    <>
+    <MKBox component="section" py={12}>
+        <Container>
+            <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
+                <MKTypography variant="h3" mb={1}>
+                { t('statsTitle') }
+                </MKTypography>
+            </Grid>
+            <div id="chart"> {state?.rsvpChart ?
+            <>
+            <Chart options={state.rsvpChart.options} series={state.rsvpChart.series} type="bar" height={350} />
+            <Chart options={state.donationsChart.options} series={state.donationsChart.series} type="bar" height={350} />
+            </>
+            : <></> }
 </div>
-            </Container>
-        </MKBox></>
-    );
-  }
-}
+        </Container>
+    </MKBox></>
+);
 
-export default StatsSection;
+}

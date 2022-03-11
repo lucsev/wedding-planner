@@ -52,6 +52,7 @@ import ResponseForm from "components/Custom/ResponseForm";
 import StatsSection from "components/Custom/StatsSection";
 import SimpleAccordion from "components/Custom/SimpleAccordion";
 import { useTranslation } from 'react-i18next';
+import { StrictMode} from "react";
 
 const theme = createTheme({
   typography: {
@@ -143,7 +144,9 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       >
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage}/>
+        <StrictMode>
         <StatsSection appLanguage={appLanguage} />
+        </StrictMode>
         <Counters />
         <Information />
         <DesignBlocks />
