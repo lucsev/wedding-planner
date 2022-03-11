@@ -51,6 +51,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ResponseForm from "components/Custom/ResponseForm";
 import StatsSection from "components/Custom/StatsSection";
 import SimpleAccordion from "components/Custom/SimpleAccordion";
+import { useTranslation } from 'react-i18next';
 
 const theme = createTheme({
   typography: {
@@ -71,6 +72,8 @@ const theme = createTheme({
 });
 
 export default function Presentation({appLanguage, setAppLanguage}) {
+  const { t } = useTranslation();
+
   return (
     
     <>
@@ -110,7 +113,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
                 },
               })}
             >
-              We&apos;re getting married!{" "}
+              {t('mainTitle')}
             </MKTypography>
             <ThemeProvider theme={theme}>
             <MKTypography
@@ -121,7 +124,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
               mt={1}
               sx={{ fontSize: 26, color: "#FFFFFF" }}
             >
-              Ashley & Lucas
+              {t('mainSignature')}
             </MKTypography>
             </ThemeProvider>
           </Grid>

@@ -14,10 +14,12 @@ import Grid from "@mui/material/Grid";
 import translations from "public/translations/translations"
 import i17n from 'i18n';
 import i18next from "i18next";
+import parse from 'html-react-parser';
 
 export default function SimpleAccordion({appLanguage}) {
   
-  const accordionTranslations = translations[appLanguage].translation.faqAccordion;
+  const faqTranslations = translations[appLanguage].translation;
+  console.log(faqTranslations);
 
   return (
     <>
@@ -25,12 +27,12 @@ export default function SimpleAccordion({appLanguage}) {
       <Container>
         <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
           <MKTypography variant="h3" mb={1}>
-            FAQ
+          {faqTranslations["faqTitle"]}
           </MKTypography>
         </Grid>
         <Grid container item xs={12}>
         <div>
-        {accordionTranslations?.map((translation, index) =>
+        {faqTranslations?.faqAccordion.map((translation, index) =>
           <Accordion key={index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -41,7 +43,7 @@ export default function SimpleAccordion({appLanguage}) {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            {translation.detail}
+            {parse(translation.detail)}
             </Typography>
           </AccordionDetails>
         </Accordion>
