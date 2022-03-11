@@ -29,6 +29,8 @@ export default function StatsSection ({appLanguage}) {
       .then((response) => response.json())
       .then((data) => {
       console.log('Stats: ', data);
+      console.log(t('statsRsvpChartConfirmedYes'));
+      console.log(t('statsRsvpChartUKFriends') );
 
       setState({
         rsvpChart: {

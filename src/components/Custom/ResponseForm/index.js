@@ -113,7 +113,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
               </Grid>
               <Grid container item justifyContent="center" xs={12} my={2}>
                 <MKButton type="submit" variant="gradient" color="dark" fullWidth>
-                  Submit
+                  {t('rsvpSubmit')}
                 </MKButton>
               </Grid>
             </MKBox>
