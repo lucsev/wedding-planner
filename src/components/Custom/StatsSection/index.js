@@ -29,8 +29,6 @@ export default function StatsSection ({appLanguage}) {
       .then((response) => response.json())
       .then((data) => {
       console.log('Stats: ', data);
-      console.log(t('statsRsvpChartConfirmedYes'));
-      console.log(t('statsRsvpChartUKFriends') );
 
       setState({
         rsvpChart: {
@@ -100,19 +98,18 @@ export default function StatsSection ({appLanguage}) {
           fill: {
             opacity: 1
           }
-        },
-      
+        },      
       
       },
       donationsChart: {
         series: [{
           name: t('statsDonationsChartFriends'),
-          data: [44, 55, 41, 67],
+          data: [data.UK.Friends.totalGBPDonated, data.ES.Friends.totalGBPDonated, data.UK.Friends.avgGBPDonationPerPerson, data.ES.Friends.avgGBPDonationPerPerson],
           color: "#4CAF50"
         },
         {
           name: t('statsDonationsChartFamily'),
-          data: [44, 55, 41, 67],
+          data: [data.UK.Family.totalGBPDonated, data.ES.Family.totalGBPDonated, data.UK.Family.avgGBPDonationPerPerson, data.ES.Family.avgGBPDonationPerPerson],
           color: "#1A73E8"
         }],
         options: {
