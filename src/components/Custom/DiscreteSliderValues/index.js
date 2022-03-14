@@ -4,30 +4,34 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
 
+const values = [0, 100, 200, 500, 1000, 2000, 4000];
+
 function valueLabelFormat(value) {
   return `£${value}`;
 }
 
 function calculateValue(value) {
-  const values = [0, 100, 200, 500, 1000, 2000, 4000];
   return values[value];
+}
+function donationAmountToIndex(amount) {
+  return values.indexOf(amount);
 }
 
 export default function DiscreteSliderValues({donationAmount, defaultValue, setDonationAmount}) {
 
   const handleChange = (event, newValue) => {
     if (typeof newValue === 'number') {
-      setDonationAmount(newValue);
+      setDonationAmount(calculateValue(newValue));
     }
   };
 
   return (
     <Box>
       <Typography id="non-linear-slider" gutterBottom>
-        Donation: {valueLabelFormat(calculateValue(donationAmount))}
+        Donation: {valueLabelFormat(donationAmount)}
       </Typography>
       <Slider
-        defaultValue={defaultValue}
+        defaultValue={donationAmountToIndex(defaultValue)}
         min={0}
         step={1}
         max={6}

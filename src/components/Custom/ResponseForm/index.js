@@ -46,7 +46,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
   // console.log(`The code is:${searchParams.get('code')}`);
 
   const [rsvpData, setrsvpData] = useState();
-  const defaultValue = 1;
+  const defaultValue = 100;
   const [donationAmount, setDonationAmount] = useState(defaultValue);
 
   useEffect(() => {
