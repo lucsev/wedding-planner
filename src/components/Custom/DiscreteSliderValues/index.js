@@ -13,7 +13,7 @@ function calculateValue(value) {
 }
 
 export default function DiscreteSliderValues() {
-  const [value, setValue] = React.useState(10);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     if (typeof newValue === 'number') {
@@ -28,6 +28,7 @@ export default function DiscreteSliderValues() {
       </Typography>
       <Slider
         value={value}
+        defaultValue={1}
         min={0}
         step={1}
         max={6}
