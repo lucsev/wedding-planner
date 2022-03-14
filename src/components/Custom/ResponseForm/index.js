@@ -46,8 +46,8 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
   // console.log(`The code is:${searchParams.get('code')}`);
 
   const [rsvpData, setrsvpData] = useState();
-  const defaultValue = 100;
-  const [donationAmount, setDonationAmount] = useState(defaultValue);
+  const defaultDonationAmount = 100;
+  const [donationAmount, setDonationAmount] = useState(defaultDonationAmount);
 
   useEffect(() => {
     const apiUrl = '/api/rsvp';
@@ -95,7 +95,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
                   <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
                 </Grid>
                 <Grid item xs={12}>
-                <DiscreteSliderValues donationAmount={donationAmount} defaultValue={defaultValue} setDonationAmount={setDonationAmount} />
+                <DiscreteSliderValues donationAmount={donationAmount} defaultDonationAmount={defaultDonationAmount} setDonationAmount={setDonationAmount} />
                 </Grid>
                 
                 <Grid item xs={12}>

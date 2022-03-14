@@ -10,18 +10,18 @@ function valueLabelFormat(value) {
   return `£${value}`;
 }
 
-function calculateValue(value) {
+function indexToDonationAmount(value) {
   return values[value];
 }
 function donationAmountToIndex(amount) {
   return values.indexOf(amount);
 }
 
-export default function DiscreteSliderValues({donationAmount, defaultValue, setDonationAmount}) {
+export default function DiscreteSliderValues({donationAmount, defaultDonationAmount, setDonationAmount}) {
 
   const handleChange = (event, newValue) => {
     if (typeof newValue === 'number') {
-      setDonationAmount(calculateValue(newValue));
+      setDonationAmount(indexToDonationAmount(newValue));
     }
   };
 
@@ -31,11 +31,11 @@ export default function DiscreteSliderValues({donationAmount, defaultValue, setD
         Donation: {valueLabelFormat(donationAmount)}
       </Typography>
       <Slider
-        defaultValue={donationAmountToIndex(defaultValue)}
+        defaultValue={donationAmountToIndex(defaultDonationAmount)}
         min={0}
         step={1}
         max={6}
-        scale={calculateValue}
+        scale={indexToDonationAmount}
         getAriaValueText={valueLabelFormat}
         valueLabelFormat={valueLabelFormat}
         onChange={handleChange}
