@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -12,23 +13,21 @@ function calculateValue(value) {
   return values[value];
 }
 
-export default function DiscreteSliderValues() {
-  const [value, setValue] = React.useState(1);
+export default function DiscreteSliderValues({donationAmount, defaultValue, setDonationAmount}) {
 
   const handleChange = (event, newValue) => {
     if (typeof newValue === 'number') {
-      setValue(newValue);
+      setDonationAmount(newValue);
     }
   };
 
   return (
     <Box>
       <Typography id="non-linear-slider" gutterBottom>
-        Donation: {valueLabelFormat(calculateValue(value))}
+        Donation: {valueLabelFormat(calculateValue(donationAmount))}
       </Typography>
       <Slider
-        value={value}
-        defaultValue={1}
+        defaultValue={defaultValue}
         min={0}
         step={1}
         max={6}
