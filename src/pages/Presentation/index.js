@@ -102,20 +102,25 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container justifyContent="center" mx="auto">
+          <Grid item xs={12} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
               color="white"
               mt={-6}
               mb={1}
+              textAlign="center"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
+                
               })}
             >
               {t('mainTitle')}
             </MKTypography>
+            </Grid>
+            <Grid item xs={12} justifyContent="center" mx="auto">
             <ThemeProvider theme={theme}>
             <MKTypography
               variant="body1"
@@ -128,6 +133,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
               {t('mainSignature')}
             </MKTypography>
             </ThemeProvider>
+            </Grid>
           </Grid>
         </Container>
       </MKBox>
