@@ -28,6 +28,7 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
+import DiscreteSliderValues from "components/Custom/DiscreteSliderValues";
 
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -91,6 +92,10 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
                 <Grid item xs={12}>
                   <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
                 </Grid>
+                <Grid item xs={12}>
+                <DiscreteSliderValues />
+                </Grid>
+                
                 <Grid item xs={12}>
                   <MKInput variant="standard" type="email" label="Email Address" fullWidth />
                 </Grid>
