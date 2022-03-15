@@ -27,31 +27,35 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 import MKTypography from "components/MKTypography";
 import { useTranslation } from 'react-i18next';
+import GlobalStyles from '@mui/material/GlobalStyles';
 
 function TheWedding() {
   const { t } = useTranslation();
-  
+
   return (
     <MKBox component="section" py={6} my={6}>
       <Container>
       <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
           <MKTypography variant="h3" mb={1}>
-          {t('rsvpTitle')}
+          {t('theWeddingTitle')}
           </MKTypography>
         </Grid>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <div className="backgroundBlogCardHiddenText">
+            <GlobalStyles styles={{ ".MuiTypography-body2": { visibility: 'hidden' } }} />
             <BackgroundBlogCard
               image="https://bit.ly/31BuIti"
-              title="Flexible work hours"
-              description="Rather than worrying about switching offices every couple years, you stay in the same place."
+              title=""
+              description=""
               action={{
                 type: "internal",
                 route: "/somewhere",
                 color: "info",
-                label: "Read More"
+                label: ""
               }}
             />
+            </div>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>

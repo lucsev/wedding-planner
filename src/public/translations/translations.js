@@ -5,6 +5,7 @@ const translations = {
     translation: {
       mainTitle: "We're getting married!",
       mainSignature: "Ashley & Lucas",
+      theWeddingTitle: "The Wedding",
       rsvpTitle: "RSVP",
       rsvpWhosComing: "Who is coming?",
       rsvpSubmit: "Submit",
@@ -37,6 +38,7 @@ const translations = {
     translation: {
       mainTitle: "¡Nos casamos!",
       mainSignature: "Ashley & Lucas",
+      theWeddingTitle: "La Boda",
       rsvpTitle: "Confirmación de Asistencia",
       rsvpWhosComing: "¿Quién va a venir?",
       rsvpSubmit: "Enviar",
