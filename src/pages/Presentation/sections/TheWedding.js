@@ -42,8 +42,8 @@ function TheWedding() {
         </Grid>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <div className="backgroundBlogCardHiddenText">
-            <GlobalStyles styles={{ ".MuiTypography-body2": { visibility: 'hidden' } }} />
+            <div className="hideTextInsideCard">
+            <GlobalStyles styles={{ ".hideTextInsideCard .MuiTypography-body2": { visibility: 'hidden' } }} />
             <BackgroundBlogCard
               image="https://bit.ly/31BuIti"
               title=""
