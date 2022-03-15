@@ -56,7 +56,7 @@ export function makeServer() {
             ],
             "canDonate": true,
             "specialRequests": null,
-            "country": "ES",
+            "country": "UK",
             "consentToShowNameInAttendeeList": null,
             "amountDonatedLocalCurrency": 200
           }
