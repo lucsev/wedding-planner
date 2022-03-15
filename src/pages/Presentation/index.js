@@ -30,7 +30,7 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
+import TheWedding from "pages/Presentation/sections/TheWedding";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
@@ -148,13 +148,11 @@ export default function Presentation({appLanguage, setAppLanguage}) {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        <TheWedding />
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage}/>
-        <StrictMode>
         <StatsSection appLanguage={appLanguage} />
-        </StrictMode>
         <Counters />
-        <Information />
         <DesignBlocks />
         <Pages />
         <Container sx={{ mt: 6 }}>
