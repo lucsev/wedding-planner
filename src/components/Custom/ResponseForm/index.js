@@ -46,16 +46,16 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
   // console.log(`The code is:${searchParams.get('code')}`);
 
   const [rsvpData, setrsvpData] = useState();
-  const defaultDonationAmount = 100;
-  const [donationAmount, setDonationAmount] = useState(defaultDonationAmount);
+  const [donationAmount, setDonationAmount] = useState(0);
 
   useEffect(() => {
-    const apiUrl = '/api/rsvp';
+    const apiUrl = 'http://localhost:8080/rsvp';
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
         setrsvpData(data);
-        // console.log('GET RSVP: ', data);
+        setDonationAmount(data.amountDonatedLocalCurrency);
+         // console.log('GET RSVP: ', data);
         if(data.country == "ES") {
           i18n.changeLanguage("es");
           setAppLanguage("es");
@@ -79,54 +79,71 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
 
   // console.log("Form responses", formResponses);
 
-  return (
-    <MKBox component="section" py={12}>
-      <Container>
-        <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
-          <MKTypography variant="h3" mb={1}>
-          {t('rsvpTitle')}
-          </MKTypography>
-        </Grid>
-        <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
-          <MKBox width="100%" component="form" method="post" autocomplete="off">
-            <MKBox p={3}>
-              <Grid container spacing={3}>
-                <Grid item xs={12}>
-                  <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
+  let defaultDonationAmount = 0;
+  if (rsvpData != undefined && rsvpData.hasOwnProperty('amountDonatedLocalCurrency')) {
+    defaultDonationAmount = rsvpData.amountDonatedLocalCurrency;
+
+    return (
+      <MKBox component="section" py={12}>
+        <Container>
+          <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
+            <MKTypography variant="h3" mb={1}>
+            {t('rsvpTitle')}
+            </MKTypography>
+          </Grid>
+          <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
+            <MKBox width="100%" component="form" method="post" autocomplete="off">
+              <MKBox p={3}>
+                <Grid container spacing={3}>
+                  <Grid item xs={12}>
+                    <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
+                  </Grid>
+                  <Grid item xs={12}>
+                  <DiscreteSliderValues donationAmount={donationAmount} defaultDonationAmount={defaultDonationAmount} setDonationAmount={setDonationAmount} country={rsvpData.country} />
+                  </Grid>
+                  
+                  <Grid item xs={12}>
+                    <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} multiline fullWidth rows={6} />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <MKInput variant="standard" label="Music Suggestions" fullWidth />
+                  </Grid>
+
+                  {/*
+                  <Grid item xs={12} alignItems="center" ml={-1}>
+                    <Switch checked={checked} onChange={handleChecked} />
+                    <MKTypography
+                      variant="button"
+                      fontWeight="regular"
+                      color="text"
+                      ml={-1}
+                      sx={{ cursor: "pointer", userSelect: "none" }}
+                      onClick={handleChecked}
+                    >
+                      &nbsp;&nbsp;I am ok for my first name being shown in the attendee list&nbsp;
+                    </MKTypography>
+                  </Grid>
+                  */}
+
                 </Grid>
-                <Grid item xs={12}>
-                <DiscreteSliderValues donationAmount={donationAmount} defaultDonationAmount={defaultDonationAmount} setDonationAmount={setDonationAmount} />
+                <Grid container item justifyContent="center" xs={12} my={2}>
+                  <MKButton type="submit" variant="gradient" color="dark" fullWidth>
+                    {t('rsvpSubmit')}
+                  </MKButton>
                 </Grid>
-                
-                <Grid item xs={12}>
-                  <MKInput variant="standard" type="email" label="Email Address" fullWidth />
-                </Grid>
-                <Grid item xs={12}>
-                  <MKInput variant="standard" label="If you have any special requests for any guests (e.g. dietary requirements, logistics help), type them here:" multiline fullWidth rows={6} />
-                </Grid>
-                <Grid item xs={12} alignItems="center" ml={-1}>
-                  <Switch checked={checked} onChange={handleChecked} />
-                  <MKTypography
-                    variant="button"
-                    fontWeight="regular"
-                    color="text"
-                    ml={-1}
-                    sx={{ cursor: "pointer", userSelect: "none" }}
-                    onClick={handleChecked}
-                  >
-                    &nbsp;&nbsp;I am ok for my first name being shown in the attendee list&nbsp;
-                  </MKTypography>
-                </Grid>
-              </Grid>
-              <Grid container item justifyContent="center" xs={12} my={2}>
-                <MKButton type="submit" variant="gradient" color="dark" fullWidth>
-                  {t('rsvpSubmit')}
-                </MKButton>
-              </Grid>
+              </MKBox>
             </MKBox>
-          </MKBox>
-        </Grid>
-      </Container>
-    </MKBox>
-  );
+          </Grid>
+        </Container>
+      </MKBox>
+    );
+  }
+  else {
+     //Response not received yet
+    return (<></>);
+  }
+
+
+
+  
 }

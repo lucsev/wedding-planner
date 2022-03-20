@@ -12,6 +12,9 @@ const translations = {
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Not sure",
       rsvpResponseYes: "Yes",
+      localCurrencySymbol: "£",
+      donationSliderLabel: "Donation",
+      rsvpSpecialRequirementsLabel: "Any special requests? Allergies, dietary requirements, logistics help, etc.",
       faqTitle: "FAQ",
       faqAccordion: [
         {title: "Is there a dress code?", detail: "No. You can wear what you feel comfortable wearing."},
@@ -45,11 +48,14 @@ const translations = {
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Inseguro",
       rsvpResponseYes: "Sí",
+      localCurrencySymbol: "€",
+      donationSliderLabel: "Donativo",
+      rsvpSpecialRequirementsLabel: "¿Algún requisito especial? Alergias, requisitos dietéticos, ayuda logística, etc.",
       faqTitle: "Preguntas Frecuentes",
       faqAccordion: [
         {title: "¿Hay un código de vestimenta?", detail: "No. Puedes llevar la ropa con la que te sientas cómodo."},
         {title: "¿Tienen los invitados que organizar su propio transporte y alojamiento?", detail: "Sí. Pero tenemos algunas sugerencias (link to suggestions question)"},
-        {title: "¿Qué regalos de boda son apropiados?", detail: "Debido a nuestra situación, os pedimos evitar regalos físicos en lo posible. <strong>Sin embargo</strong>, estaríamos encantados si pudieras hacer una donación para ayudarnos a traer a nuestro primer hijo al mundo. Necesitaremos 30-50 mil libras por hijo, ¡pero no esperamos financiarlo todo con donaciones!"}
+        {title: "¿Qué regalos de boda son apropiados?", detail: "Debido a nuestra situación, os pedimos evitar regalos físicos en lo posible. <strong>Sin embargo</strong>, estaríamos encantados si pudieras hacer un donativo para ayudarnos a traer a nuestro primer hijo al mundo. Necesitaremos 30-50 mil libras por hijo, ¡pero no esperamos financiarlo todo con donativos!"}
       ],
       statsTitle: "Estadísticas",
       statsRsvpChartTitle: "Confirmación de Asistencia",
@@ -60,7 +66,7 @@ const translations = {
       statsRsvpChartUKFamily: "Familia UK",
       statsRsvpChartESFriends: "Amigos ES",
       statsRsvpChartESFamily: "Familia ES",
-      statsDonationsChartTitle: "Donaciones",
+      statsDonationsChartTitle: "Donativos",
       statsDonationsChartUKPerPerson: "UK Por Persona",
       statsDonationsChartESPerPerson: "ES Por Persona",
       statsDonationsChartFriends: "Amigos",

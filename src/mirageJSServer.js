@@ -49,17 +49,27 @@ export function makeServer() {
 
       this.get("/rsvp", () => {
         return {
-            "attendees": [
-              {"guestID": 1, "firstName":"Mr. A", "isAttending": null},
-              {"guestID": 2, "firstName":"Mr. B", "isAttending": "yes"},
-              {"guestID": 3, "firstName":"Mr. C", "isAttending": "notsure"}
-            ],
-            "canDonate": true,
-            "specialRequests": null,
-            "country": "UK",
-            "consentToShowNameInAttendeeList": null,
-            "amountDonatedLocalCurrency": 200
-          }
+          "attendees": [
+              {
+                  "guestID": 1,
+                  "firstName": "Ashley",
+                  "isAttending": ""
+              },
+              {
+                  "guestID": 2,
+                  "firstName": "Lucas",
+                  "isAttending": ""
+              }
+          ],
+          "partyID": 1,
+          "country": "UK",
+          "group": "Family",
+          "subGroup": "Groom & Groom",
+          "eligibleToDonate": "no",
+          "specialRequests": "",
+          "musicSuggestions": "",
+          "amountDonatedLocalCurrency": 0
+      }
       });
     },
   });

@@ -4,11 +4,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
 
-const values = [0, 100, 200, 500, 1000, 2000, 4000];
+import { useTranslation } from 'react-i18next';
 
-function valueLabelFormat(value) {
-  return `£${value}`;
-}
+const values = [0, 100, 200, 500, 1000, 2000, 4000];
 
 function indexToDonationAmount(value) {
   return values[value];
@@ -17,7 +15,13 @@ function donationAmountToIndex(amount) {
   return values.indexOf(amount);
 }
 
-export default function DiscreteSliderValues({donationAmount, defaultDonationAmount, setDonationAmount}) {
+export default function DiscreteSliderValues({donationAmount, defaultDonationAmount, setDonationAmount, country}) {
+  const { t } = useTranslation();
+
+  function valueLabelFormat(value) {
+    if (country == "UK") {return `${t('localCurrencySymbol')}${value}`;}
+    else {return `${value}${t('localCurrencySymbol')}`;}
+  }
 
   const handleChange = (event, newValue) => {
     if (typeof newValue === 'number') {
@@ -28,7 +32,7 @@ export default function DiscreteSliderValues({donationAmount, defaultDonationAmo
   return (
     <Box>
       <Typography id="non-linear-slider" gutterBottom>
-        Donation: {valueLabelFormat(donationAmount)}
+      {t('donationSliderLabel')}: {valueLabelFormat(donationAmount)}
       </Typography>
       <Slider
         defaultValue={donationAmountToIndex(defaultDonationAmount)}
