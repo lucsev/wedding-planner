@@ -77,6 +77,19 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
     setrsvpData(newState);
   };
 
+  
+  const handleSpecialRequestsChange = (e) => {
+    var newState = rsvpData;
+    newState.specialRequests = e.target.value;
+    setrsvpData(newState);
+  };
+
+  const handleMusicSuggestionsChange = (e) => {
+    var newState = rsvpData;
+    newState.musicSuggestions = e.target.value;
+    setrsvpData(newState);
+  };
+
   // console.log("Form responses", formResponses);
 
   const formSubmitHandler = (e) => {
@@ -94,16 +107,18 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
               isAttending: "yes"
           }
       ],
-      partyID: 1,
-      specialRequests: "AAA",
-      musicSuggestions: "BBB",
-      amountDonatedLocalCurrency: 1000
+      partyID: rsvpData.partyID,
+      specialRequests: rsvpData.specialRequests,
+      musicSuggestions: rsvpData.musicSuggestions,
+      amountDonatedLocalCurrency: donationAmount,
   };
+  console.log(formData);
 
     fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        // TODO un-hardcode
         'partyCode': 'mT2pw',
       },
       body: JSON.stringify(formData),
@@ -143,10 +158,10 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
                   </Grid>
                   
                   <Grid item xs={12}>
-                    <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} multiline fullWidth rows={6} />
+                    <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} onChange={handleSpecialRequestsChange} multiline fullWidth rows={6} />
                   </Grid>
                   <Grid item xs={12}>
-                    <MKInput variant="standard" label="Music Suggestions" fullWidth />
+                    <MKInput variant="standard" label="Music Suggestions" onChange={handleMusicSuggestionsChange} fullWidth />
                   </Grid>
 
                   {/*
