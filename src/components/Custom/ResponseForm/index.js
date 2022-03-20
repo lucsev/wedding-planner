@@ -82,12 +82,12 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
   const formSubmitHandler = (e) => {
     console.log('submit called');
 
-    const apiUrl = 'http://localhost:8080/rsvpsubmit'; 
+    const apiUrl = 'http://localhost:8080/rsvp';
     let formData = {
       attendees: [
           {
               guestID: 1,
-              isAttending: "no"
+              isAttending: "yes"
           },
           {
               guestID: 2,
@@ -95,8 +95,8 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
           }
       ],
       partyID: 1,
-      specialRequests: "A cup of tea!",
-      musicSuggestions: "Something, I don't know!",
+      specialRequests: "AAA",
+      musicSuggestions: "BBB",
       amountDonatedLocalCurrency: 1000
   };
 
@@ -104,6 +104,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'partyCode': 'mT2pw',
       },
       body: JSON.stringify(formData),
     })
