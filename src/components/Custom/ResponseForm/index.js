@@ -79,6 +79,45 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
 
   // console.log("Form responses", formResponses);
 
+  const formSubmitHandler = (e) => {
+    console.log('submit called');
+
+    const apiUrl = 'http://localhost:8080/rsvpsubmit'; 
+    let formData = {
+      attendees: [
+          {
+              guestID: 1,
+              isAttending: "no"
+          },
+          {
+              guestID: 2,
+              isAttending: "yes"
+          }
+      ],
+      partyID: 1,
+      specialRequests: "A cup of tea!",
+      musicSuggestions: "Something, I don't know!",
+      amountDonatedLocalCurrency: 1000
+  };
+
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
+    e.preventDefault();
+  }
+
   let defaultDonationAmount = 0;
   if (rsvpData != undefined && rsvpData.hasOwnProperty('amountDonatedLocalCurrency')) {
     defaultDonationAmount = rsvpData.amountDonatedLocalCurrency;
@@ -92,7 +131,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
             </MKTypography>
           </Grid>
           <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
-            <MKBox width="100%" component="form" method="post" autocomplete="off">
+            <MKBox width="100%" component="form" onSubmit={formSubmitHandler} autocomplete="off">
               <MKBox p={3}>
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
