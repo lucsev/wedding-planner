@@ -36,6 +36,8 @@ import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18n';
 
+var defaultDonationAmount = -1;
+
 export default function ResponseForm({appLanguage, setAppLanguage}) {
   const { t } = useTranslation();
   const [checked, setChecked] = useState(true);
@@ -53,6 +55,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
+        defaultDonationAmount = data.amountDonatedLocalCurrency;
         setrsvpData(data);
         setDonationAmount(data.amountDonatedLocalCurrency);
          // console.log('GET RSVP: ', data);
@@ -63,29 +66,28 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
     });
   }, []);
 
-  const handleAtendeeChange = (guestID, isAttending) => {
-    var newState = rsvpData;
+  const handleAtendeeChange = (guestID, firstName, isAttending) => {
+    var newState = { ...rsvpData };
 
     const index = newState.attendees ? newState.attendees.findIndex(object => object.guestID === guestID) : -1;
-    const newValue = {"guestID": guestID, "isAttending": isAttending};
+    const newValue = {"guestID": guestID, "firstName": firstName, "isAttending": isAttending};
     if(index === -1) {
       if(!newState.attendees) { newState.attendees = []; }
       newState.attendees.push(newValue);
     }
     else { newState.attendees[index] = newValue }
-    // console.log(newState);
+     console.log(newState);
     setrsvpData(newState);
   };
 
-  
   const handleSpecialRequestsChange = (e) => {
-    var newState = rsvpData;
+    var newState = { ...rsvpData };
     newState.specialRequests = e.target.value;
     setrsvpData(newState);
   };
 
   const handleMusicSuggestionsChange = (e) => {
-    var newState = rsvpData;
+    var newState = { ...rsvpData };
     newState.musicSuggestions = e.target.value;
     setrsvpData(newState);
   };
@@ -97,21 +99,15 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
 
     const apiUrl = 'http://localhost:8080/rsvp';
     let formData = {
-      attendees: [
-          {
-              guestID: 1,
-              isAttending: "yes"
-          },
-          {
-              guestID: 2,
-              isAttending: "yes"
-          }
-      ],
+      attendees: [],
       partyID: rsvpData.partyID,
       specialRequests: rsvpData.specialRequests,
       musicSuggestions: rsvpData.musicSuggestions,
       amountDonatedLocalCurrency: donationAmount,
   };
+  rsvpData.attendees.forEach(attendee => {
+    formData.attendees.push({ guestID: attendee.guestID, isAttending: attendee.isAttending });
+  });
   console.log(formData);
 
     fetch(apiUrl, {
@@ -134,9 +130,8 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
     e.preventDefault();
   }
 
-  let defaultDonationAmount = 0;
-  if (rsvpData != undefined && rsvpData.hasOwnProperty('amountDonatedLocalCurrency')) {
-    defaultDonationAmount = rsvpData.amountDonatedLocalCurrency;
+  console.log("Default donation amount:", defaultDonationAmount);
+  if (defaultDonationAmount !== -1) {
 
     return (
       <MKBox component="section" py={12}>

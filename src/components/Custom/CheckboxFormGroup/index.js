@@ -27,15 +27,14 @@ export default function CheckboxFormGroup({rsvpData, handleAtendeeChange}) {
     });
   };
 
-  const handleRadioChange = (guestID, attendingValue) => {
+  const handleRadioChange = (guestID, firstName, attendingValue) => {
     console.log(guestID," " , attendingValue);
-    console.log(handleAtendeeChange);
-    handleAtendeeChange(guestID, attendingValue);
+    handleAtendeeChange(guestID, firstName, attendingValue);
   };
 
   const { gilad, jason, antoine } = state;
 
-  // console.log('Radio group:', rsvpData);
+  //console.log('Radio group re-render:', rsvpData);
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -48,8 +47,8 @@ export default function CheckboxFormGroup({rsvpData, handleAtendeeChange}) {
             row
             aria-labelledby="demo-radio-buttons-group-label"
             name="radio-buttons-group"
-            onChange={e=>handleRadioChange(attendee.guestID, e.target.value)}
-            defaultValue={attendee.isAttending}
+            onChange={e=>handleRadioChange(attendee.guestID, attendee.firstName, e.target.value)}
+            value={attendee.isAttending}
           >
             <FormControlLabel value="no" control={<Radio />} label={t('rsvpResponseNo')} />
             <FormControlLabel value="notsure" control={<Radio />} label={t('rsvpResponseNotSure')} />
