@@ -130,7 +130,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
     e.preventDefault();
   }
 
-  console.log("Default donation amount:", defaultDonationAmount);
+  // console.log("Default donation amount:", defaultDonationAmount);
   if (defaultDonationAmount !== -1) {
 
     return (
@@ -153,10 +153,10 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
                   </Grid>
                   
                   <Grid item xs={12}>
-                    <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} onChange={handleSpecialRequestsChange} multiline fullWidth rows={6} />
+                    <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} value={rsvpData.specialRequests} onChange={handleSpecialRequestsChange} multiline fullWidth rows={6} />
                   </Grid>
                   <Grid item xs={12}>
-                    <MKInput variant="standard" label="Music Suggestions" onChange={handleMusicSuggestionsChange} fullWidth />
+                    <MKInput variant="standard" label="Music Suggestions" value={rsvpData.musicSuggestions} onChange={handleMusicSuggestionsChange} fullWidth />
                   </Grid>
 
                   {/*
