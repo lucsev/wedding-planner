@@ -53,6 +53,7 @@ import StatsSection from "components/Custom/StatsSection";
 import SimpleAccordion from "components/Custom/SimpleAccordion";
 import { useTranslation } from 'react-i18next';
 import { StrictMode} from "react";
+import { useState } from "react";
 
 const theme = createTheme({
   typography: {
@@ -74,6 +75,7 @@ const theme = createTheme({
 
 export default function Presentation({appLanguage, setAppLanguage}) {
   const { t } = useTranslation();
+  const [rsvpInitialised, setrsvpInitialised] = useState(false);
 
   return (
     
@@ -150,8 +152,12 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       >
         <TheWedding />
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
-        <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage}/>
+        <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} setrsvpInitialised={setrsvpInitialised} />
+        
+        {rsvpInitialised === true && 
         <StatsSection appLanguage={appLanguage} />
+        }
+
         <Counters />
         <DesignBlocks />
         <Pages />

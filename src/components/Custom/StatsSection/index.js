@@ -24,11 +24,13 @@ export default function StatsSection ({appLanguage}) {
   const [state, setState] = useState();
 
   useEffect(() => {
-    const apiUrl = '/api/stats';
+    const apiUrl = 'http://localhost:8080/stats';
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
       console.log('Stats: ', data);
+
+      console.log("App language:", appLanguage);
 
       setState({
         rsvpChart: {
@@ -41,6 +43,11 @@ export default function StatsSection ({appLanguage}) {
           data: [data.UK.Friends.notConfirmed, data.UK.Family.notConfirmed, data.ES.Friends.notConfirmed, data.ES.Family.notConfirmed],
           color: "#1A73E8"
         }, {
+          name: t('statsRsvpChartConfirmedNotSure'),
+          data: [data.UK.Friends.confirmedNotSure, data.UK.Family.confirmedNotSure, data.ES.Friends.confirmedNotSure, data.ES.Family.confirmedNotSure],
+          color: "#7b809a"
+        },
+        {
           name: t('statsRsvpChartConfirmedNo'),
           data: [data.UK.Friends.confirmedNo, data.UK.Family.confirmedNo, data.ES.Friends.confirmedNo, data.ES.Family.confirmedNo],
           color: "#fb8c00"
@@ -104,12 +111,18 @@ export default function StatsSection ({appLanguage}) {
       donationsChart: {
         series: [{
           name: t('statsDonationsChartFriends'),
-          data: [data.UK.Friends.totalGBPDonated, data.ES.Friends.totalGBPDonated, data.UK.Friends.avgGBPDonationPerPerson, data.ES.Friends.avgGBPDonationPerPerson],
+          data: [appLanguage == "es" ? data.UK.Friends.totalEURDonated : data.UK.Friends.totalGBPDonated,
+                 appLanguage == "es" ? data.ES.Friends.totalEURDonated : data.ES.Friends.totalGBPDonated,
+                 appLanguage == "es" ? data.UK.Friends.avgEURDonatedPerParty : data.UK.Friends.avgGBPDonatedPerParty,
+                 appLanguage == "es" ? data.ES.Friends.avgEURDonatedPerParty : data.ES.Friends.avgGBPDonatedPerParty],
           color: "#4CAF50"
         },
         {
           name: t('statsDonationsChartFamily'),
-          data: [data.UK.Family.totalGBPDonated, data.ES.Family.totalGBPDonated, data.UK.Family.avgGBPDonationPerPerson, data.ES.Family.avgGBPDonationPerPerson],
+          data: [appLanguage == "es" ? data.UK.Family.totalEURDonated : data.UK.Family.totalGBPDonated,
+          appLanguage == "es" ? data.ES.Family.totalEURDonated : data.ES.Family.totalGBPDonated,
+          appLanguage == "es" ? data.UK.Family.avgEURDonatedPerParty : data.UK.Family.avgGBPDonatedPerParty,
+          appLanguage == "es" ? data.ES.Family.avgEURDonatedPerParty : data.ES.Family.avgGBPDonatedPerParty],
           color: "#1A73E8"
         }],
         options: {

@@ -38,7 +38,7 @@ import i18n from 'i18n';
 
 var defaultDonationAmount = -1;
 
-export default function ResponseForm({appLanguage, setAppLanguage}) {
+export default function ResponseForm({appLanguage, setAppLanguage, setrsvpInitialised}) {
   const { t } = useTranslation();
   const [checked, setChecked] = useState(true);
 
@@ -49,6 +49,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
 
   const [rsvpData, setrsvpData] = useState();
   const [donationAmount, setDonationAmount] = useState(0);
+  
 
   useEffect(() => {
     const apiUrl = 'http://localhost:8080/rsvp';
@@ -63,6 +64,7 @@ export default function ResponseForm({appLanguage, setAppLanguage}) {
           i18n.changeLanguage("es");
           setAppLanguage("es");
         }
+        setrsvpInitialised(true);
     });
   }, []);
 
