@@ -18,7 +18,7 @@ import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
-export default function StatsSection ({appLanguage}) {
+export default function StatsSection ({appLanguage, rsvpRerenderKey}) {
 
   const { t } = useTranslation();
   const [state, setState] = useState();
@@ -185,7 +185,7 @@ export default function StatsSection ({appLanguage}) {
     });
 
     });
-  }, []);
+  }, [rsvpRerenderKey]);
 
   return (
     <>

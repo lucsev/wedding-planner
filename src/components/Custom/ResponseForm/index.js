@@ -38,7 +38,7 @@ import i18n from 'i18n';
 
 var defaultDonationAmount = -1;
 
-export default function ResponseForm({appLanguage, setAppLanguage, setrsvpInitialised}) {
+export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialised, setrsvpInitialised, rsvpRerenderKey, setrsvpRerenderKey}) {
   const { t } = useTranslation();
   const [checked, setChecked] = useState(true);
 
@@ -124,10 +124,13 @@ export default function ResponseForm({appLanguage, setAppLanguage, setrsvpInitia
     .then(response => response.json())
     .then(data => {
       console.log('Success:', data);
+      setrsvpRerenderKey(!rsvpRerenderKey);
     })
     .catch((error) => {
       console.error('Error:', error);
     });
+
+    
 
     e.preventDefault();
   }

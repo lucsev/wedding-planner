@@ -76,6 +76,7 @@ const theme = createTheme({
 export default function Presentation({appLanguage, setAppLanguage}) {
   const { t } = useTranslation();
   const [rsvpInitialised, setrsvpInitialised] = useState(false);
+  const [rsvpRerenderKey, setrsvpRerenderKey] = useState(false);
 
   return (
     
@@ -152,10 +153,10 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       >
         <TheWedding />
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
-        <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} setrsvpInitialised={setrsvpInitialised} />
+        <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
         
         {rsvpInitialised === true && 
-        <StatsSection appLanguage={appLanguage} />
+        <StatsSection appLanguage={appLanguage} rsvpRerenderKey={rsvpRerenderKey} />
         }
 
         <Counters />
