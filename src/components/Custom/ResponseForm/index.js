@@ -52,7 +52,7 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
   
 
   useEffect(() => {
-    const apiUrl = 'http://localhost:8080/rsvp';
+    const apiUrl = 'http://localhost:8080/api/rsvp';
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -99,7 +99,7 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
   const formSubmitHandler = (e) => {
     console.log('submit called');
 
-    const apiUrl = 'http://localhost:8080/rsvp';
+    const apiUrl = 'http://localhost:8080/api/rsvp';
     let formData = {
       attendees: [],
       partyID: rsvpData.partyID,

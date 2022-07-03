@@ -4,7 +4,8 @@ import { createServer } from 'miragejs';
 export function makeServer() {
   let server = createServer({
     routes() {
-      this.namespace = ""
+      this.urlPrefix = 'http://localhost:8080/api';
+      this.namespace = "";
   
       this.get("/stats", () => {
         return {

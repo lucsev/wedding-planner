@@ -24,7 +24,7 @@ export default function StatsSection ({appLanguage, rsvpRerenderKey}) {
   const [state, setState] = useState();
 
   useEffect(() => {
-    const apiUrl = 'http://localhost:8080/stats';
+    const apiUrl = 'http://localhost:8080/api/stats';
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
