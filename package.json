@@ -1,6 +1,7 @@
 {
   "name": "material-kit-2-react",
   "version": "2.0.0",
+  "homepage": "https://lucsev.github.io",
   "private": true,
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
@@ -47,6 +48,8 @@
     "web-vitals": "1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -80,6 +83,7 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
+    "gh-pages": "^4.0.0",
     "miragejs": "^0.1.43",
     "prettier": "2.3.2"
   }
