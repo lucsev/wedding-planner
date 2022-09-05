@@ -152,7 +152,9 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <TheWedding />
+        {/*
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
+        
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
         
         {rsvpInitialised === true && 
@@ -262,11 +264,11 @@ export default function Presentation({appLanguage, setAppLanguage}) {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </MKBox>*/}
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      {/*<MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </MKBox>*/}
     </>
   );
 }

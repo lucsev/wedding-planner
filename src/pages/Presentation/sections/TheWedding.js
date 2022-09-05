@@ -33,10 +33,10 @@ function TheWedding() {
   const { t } = useTranslation();
 
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={6} my={6} sx={{ margin: "0px", padding: "12px 0px 12px 0px" }}  >
       <Container>
       <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
-          <MKTypography variant="h3" mb={1}>
+          <MKTypography variant="h3" mb={1} sx = {{ padding: "0px 0px 6px 0px" }}>
           {t('theWeddingTitle')}
           </MKTypography>
         </Grid>
@@ -45,7 +45,7 @@ function TheWedding() {
             <div className="hideTextInsideCard">
             <GlobalStyles styles={{ ".hideTextInsideCard .MuiTypography-body2": { visibility: 'hidden' } }} />
             <BackgroundBlogCard
-              image="https://bit.ly/31BuIti"
+              image="https://i.imgur.com/n6jrQtP.jpg"
               title=""
               description=""
               action={{
@@ -61,21 +61,20 @@ function TheWedding() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="location_on"
+                  title="In Spain"
+                  description="Either Seville or Malaga."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="calendar_month"
+                  title="Q2 2024"
+                  description="Exact date to be confirmed."
                 />
               </Grid>
             </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
+            {/* <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
@@ -90,9 +89,16 @@ function TheWedding() {
                   description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />
               </Grid>
-            </Grid>
-          </Grid>
+            </Grid> */}
+             <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center" sx={{ padding: "12px 0px 0px 0px" }}>
+          <MKTypography variant="h3" mb={1}>
+          Stay tuned!
+          </MKTypography>
         </Grid>
+          </Grid>
+         
+        </Grid>
+        
       </Container>
     </MKBox>
   );

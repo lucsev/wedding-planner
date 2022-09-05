@@ -48,8 +48,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
   return (
     <Card
       sx={{
-        backgroundImage: ({ palette: { black }, functions: { linearGradient, rgba } }) =>
-          `${linearGradient(rgba(black.main, 0.5), rgba(black.main, 0.5))}, url(${image})`,
+        backgroundImage: `url(${image})`,
         backgroundSize: "cover",
       }}
     >
