@@ -17,9 +17,12 @@ const translations = {
       rsvpSpecialRequirementsLabel: "Any special requests? Allergies, dietary requirements, logistics help, etc.",
       faqTitle: "FAQ",
       faqAccordion: [
+        {title: "What flights are available?", detail: "TBD"},
+        {title: "Where can I stay?", detail: "TBD"},
+        {title: "Do I have to pay for drinks?", detail: "No, we will cover unlimited drinks, including alcoholic, for the duration of the wedding (around 7 hours)."},
         {title: "Is there a dress code?", detail: "No. You can wear what you feel comfortable wearing."},
         {title: "Do guests have to arrange their own transportation and lodging?", detail: "Yes. However, we have some suggestions (link to suggestions question)"},
-        {title: "What wedding gifts are appropriate?", detail: "Due to our situation, we ask that you avoid physical gifts where possible. <strong>However</strong>, we would be delighted if you could give a donation to help us bring our first child to this world. We will need £30-50k per child, but we don't expect to fund it all with donations!"}
+        {title: "What wedding gifts are appropriate?", detail: "Due to our situation, we ask that you avoid physical gifts where possible. However, we would be delighted if you could give a donation to help us bring our first child to this world."}
       ],
       statsTitle: "Stats",
       statsRsvpChartTitle: "RSVP",

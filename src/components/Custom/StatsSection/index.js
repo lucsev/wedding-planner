@@ -199,7 +199,7 @@ export default function StatsSection ({appLanguage, rsvpRerenderKey}) {
             <div id="chart"> {state?.rsvpChart ?
             <>
             <Chart options={state.rsvpChart.options} series={state.rsvpChart.series} type="bar" height={350} />
-            <Chart options={state.donationsChart.options} series={state.donationsChart.series} type="bar" height={350} />
+            { /* <Chart options={state.donationsChart.options} series={state.donationsChart.series} type="bar" height={350} /> */}
             </>
             : <></> }
 </div>
