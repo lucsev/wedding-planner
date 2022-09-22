@@ -109,31 +109,59 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         <Container >
           <Grid container justifyContent="center" mx="auto">
           <Grid item xs={12} justifyContent="center" mx="auto">
-          <ThemeProvider theme={theme2}>
+          
               <MKTypography
                 variant="h1"
                 mt={-6}
-                mb={1}
+                mb={-3}
                 textAlign="center"
-                sx={{paddingTop: '280px', color: 'white'}}
+                sx={({ breakpoints }) => ({
+                  paddingTop: '280px',
+                  
+                  typography: {
+                    fontFamily: [
+                      "Fake Serif",
+                      "sans-serif",
+                    ].join(","),
+                   color: "white",
+                   fontSize: 80,
+                   fontWeight: 10,
+                   [breakpoints.down("sm")]: {
+                    fontSize: 55,
+                   },
+                  },          
+                })}
               >
                 {t('mainTitle')}
               </MKTypography>
-              </ThemeProvider>
+              
             
             </Grid>
             <Grid item xs={12} justifyContent="center" mx="auto">
-            <ThemeProvider theme={theme2}>
             <MKTypography
-              variant="h2"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={-1}
-              sx={{color: 'white'}}
-            >
-              {t('mainSignature')}
-            </MKTypography>
-            </ThemeProvider>
+                variant="body1"
+                mb={1}
+                textAlign="center"
+                sx={({ breakpoints }) => ({
+                  paddingTop: '10px',
+                  
+                  typography: {
+                    fontFamily: [
+                      "Fake Serif",
+                      "sans-serif",
+                    ].join(","),
+                   color: "white",
+                   fontSize: 70,
+                   fontWeight: 10,
+                   [breakpoints.down("sm")]: {
+                    fontSize: 48,
+                   },
+                  },          
+                })}
+              >
+                {t('mainSignature')}
+              </MKTypography>
+            
             </Grid>
           </Grid>
         </Container>
