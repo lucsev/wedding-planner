@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/Custom/PXL_20211015_180007358.jpg";
+import bgImage from "assets/images/Custom/PXL_20220913_163333548.MP.jpg";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -58,18 +58,20 @@ import { useState } from "react";
 const theme = createTheme({
   typography: {
     fontFamily: [
-      "Brush Script MT",
-      "-apple-system",
-      "BlinkMacSystemFont",
-      "Segoe UI",
-      "Roboto",
-      "Helvetica Neue",
-      "Arial",
+      "Fake Serif",
       "sans-serif",
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
     ].join(","),
+    fontSize: 12,
+  },
+});
+
+const theme2 = createTheme({
+  typography: {
+    fontFamily: [
+      "Fake Serif",
+      "sans-serif",
+    ].join(","),
+   fontSize: 12,
   },
 });
 
@@ -104,34 +106,30 @@ export default function Presentation({appLanguage, setAppLanguage}) {
           placeItems: "center",
         }}
       >
-        <Container>
+        <Container >
           <Grid container justifyContent="center" mx="auto">
           <Grid item xs={12} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              textAlign="center"
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-                
-              })}
-            >
-              {t('mainTitle')}
-            </MKTypography>
+          <ThemeProvider theme={theme2}>
+              <MKTypography
+                variant="h1"
+                mt={-6}
+                mb={1}
+                textAlign="center"
+                sx={{paddingTop: '280px', color: 'white'}}
+              >
+                {t('mainTitle')}
+              </MKTypography>
+              </ThemeProvider>
+            
             </Grid>
             <Grid item xs={12} justifyContent="center" mx="auto">
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={theme2}>
             <MKTypography
-              variant="body1"
-              color="white"
+              variant="h2"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
-              mt={1}
-              sx={{ fontSize: 26, color: "#FFFFFF" }}
+              mt={-1}
+              sx={{color: 'white'}}
             >
               {t('mainSignature')}
             </MKTypography>
