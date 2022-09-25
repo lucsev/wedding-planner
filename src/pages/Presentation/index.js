@@ -54,6 +54,7 @@ import SimpleAccordion from "components/Custom/SimpleAccordion";
 import { useTranslation } from 'react-i18next';
 import { StrictMode} from "react";
 import { useState } from "react";
+import TabsSimple from "layouts/sections/navigation/nav-tabs/components/TabsSimple";
 
 const theme = createTheme({
   typography: {
@@ -178,7 +179,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <TheWedding />
-        
+        <TabsSimple />
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />

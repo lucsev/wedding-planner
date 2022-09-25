@@ -33,8 +33,10 @@ function TabsSimple() {
       <Grid container item justifyContent="center" xs={12} lg={4} mx="auto">
         <AppBar position="static">
           <Tabs value={activeTab} onChange={handleTabType}>
-            <Tab label="My Profile" />
-            <Tab label="Dashboard" />
+            <Tab label="The Wedding" />
+            <Tab label="RSVP" />
+            <Tab label="Accommodation" />
+            <Tab label="FAQ" />
           </Tabs>
         </AppBar>
       </Grid>

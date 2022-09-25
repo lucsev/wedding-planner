@@ -153,9 +153,10 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
                   <Grid item xs={12}>
                     <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
                   </Grid>
-                  <Grid item xs={12}>
+                  
+                  {/*<Grid item xs={12}>
                   <DiscreteSliderValues donationAmount={donationAmount} defaultDonationAmount={defaultDonationAmount} setDonationAmount={setDonationAmount} country={rsvpData.country} />
-                  </Grid>
+                  </Grid>*/}
                   
                   <Grid item xs={12}>
                     <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} value={rsvpData.specialRequests} onChange={handleSpecialRequestsChange} multiline fullWidth rows={6} />
