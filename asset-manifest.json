@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/material-kit-react/static/js/main.3fcf533d.chunk.js",
-    "main.js.map": "/material-kit-react/static/js/main.3fcf533d.chunk.js.map",
+    "main.js": "/material-kit-react/static/js/main.a47f765e.chunk.js",
+    "main.js.map": "/material-kit-react/static/js/main.a47f765e.chunk.js.map",
     "runtime-main.js": "/material-kit-react/static/js/runtime-main.3915f838.js",
     "runtime-main.js.map": "/material-kit-react/static/js/runtime-main.3915f838.js.map",
-    "static/js/2.839334f4.chunk.js": "/material-kit-react/static/js/2.839334f4.chunk.js",
-    "static/js/2.839334f4.chunk.js.map": "/material-kit-react/static/js/2.839334f4.chunk.js.map",
+    "static/js/2.ea0122f9.chunk.js": "/material-kit-react/static/js/2.ea0122f9.chunk.js",
+    "static/js/2.ea0122f9.chunk.js.map": "/material-kit-react/static/js/2.ea0122f9.chunk.js.map",
     "index.html": "/material-kit-react/index.html",
-    "static/js/2.839334f4.chunk.js.LICENSE.txt": "/material-kit-react/static/js/2.839334f4.chunk.js.LICENSE.txt",
-    "static/media/PXL_20211015_180007358.7b0eed03.jpg": "/material-kit-react/static/media/PXL_20211015_180007358.7b0eed03.jpg",
+    "static/js/2.ea0122f9.chunk.js.LICENSE.txt": "/material-kit-react/static/js/2.ea0122f9.chunk.js.LICENSE.txt",
+    "static/media/PXL_20220913_163333548.MP.c9033e68.jpg": "/material-kit-react/static/media/PXL_20220913_163333548.MP.c9033e68.jpg",
     "static/media/bg-about-us.cf9a123e.jpg": "/material-kit-react/static/media/bg-about-us.cf9a123e.jpg",
     "static/media/bg-coworking.06bccc47.jpeg": "/material-kit-react/static/media/bg-coworking.06bccc47.jpeg",
     "static/media/bg-sign-in-basic.f327db1d.jpeg": "/material-kit-react/static/media/bg-sign-in-basic.f327db1d.jpeg",
@@ -40,7 +40,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3915f838.js",
-    "static/js/2.839334f4.chunk.js",
-    "static/js/main.3fcf533d.chunk.js"
+    "static/js/2.ea0122f9.chunk.js",
+    "static/js/main.a47f765e.chunk.js"
   ]
 }
