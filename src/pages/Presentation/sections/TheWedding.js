@@ -62,14 +62,14 @@ function TheWedding() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="location_on"
-                  title="In Spain"
-                  description="Either Seville or Malaga."
+                  title="In Seville, Spain"
+                  description="Venue to be confirmed."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="calendar_month"
-                  title="Q2 2024"
+                  title="May 2024"
                   description="Exact date to be confirmed."
                 />
               </Grid>

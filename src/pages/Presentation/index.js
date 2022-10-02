@@ -179,6 +179,8 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <TheWedding />
+
+{/*
         <TabsSimple />
         <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         
@@ -292,6 +294,8 @@ export default function Presentation({appLanguage, setAppLanguage}) {
             </Grid>
           </Container>
         </MKBox>
+      */}
+
       </Card>
       {/*<MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
