@@ -16,23 +16,18 @@ import i17n from 'i18n';
 import i18next from "i18next";
 import parse from 'html-react-parser';
 
-export default function SimpleAccordion({appLanguage}) {
+export default function RsvpFAQAccordion({appLanguage}) {
   
   const faqTranslations = translations[appLanguage].translation;
-  console.log(faqTranslations);
+  //console.log(translations);
 
   return (
     <>
     <MKBox component="section" py={12}>
       <Container>
-        <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
-          <MKTypography variant="h3" mb={1}>
-          {faqTranslations["faqTitle"]}
-          </MKTypography>
-        </Grid>
         <Grid container item xs={12}>
         <div>
-        {faqTranslations?.faqAccordion.map((translation, index) =>
+        {faqTranslations?.rsvpFAQ.map((translation, index) =>
           <Accordion key={index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}

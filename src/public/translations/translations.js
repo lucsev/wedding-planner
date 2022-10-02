@@ -16,14 +16,19 @@ const translations = {
       donationSliderLabel: "Donation",
       rsvpSpecialRequirementsLabel: "Any special requests? Allergies, dietary requirements, logistics help, etc.",
       faqTitle: "FAQ",
-      faqAccordion: [
+      rsvpFAQ: [
         {title: "What is the deadline for RSVP?", detail: "TBD"},
         {title: "Can I bring a +1?", detail: "We have a strict guest list to stay on budget. We will only be able to accommodate those listed on your invitation."},
         {title: "Can I bring my kids?", detail: "Yes, but only if we listed them on your invitation."},
+      ],
+      travelFAQ: [
         {title: "Do guests have to arrange their own transportation and accommodation?", detail: "Yes. See FAQs below for recommended flights and hotels."},
         {title: "What flights are available?", detail: "The closest airport is Seville (SVQ). There are regular non-stop flights from Stansted (Ryanair), Luton (Ryanair) and Heathrow (BA/Iberia, EasyJet, Vueling). In <a href=\"https://www.google.com/travel/flights\">Google Flights</a> you can browse or book your flights."},
         {title: "Where is the venue?", detail: "The venue is the Hotel Alfonso XIII, located at \"Calle San Fernando, 2\" (<a href=\"https://goo.gl/maps/kc6Tq7DTJTzWtuem7\">Google Maps</a>). If you are staying in the city centre, you should be able to get to the venue on foot or by taxi."},
         {title: "Where can I stay?", detail: "There are many hotels and apartments available within 5-10 minutes' walking distance of the venue. You can book them either on <a href=\"https://www.booking.com\">Booking.com</a> or <a href=\"https://www.airbnb.com\">airbnb.com</a> . You can also stay at the <a href=\"https://www.marriott.co.uk/hotels/travel/svqlc-hotel-alfonso-xiii-a-luxury-collection-hotel-seville/\">wedding venue</a> itself, which is a five-star hotel, but rooms are £300-400 per night!"},
+        {title: "What travel documents do I need?", detail: "From November 2023, non-EU nationals will need to get an <strong><a href=\"https://www.spainvisa.eu/visa-types/etias/\">ETIAS permit</a></strong> before travelling to Spain. The process is done online, takes around 5 minutes and costs €7 per person. The permit is valid for 3 years and multiple trips to Spain and EU countries of up to 90 days per 180-day period. <br/>Additionally, the passport being used for the ETIAS permit needs to be valid for a minimum of 3 months from the day of entry to Spain."},
+      ],
+      onTheDayFAQ: [
         {title: "Do I have to pay for drinks?", detail: "No, we will cover unlimited drinks, including alcoholic, for the duration of the wedding (around 7 hours). The drinks that will be served during the Reception and the Banquet are: beer, soft drinks, water, white wine, red wine and cava (Spanish sparkling wine).<br/><br/>During the Dance Floor time, there will be different drinks available:<br/>- Beer, juices, soft drinks and cava.<br/>- Whisky: JB, Ballantine’s and White Label.<br/>- Vodka: Absolut and Eristoff.<br/>- Gin: Beefeater, Tanqueray and Puerto de Indias.<br/>- Rum: Bacardi 5 years, Cacique, Brugal and Barceló. <br/>- Liqueurs: Cointreau, Baileys, Frangélico, Pacharán, Brandy, Alcohol-free apple and Alcohol-free peach."},
         {title: "What are we eating?", detail: "<span>&#8226;</span>At the Reception, we will have various nibbles.<br/><span>&#8226;</span>At the Banquet, the menu will consist of:<br/><p style=\"margin-left: 20px\">   -Starter: TBD<br/>   -Main: TBD<br/>   -Dessert: TBD<br/>   If you have any allergies or can't eat any of the ingredients (nuts, gluten, meat, fish, pork, dairy), please let us know and we will try to accommodate your request.</p><span>&#8226;</span>A couple of hours after the Banquet, there will be an additional round of nibbles.<br/>For the list of available drinks, refer to the drinks FAQ."},
         {title: "What should I wear?", detail: "The dress code for our wedding is <a href=\"https://www.brides.com/semi-formal-wedding-attire-4800687\">semi-formal/cocktail attire</a>. Most ladies will wear dresses, and gentlemen a suit or just a blazer, with or without tie."},

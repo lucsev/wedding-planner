@@ -50,7 +50,6 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import ResponseForm from "components/Custom/ResponseForm";
 import StatsSection from "components/Custom/StatsSection";
-import SimpleAccordion from "components/Custom/SimpleAccordion";
 import { useTranslation } from 'react-i18next';
 import { StrictMode} from "react";
 import { useState } from "react";
@@ -180,9 +179,8 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       >
         <TheWedding />
 
-{/*
-        <TabsSimple />
-        <SimpleAccordion appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
+
+        <TabsSimple appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
         
@@ -294,12 +292,10 @@ export default function Presentation({appLanguage, setAppLanguage}) {
             </Grid>
           </Container>
         </MKBox>
-      */}
+      
 
       </Card>
-      {/*<MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>*/}
+      
     </>
   );
 }
