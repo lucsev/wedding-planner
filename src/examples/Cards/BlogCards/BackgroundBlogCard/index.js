@@ -50,56 +50,9 @@ function BackgroundBlogCard({ image, title, description, action }) {
       sx={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
+        minHeight: "450px",
       }}
     >
-      <MKBox p={3}>
-        <MKBox minHeight="20.625rem" my="auto" py={3}>
-          <MKTypography
-            variant="h2"
-            color="white"
-            mb={1}
-            sx={({ breakpoints, typography: { size } }) => ({
-              [breakpoints.down("md")]: {
-                fontSize: size["3xl"],
-              },
-            })}
-          >
-            {title}
-          </MKTypography>
-          <MKTypography variant="body2" color="white" my={3}>
-            {description}
-          </MKTypography>
-          {action.type === "internal" ? (
-            <MKTypography
-              component={Link}
-              to={action.route}
-              variant="body2"
-              fontWeight="regular"
-              color="white"
-              textTransform="capitalize"
-              sx={cardActionStyles}
-            >
-              {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
-          ) : (
-            <MKTypography
-              component={MuiLink}
-              href={action.route}
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              fontWeight="regular"
-              color="white"
-              textTransform="capitalize"
-              sx={cardActionStyles}
-            >
-              {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
-          )}
-        </MKBox>
-      </MKBox>
     </Card>
   );
 }

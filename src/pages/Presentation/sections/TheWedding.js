@@ -42,30 +42,14 @@ function TheWedding() {
           {t('theWeddingTitle')}
           </MKTypography>
         </Grid>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <div className="hideTextInsideCard">
-            <GlobalStyles styles={{ ".hideTextInsideCard .MuiTypography-body2": { visibility: 'hidden' } }} />
-            <BackgroundBlogCard
-              image="https://i.imgur.com/n6jrQtP.jpg"
-              title=""
-              description=""
-              action={{
-                type: "internal",
-                route: "/somewhere",
-                color: "info",
-                label: ""
-              }}
-            />
-            </div>
-          </Grid>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+        <Grid container item xs={11} spacing={2} alignItems="center" sx={{ mx: "auto" }}>
+          <Grid item xs={12} lg={12} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="location_on"
                   title="In Seville, Spain"
-                  description="Venue to be confirmed."
+                  description="At the Alfonso XIII hotel."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
@@ -92,11 +76,12 @@ function TheWedding() {
                 />
               </Grid>
             </Grid> */}
-             <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center" sx={{ padding: "12px 0px 0px 0px" }}>
+
+             {/*<Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center" sx={{ padding: "12px 0px 0px 0px" }}>
           <MKTypography variant="h3" mb={1}>
           Stay tuned!
           </MKTypography>
-        </Grid>
+        </Grid>*/}
           </Grid>
          
         </Grid>

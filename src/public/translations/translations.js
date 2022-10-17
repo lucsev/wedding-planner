@@ -15,7 +15,7 @@ const translations = {
       localCurrencySymbol: "£",
       donationSliderLabel: "Donation",
       rsvpSpecialRequirementsLabel: "Any special requests? Allergies, dietary requirements, logistics help, etc.",
-      faqTitle: "FAQ",
+      faqTitle: "Frequently Asked Questions",
       rsvpFAQ: [
         {title: "What is the deadline for RSVP?", detail: "TBD"},
         {title: "Can I bring a +1?", detail: "We have a strict guest list to stay on budget. We will only be able to accommodate those listed on your invitation."},
