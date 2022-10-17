@@ -29,6 +29,8 @@ import MKTypography from "components/MKTypography";
 import { useTranslation } from 'react-i18next';
 import GlobalStyles from '@mui/material/GlobalStyles';
 
+import HotelCarousel from "components/Custom/HotelCarousel"
+
 function TheWedding() {
   const { t } = useTranslation();
 
@@ -98,7 +100,7 @@ function TheWedding() {
           </Grid>
          
         </Grid>
-        
+        <HotelCarousel />
       </Container>
     </MKBox>
   );
