@@ -45,6 +45,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/Custom/PXL_20220913_163333548.MP.jpg";
+import rsvpBackground from "assets/images/Custom/rsvp-background.jpg";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -111,7 +112,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
           placeItems: "center",
         }}
       >
-        <Container >
+        <Container sx={{backgroundImage: `unset`,}}>
           <Grid container justifyContent="center" mx="auto">
           <Grid item xs={12} justifyContent="center" mx="auto">
           
@@ -183,12 +184,34 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <TheWedding />
-        
-
-
-        <TabsSimple appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
-        
+      </Card>
+      <div style={{padding: 20}}></div>
+      <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -8,
+          mb: 4,
+          backgroundImage: `url(${rsvpBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
+        </Card>
+        <div style={{padding: 20}}></div>
+        <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -8,
+          mb: 4,
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
+      >
+        <TabsSimple appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         
         {rsvpInitialised === true && 
         <StatsSection appLanguage={appLanguage} rsvpRerenderKey={rsvpRerenderKey} />

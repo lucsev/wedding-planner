@@ -28,6 +28,7 @@ import OnTheDayFAQAccordion from "components/Custom/onTheDayFAQAccordion";
 import MKTypography from "components/MKTypography";
 import { useTranslation } from 'react-i18next';
 import autocomplete from "assets/theme/components/form/autocomplete";
+import MKBox from "components/MKBox";
 
 function TabsSimple({appLanguage, setAppLanguage}) {
   const [activeTab, setActiveTab] = useState(0);
@@ -36,6 +37,7 @@ function TabsSimple({appLanguage, setAppLanguage}) {
   const handleTabType = (event, newValue) => setActiveTab(newValue);
 
   return (
+    <MKBox component="section" py={2}>
     <Container>
       <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
           <MKTypography variant="h3" mb={1} sx = {{ padding: "0px 0px 6px 0px" }}>
@@ -62,6 +64,7 @@ function TabsSimple({appLanguage, setAppLanguage}) {
       </div>
       
     </Container>
+    </MKBox>
     
   );
 }

@@ -139,7 +139,7 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
   if (defaultDonationAmount !== -1) {
 
     return (
-      <MKBox component="section" py={12}>
+      <MKBox component="section" py={2}>
         <Container>
           <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
             <MKTypography variant="h3" mb={1}>

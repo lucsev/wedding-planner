@@ -23,7 +23,7 @@ export default function TravelFAQAccordion({appLanguage}) {
 
   return (
     <>
-    <MKBox component="section" py={12}>
+    <MKBox component="section" py={2}>
       <Container>
         <Grid container item xs={12}>
         <div>
