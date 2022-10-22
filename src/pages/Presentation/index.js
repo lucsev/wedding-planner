@@ -54,6 +54,7 @@ import { useTranslation } from 'react-i18next';
 import { StrictMode} from "react";
 import { useState } from "react";
 import TabsSimple from "layouts/sections/navigation/nav-tabs/components/TabsSimple";
+import WeddingSignIn from "pages/LandingPages/WeddingSignIn"
 
 const theme = createTheme({
   typography: {
@@ -79,6 +80,8 @@ export default function Presentation({appLanguage, setAppLanguage}) {
   const { t } = useTranslation();
   const [rsvpInitialised, setrsvpInitialised] = useState(false);
   const [rsvpRerenderKey, setrsvpRerenderKey] = useState(false);
+  
+  const [guestCodeIsValid, setGuestCodeIsValidParent] = useState('');
 
   return (
     
@@ -95,6 +98,8 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         sticky
       />
       */}
+      <WeddingSignIn setGuestCodeIsValidParent={setGuestCodeIsValidParent} />
+      <div style={{display: guestCodeIsValid ? 'block' : 'none' }}>
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -178,6 +183,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <TheWedding />
+        
 
 
         <TabsSimple appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
@@ -295,7 +301,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       
 
       </Card>
-      
+      </div>
     </>
   );
 }
