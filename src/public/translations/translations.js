@@ -15,6 +15,7 @@ const translations = {
       localCurrencySymbol: "£",
       donationSliderLabel: "Donation",
       rsvpSpecialRequirementsLabel: "Any special requests? Allergies, dietary requirements, logistics help, etc.",
+      rsvpMusicSuggestionsLabel: "Any music suggestions?",
       faqTitle: "Frequently Asked Questions",
       rsvpFAQ: [
         {title: "What is the deadline for RSVP?", detail: "TBD"},
@@ -68,6 +69,7 @@ const translations = {
       localCurrencySymbol: "€",
       donationSliderLabel: "Donativo",
       rsvpSpecialRequirementsLabel: "¿Algún requisito especial? Alergias, requisitos dietéticos, ayuda logística, etc.",
+      rsvpMusicSuggestionsLabel: "¿Alguna sugerencia de música?",
       faqTitle: "Preguntas Frecuentes",
       faqAccordion: [
         {title: "¿Hay un código de vestimenta?", detail: "No. Puedes llevar la ropa con la que te sientas cómodo."},
