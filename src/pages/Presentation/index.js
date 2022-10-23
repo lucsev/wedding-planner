@@ -33,6 +33,8 @@ import Counters from "pages/Presentation/sections/Counters";
 import TheWedding from "pages/Presentation/sections/TheWedding";
 import TravelSection from "pages/Presentation/sections/TravelSection";
 import OnTheDaySection from "pages/Presentation/sections/OnTheDaySection";
+import PreWeddingSection from "pages/Presentation/sections/PreWeddingSection";
+
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
@@ -229,6 +231,20 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         }}
       >
         <OnTheDaySection />
+      </Card>
+      <div style={{padding: 20}}></div>
+        <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -8,
+          mb: 4,
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
+      >
+        <PreWeddingSection />
       </Card>
         <div style={{padding: 20}}></div>
         <Card
