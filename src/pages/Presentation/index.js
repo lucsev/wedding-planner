@@ -31,6 +31,7 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import TheWedding from "pages/Presentation/sections/TheWedding";
+import TravelSection from "pages/Presentation/sections/TravelSection";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
@@ -200,6 +201,20 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       >
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
         </Card>
+        <div style={{padding: 20}}></div>
+        <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -8,
+          mb: 4,
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
+      >
+        <TravelSection />
+      </Card>
         <div style={{padding: 20}}></div>
         <Card
         sx={{

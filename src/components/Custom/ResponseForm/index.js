@@ -147,6 +147,9 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
             </MKTypography>
           </Grid>
           <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
+          <MKTypography mb={1}>
+            If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.
+            </MKTypography>
             <MKBox width="100%" component="form" onSubmit={formSubmitHandler} autocomplete="off">
               <MKBox p={3}>
                 <Grid container spacing={3}>
