@@ -246,7 +246,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       >
         <PreWeddingSection />
       </Card>
-        <div style={{padding: 20}}></div>
+        {/*<div style={{padding: 20}}></div>
         <Card
         sx={{
           p: 2,
@@ -258,7 +258,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <TabsSimple appLanguage={appLanguage} setAppLanguage={setAppLanguage} /> */}
+        <TabsSimple appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
         
         {rsvpInitialised === true && 
         <StatsSection appLanguage={appLanguage} rsvpRerenderKey={rsvpRerenderKey} />
@@ -383,7 +383,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         </MKBox>
       
 
-      </Card>
+      </Card> */}
       </div>
     </>
   );
