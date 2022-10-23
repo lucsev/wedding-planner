@@ -32,7 +32,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import HotelCarousel from "components/Custom/HotelCarousel"
 import parse from 'html-react-parser';
 
-function TravelSection() {
+function OnTheDaySection() {
   const { t } = useTranslation();
 
   return (
@@ -40,10 +40,10 @@ function TravelSection() {
       <Container>
       <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
           <MKTypography variant="h3" mb={1} sx = {{ padding: "0px 0px 6px 0px" }}>
-          {t('travelSectionTitle')}
+          {t('onTheDaySectionTitle')}
           </MKTypography>
           <MKTypography variant="body2" mb={1} sx = {{ padding: "0px 0px 6px 0px" }}>
-          {parse(t('travelSectionDescription'))}
+          {parse(t('onTheDaySectionDescription'))}
           </MKTypography>
         </Grid>
       </Container>
@@ -51,4 +51,4 @@ function TravelSection() {
   );
 }
 
-export default TravelSection;
+export default OnTheDaySection;

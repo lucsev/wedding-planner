@@ -51,6 +51,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         minHeight: "450px",
+        backgroundPosition: "center",
       }}
     >
     </Card>

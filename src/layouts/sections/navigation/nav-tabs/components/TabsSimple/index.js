@@ -47,19 +47,15 @@ function TabsSimple({appLanguage, setAppLanguage}) {
       <Grid container item justifyContent="center" xs="auto" lg={6} mx="auto">
         <AppBar position="static">
           <Tabs value={activeTab} onChange={handleTabType}>
-            <Tab label="RSVP" />
             <Tab label="Travel" />
             <Tab label="On The Day" />
           </Tabs>
         </AppBar>
       </Grid>
       <div hidden={activeTab !== 0}>
-      <RsvpFAQAccordion  appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
-      </div>
-      <div hidden={activeTab !== 1}>
       <TravelFAQAccordion  appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
       </div>
-      <div hidden={activeTab !== 2}>
+      <div hidden={activeTab !== 1}>
       <OnTheDayFAQAccordion  appLanguage={appLanguage} setAppLanguage={setAppLanguage} />
       </div>
       
