@@ -45,7 +45,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/Custom/PXL_20220913_163333548.MP.jpg";
-import rsvpBackground from "assets/images/Custom/rsvp-background.jpg";
+import rsvpBackground from "assets/images/Custom/rsvp-web.png";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -193,8 +193,9 @@ export default function Presentation({appLanguage, setAppLanguage}) {
           mt: -8,
           mb: 4,
           backgroundImage: `url(${rsvpBackground})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "95vw 100vh",
+          backgroundPosition: "top",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
