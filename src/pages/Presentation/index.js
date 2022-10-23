@@ -47,7 +47,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/Custom/PXL_20220913_163333548.MP.jpg";
-import rsvpBackground from "assets/images/Custom/rsvp-web-2.png";
+import rsvpBackground from "assets/images/Custom/rsvp-web-3.png";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 

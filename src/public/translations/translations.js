@@ -29,6 +29,7 @@ const translations = {
       <h4 align=\"left\" style=\"padding-top:10px;\">Wedding Gifts</h4>\
       <p align=\"left\">Due to our situation, we ask that you avoid physical gifts where possible. However, we would be delighted if you could give a donation to help us bring our first child to this world.</p>",
       rsvpTitle: "RSVP",
+      rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.</p>",
       rsvpWhosComing: "Who is coming?",
       rsvpSubmit: "Submit",
       rsvpResponseNo: "No",

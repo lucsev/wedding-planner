@@ -35,6 +35,7 @@ import { useEffect } from 'react';
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18n';
+import parse from 'html-react-parser';
 
 var defaultDonationAmount = -1;
 
@@ -148,7 +149,7 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
           </Grid>
           <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
           <MKTypography mb={1}>
-            If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.
+          {parse(t('rsvpDescription'))}
             </MKTypography>
             <MKBox width="100%" component="form" onSubmit={formSubmitHandler} autocomplete="off">
               <MKBox p={3}>
