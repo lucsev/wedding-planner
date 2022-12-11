@@ -47,34 +47,51 @@ import bgImage from "assets/images/Custom/plaza-de-espana-looking-out.jpg";
 
 function WeddingSignIn({setGuestCodeIsValidParent}) {
   //const [rememberMe, setRememberMe] = useState(false);
-  const [guestCodeInput, setGuestCodeInptut] = useState('');
+  const [guestCodeInput, setGuestCodeInput] = useState('');
   const [guestCodeIsValid, setGuestCodeIsValid] = useState('');
 
   useEffect(() => {
     ////TODO Call API to validate guest code from local storage
     if (localStorage.getItem("guestCode")) {
-      setGuestCodeIsValid(true);
-      setGuestCodeIsValidParent(true);
+      setGuestCodeInput(localStorage.getItem("guestCode"));
+      callSignInAPI();
     }
   }, []); // Never re-run useEffect
 
-
   const handleGuestCodeInputChange = event => {
-    setGuestCodeInptut(event.target.value);
+    setGuestCodeInput(event.target.value);
   };
+
+  const callSignInAPI = () => {
+    const apiUrl = 'http://localhost:8080/api/rsvp';
+
+    fetch(apiUrl, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'partyCode': guestCodeInput,
+      },
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("guestCode", guestCodeInput ? guestCodeInput : localStorage.getItem("guestCode") );
+        setGuestCodeIsValid(true);
+        setGuestCodeIsValidParent(true);
+        //TODO Make component fade out with an animation
+      } else {
+        // Sorry! No Web Storage support..
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submitted!");
-    if (typeof(Storage) !== "undefined") {
-      //TODO Call API to validate guest code
-      localStorage.setItem("guestCode", guestCodeInput);
-      setGuestCodeIsValid(true);
-      setGuestCodeIsValidParent(true);
-      //TODO Make component fade out with an animation
-    } else {
-      // Sorry! No Web Storage support..
-    }
+    callSignInAPI();
   }
 
   return (
