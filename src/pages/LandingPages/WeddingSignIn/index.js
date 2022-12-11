@@ -42,10 +42,12 @@ import SimpleFooter from "examples/Footers/SimpleFooter";
 // Material Kit 2 React page layout routes
 import routes from "routes";
 
+import i18n from 'i18n';
+
 // Images
 import bgImage from "assets/images/Custom/plaza-de-espana-looking-out.jpg";
 
-function WeddingSignIn({setGuestCodeIsValidParent}) {
+function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage}) {
   //const [rememberMe, setRememberMe] = useState(false);
   const [guestCodeInput, setGuestCodeInput] = useState('');
   const [guestCodeIsValid, setGuestCodeIsValid] = useState('');
@@ -75,6 +77,11 @@ function WeddingSignIn({setGuestCodeIsValidParent}) {
     .then(response => response.json())
     .then(data => {
       console.log('Success:', data);
+      setrsvpData(data);
+      if(data.country == "ES") {
+        i18n.changeLanguage("es");
+        setAppLanguage("es");
+      }
       if (typeof(Storage) !== "undefined") {
         localStorage.setItem("guestCode", guestCodeInput ? guestCodeInput : localStorage.getItem("guestCode") );
         setGuestCodeIsValid(true);

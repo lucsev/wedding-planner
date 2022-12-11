@@ -34,42 +34,12 @@ import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import i18n from 'i18n';
 import parse from 'html-react-parser';
 
-var defaultDonationAmount = -1;
+export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpData, setrsvpData}) {
+  const { t } = useTranslation();  
 
-export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialised, setrsvpInitialised, rsvpRerenderKey, setrsvpRerenderKey}) {
-  const { t } = useTranslation();
-  const [checked, setChecked] = useState(true);
-
-  const handleChecked = () => setChecked(!checked);
-
-  const [searchParams] = useSearchParams();
-  // console.log(`The code is:${searchParams.get('code')}`);
-
-  const [rsvpData, setrsvpData] = useState();
-  const [donationAmount, setDonationAmount] = useState(0);
-  
-
-  useEffect(() => {
-    const apiUrl = 'http://localhost:8080/api/rsvp';
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        defaultDonationAmount = data.amountDonatedLocalCurrency;
-        setrsvpData(data);
-        setDonationAmount(data.amountDonatedLocalCurrency);
-         // console.log('GET RSVP: ', data);
-        if(data.country == "ES") {
-          i18n.changeLanguage("es");
-          setAppLanguage("es");
-        }
-        setrsvpInitialised(true);
-    });
-  }, []);
-
-  const handleAtendeeChange = (guestID, firstName, isAttending) => {
+  const handleAttendeeChange = (guestID, firstName, isAttending) => {
     var newState = { ...rsvpData };
 
     const index = newState.attendees ? newState.attendees.findIndex(object => object.guestID === guestID) : -1;
@@ -117,8 +87,7 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        // TODO un-hardcode
-        'partyCode': 'mT2pw',
+        'partyCode': localStorage.getItem("guestCode"),
       },
       body: JSON.stringify(formData),
     })
@@ -131,13 +100,11 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
       console.error('Error:', error);
     });
 
-    
-
     e.preventDefault();
   }
 
-  // console.log("Default donation amount:", defaultDonationAmount);
-  if (defaultDonationAmount !== -1) {
+
+  if (rsvpData != null) {
 
     return (
       <MKBox component="section" py={2} >
@@ -155,7 +122,7 @@ export default function ResponseForm({appLanguage, setAppLanguage, rsvpInitialis
               <MKBox p={3}>
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
-                    <CheckboxFormGroup rsvpData={rsvpData} handleAtendeeChange={handleAtendeeChange} />
+                    <CheckboxFormGroup rsvpData={rsvpData} handleAttendeeChange={handleAttendeeChange} />
                   </Grid>
                   
                   {/*<Grid item xs={12}>

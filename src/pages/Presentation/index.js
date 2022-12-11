@@ -87,6 +87,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
   const [rsvpRerenderKey, setrsvpRerenderKey] = useState(false);
   
   const [guestCodeIsValid, setGuestCodeIsValidParent] = useState('');
+  const [rsvpData, setrsvpData] = useState();
 
   return (
     
@@ -103,7 +104,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         sticky
       />
       */}
-      <WeddingSignIn setGuestCodeIsValidParent={setGuestCodeIsValidParent} />
+      <WeddingSignIn setGuestCodeIsValidParent={setGuestCodeIsValidParent} setrsvpData={setrsvpData} setAppLanguage={setAppLanguage}/>
       <div style={{display: guestCodeIsValid ? 'block' : 'none' }}>
       <MKBox
         minHeight="75vh"
@@ -202,7 +203,8 @@ export default function Presentation({appLanguage, setAppLanguage}) {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <ResponseForm appLanguage={appLanguage} setAppLanguage={setAppLanguage} rsvpInitialised={rsvpInitialised} setrsvpInitialised={setrsvpInitialised} rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} />
+        
+        <ResponseForm rsvpRerenderKey={rsvpRerenderKey} setrsvpRerenderKey={setrsvpRerenderKey} rsvpData={rsvpData} setrsvpData={setrsvpData} />
         </Card>
         <div style={{padding: 20}}></div>
         <Card
