@@ -56,7 +56,7 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage})
     ////TODO Call API to validate guest code from local storage
     if (localStorage.getItem("guestCode")) {
       setGuestCodeInput(localStorage.getItem("guestCode"));
-      callSignInAPI();
+      callSignInAPI(true);
     }
   }, []); // Never re-run useEffect
 
@@ -64,18 +64,24 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage})
     setGuestCodeInput(event.target.value);
   };
 
-  const callSignInAPI = () => {
+  const callSignInAPI = (isStartUpCall) => {
     const apiUrl = 'http://localhost:8080/api/rsvp';
 
     fetch(apiUrl, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'partyCode': guestCodeInput,
+        'partyCode': isStartUpCall ? localStorage.getItem("guestCode") : guestCodeInput,
       },
     })
-    .then(response => response.json())
+    .then(response => {
+      //console.log(response);
+      if(response.status == 200) { //TODO Show error banner if not successful {
+        return response.json();
+      }
+    })
     .then(data => {
+    
       console.log('Success:', data);
       setrsvpData(data);
       if(data.country == "ES") {
@@ -90,6 +96,7 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage})
       } else {
         // Sorry! No Web Storage support..
       }
+      
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -98,7 +105,7 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage})
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    callSignInAPI();
+    callSignInAPI(false);
   }
 
   return (
