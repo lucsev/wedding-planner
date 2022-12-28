@@ -7,22 +7,22 @@ function HotelCarousel(props)
 {
     var items = [
         {
-            path: "/exterior.jpg"
+            path: "/59.jpg"
         },
         {
-            path: "/salon.jpg"
+            path: "/43.jpg"
         },
         {
-            path: "/galeria.jpg"
+            path: "/19.jpg"
         },
         {
-            path: "/lobby.jpg"
+            path: "/80.jpg"
         },
         {
-            path: "/lobby2.jpg"
+            path: "/71.jpg"
         },
         {
-            path: "/lobby3.jpg"
+            path: "/58.jpg"
         }
     ]
 

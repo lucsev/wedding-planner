@@ -6,6 +6,10 @@ const translations = {
       mainTitle: "We're getting married!",
       mainSignature: "Ashley & Lucas",
       theWeddingTitle: "The Wedding",
+      theWeddingLocation: "In Seville, Spain",
+      theWeddingVenue: "At Villa Luisa.",
+      theWeddingDate: "Sunday, May 19th, 2024",
+      theWeddingDateComment: "The date is FULLY CONFIRMED.",
       travelSectionTitle: "Travel",
       travelSectionDescription: "<p align=\"left\"><strong>The wedding will be in Spain. It's important that you arrange your transportation and accommodation as soon as possible to avoid prices going up.</strong></p> \
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Flights</h4>\
@@ -88,6 +92,10 @@ const translations = {
       mainTitle: "¡Nos casamos!",
       mainSignature: "Ashley & Lucas",
       theWeddingTitle: "La Boda",
+      theWeddingLocation: "En Sevilla, España",
+      theWeddingVenue: "En Villa Luisa.",
+      theWeddingDate: "Domingo, May 19th, 2024",
+      theWeddingDateComment: "La fecha ya está CONFIRMADA.",
       travelSectionTitle: "Viaje",
       rsvpTitle: "Confirmación de Asistencia",
       rsvpWhosComing: "¿Quién va a venir?",

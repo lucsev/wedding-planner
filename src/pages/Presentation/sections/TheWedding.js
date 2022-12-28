@@ -48,15 +48,15 @@ function TheWedding() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="location_on"
-                  title="In Seville, Spain"
-                  description="At the Alfonso XIII hotel."
+                  title={t('theWeddingLocation')}
+                  description={t('theWeddingVenue')}
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="calendar_month"
-                  title="May 2024"
-                  description="Exact date to be confirmed."
+                  title={t('theWeddingDate')}
+                  description={t('theWeddingDateComment')}
                 />
               </Grid>
             </Grid>

@@ -23,9 +23,10 @@ import { makeServer } from './mirageJSServer';
 
 import './i18n';
 
-//if (process.env.NODE_ENV === "development" || true ) {
-//  makeServer({ environment: "development" })
-//}
+// Lucas: can disable or enable as needed
+if (process.env.NODE_ENV === "development" || true ) {
+  makeServer({ environment: "development" })
+}
 
 ReactDOM.render(
   <BrowserRouter>
