@@ -46,9 +46,18 @@ const translations = {
       <br/>If you have any allergies or can't eat any of the ingredients (nuts, gluten, meat, fish, pork, dairy), please let us know and we will try to accommodate your request.</div>\
       <p align=\"left\"><span>&#8226;</span> A couple of hours after the Banquet, there will be an additional round of nibbles.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Etiquette</h4>\
-      <p align=\"left\">The dress code for our wedding is <a href=\"https://www.brides.com/semi-formal-wedding-attire-4800687\">semi-formal/cocktail attire</a>. Most women will wear dresses, and men a suit or just a blazer, with or without tie.</p> \
+      <p align=\"left\">Most women will wear a dress, short or long, and men a suit or just a blazer, with or without tie. If you decide to wear a long dress, be aware that the floor outside the venue is similar to compressed sand and could easily stain long dresses. If you want a male or female style reference, you can have a look The dress code for our wedding is <a href=\"https://www.brides.com/semi-formal-wedding-attire-4800687\">at a \"semi-formal/cocktail attire\"</a>.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Wedding Gifts</h4>\
-      <p align=\"left\">Due to our situation, we ask that you avoid physical gifts where possible. However, we would be delighted if you could give a donation to help us bring our first child to this world.</p>",
+      <p align=\"left\">Your presence at the wedding is already a gift to us, and we understand that your international travel can be costly. We therefore do not expect a wedding gift from every group of guests.\
+      <br/>If you do want to make a wedding gift, we would ask that you avoid physical gifts if possible, due to our international situation. However, we want to raise funds towards the process for us to have children, and we would be delighted if you would help us financially to achieve that goal.\
+      <br/><br/>For transfers in pounds:\
+      <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
+      <br/>Account Number: 15718395\
+      <br/>Beneficiary: Lucas Rodriguez Diaz\
+      <br/><br/>For transfers in Euros:\
+      <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
+      <br/>BIC: REVOGB21\
+      <br/>Beneficiary: Lucas Rodriguez Diaz</p>",
       rsvpTitle: "RSVP",
       rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.</p>",
       preWeddingSectionTitle: "Pre-wedding Days",
