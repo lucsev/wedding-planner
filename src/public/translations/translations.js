@@ -9,7 +9,7 @@ const translations = {
       theWeddingLocation: "In Seville, Spain",
       theWeddingVenue: "At Villa Luisa.",
       theWeddingDate: "Sunday, May 19th, 2024",
-      theWeddingDateComment: "The date is FULLY CONFIRMED.",
+      theWeddingDateComment: "The date is CONFIRMED.",
       travelSectionTitle: "Travel",
       travelSectionDescription: "<p align=\"left\"><strong>The wedding will be in Spain. It's important that you arrange your transportation and accommodation as soon as possible to avoid prices going up.</strong></p> \
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Flights</h4>\

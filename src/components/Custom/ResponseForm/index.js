@@ -39,18 +39,18 @@ import parse from 'html-react-parser';
 export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpData, setrsvpData}) {
   const { t } = useTranslation();  
 
-  const handleAttendeeChange = (guestID, firstName, isAttending) => {
+  const handleAttendanceChange = (guestID, firstName, isAttending) => {
     var newState = { ...rsvpData };
 
-    const index = newState.attendees ? newState.attendees.findIndex(object => object.guestID === guestID) : -1;
+    const index = newState.guests ? newState.guests.findIndex(object => object.guestID === guestID) : -1;
     const newValue = {"guestID": guestID, "firstName": firstName, "isAttending": isAttending};
     if(index === -1) {
-      if(!newState.attendees) { newState.attendees = []; }
-      newState.attendees.push(newValue);
+      if(!newState.guests) { newState.guests = []; }
+      newState.guests.push(newValue);
     }
-    else { newState.attendees[index] = newValue }
+    else { newState.guests[index] = newValue }
      console.log(newState);
-    setrsvpData(newState);
+     setrsvpData(newState);
   };
 
   const handleSpecialRequestsChange = (e) => {
@@ -72,14 +72,14 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
 
     const apiUrl = 'http://localhost:8080/api/rsvp';
     let formData = {
-      attendees: [],
+      guests: [],
       partyID: rsvpData.partyID,
       specialRequests: rsvpData.specialRequests,
       musicSuggestions: rsvpData.musicSuggestions,
       amountDonatedLocalCurrency: donationAmount,
   };
-  rsvpData.attendees.forEach(attendee => {
-    formData.attendees.push({ guestID: attendee.guestID, isAttending: attendee.isAttending });
+  rsvpData.guests.forEach(attendee => {
+    formData.guests.push({ guestID: attendee.guestID, isAttending: attendee.isAttending });
   });
   console.log(formData);
 
@@ -122,7 +122,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
               <MKBox p={3}>
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
-                    <CheckboxFormGroup rsvpData={rsvpData} handleAttendeeChange={handleAttendeeChange} />
+                    <CheckboxFormGroup rsvpData={rsvpData} handleAttendanceChange={handleAttendanceChange} />
                   </Grid>
                   
                   {/*<Grid item xs={12}>

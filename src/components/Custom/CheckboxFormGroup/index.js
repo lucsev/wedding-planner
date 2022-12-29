@@ -12,7 +12,7 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import { useTranslation } from 'react-i18next';
 
-export default function CheckboxFormGroup({rsvpData, handleAttendeeChange}) {
+export default function CheckboxFormGroup({rsvpData, handleAttendanceChange}) {
   const { t } = useTranslation();
   const [state, setState] = React.useState({
     gilad: false,
@@ -29,7 +29,7 @@ export default function CheckboxFormGroup({rsvpData, handleAttendeeChange}) {
 
   const handleRadioChange = (guestID, firstName, attendingValue) => {
     console.log(guestID," " , attendingValue);
-    handleAttendeeChange(guestID, firstName, attendingValue);
+    handleAttendanceChange(guestID, firstName, attendingValue);
   };
 
   const { gilad, jason, antoine } = state;
@@ -40,15 +40,15 @@ export default function CheckboxFormGroup({rsvpData, handleAttendeeChange}) {
     <Box sx={{ display: 'flex' }}>
       <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
         <FormLabel focused={false}>{t('rsvpWhosComing')}</FormLabel>
-        {rsvpData?.guests?.map((attendee, index) =>
-          <FormControl key={attendee.guestID}>
-          <FormLabel focused={false} id="demo-radio-buttons-group-label">{attendee.firstName}</FormLabel>
+        {rsvpData?.guests?.map((guest, index) =>
+          <FormControl key={guest.guestID}>
+          <FormLabel focused={false} id="demo-radio-buttons-group-label">{guest.firstName}</FormLabel>
           <RadioGroup
             row
             aria-labelledby="demo-radio-buttons-group-label"
             name="radio-buttons-group"
-            onChange={e=>handleRadioChange(attendee.guestID, attendee.firstName, e.target.value)}
-            value={attendee.isAttending}
+            onChange={e=>handleRadioChange(guest.guestID, guest.firstName, e.target.value)}
+            value={guest.isAttending}
           >
             <FormControlLabel value="no" control={<Radio />} label={t('rsvpResponseNo')} />
             <FormControlLabel value="notsure" control={<Radio />} label={t('rsvpResponseNotSure')} />

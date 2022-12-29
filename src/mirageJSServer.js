@@ -50,7 +50,7 @@ export function makeServer() {
 
       this.get("/rsvp", () => {
         return {
-          "attendees": [
+          "guests": [
               {
                   "guestID": 1,
                   "firstName": "Ashley",
