@@ -50,9 +50,9 @@ export default function CheckboxFormGroup({rsvpData, handleAttendanceChange}) {
             onChange={e=>handleRadioChange(guest.guestID, guest.firstName, e.target.value)}
             value={guest.isAttending}
           >
-            <FormControlLabel value="no" control={<Radio />} label={t('rsvpResponseNo')} />
-            <FormControlLabel value="notsure" control={<Radio />} label={t('rsvpResponseNotSure')} />
-            <FormControlLabel value="yes" control={<Radio />} label={t('rsvpResponseYes')} />
+            <FormControlLabel value="No" control={<Radio />} label={t('rsvpResponseNo')} />
+            <FormControlLabel value="Not sure" control={<Radio />} label={t('rsvpResponseNotSure')} />
+            <FormControlLabel value="Yes" control={<Radio />} label={t('rsvpResponseYes')} />
           </RadioGroup>
         </FormControl>
 

@@ -68,6 +68,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
   // console.log("Form responses", formResponses);
 
   const formSubmitHandler = (e) => {
+    e.preventDefault();
     console.log('submit called');
 
     const apiUrl = 'http://localhost:8080/api/rsvp';
@@ -76,7 +77,6 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
       partyID: rsvpData.partyID,
       specialRequests: rsvpData.specialRequests,
       musicSuggestions: rsvpData.musicSuggestions,
-      amountDonatedLocalCurrency: donationAmount,
   };
   rsvpData.guests.forEach(attendee => {
     formData.guests.push({ guestID: attendee.guestID, isAttending: attendee.isAttending });
@@ -100,7 +100,6 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
       console.error('Error:', error);
     });
 
-    e.preventDefault();
   }
 
 
@@ -123,11 +122,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
                     <CheckboxFormGroup rsvpData={rsvpData} handleAttendanceChange={handleAttendanceChange} />
-                  </Grid>
-                  
-                  {/*<Grid item xs={12}>
-                  <DiscreteSliderValues donationAmount={donationAmount} defaultDonationAmount={defaultDonationAmount} setDonationAmount={setDonationAmount} country={rsvpData.country} />
-                  </Grid>*/}
+                  </Grid>            
                   
                   <Grid item xs={12}>
                     <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} value={rsvpData.specialRequests} onChange={handleSpecialRequestsChange} multiline fullWidth rows={6} />
