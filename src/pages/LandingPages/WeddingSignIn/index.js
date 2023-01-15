@@ -65,7 +65,7 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage})
   };
 
   const callSignInAPI = (isStartUpCall) => {
-    const apiUrl = 'http://localhost:8080/api/rsvp';
+    const apiUrl = 'https://wedding-api-7gclh5lvja-uc.a.run.app/api/rsvp';
 
     fetch(apiUrl, {
       method: 'GET',

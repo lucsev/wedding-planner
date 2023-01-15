@@ -59,7 +59,7 @@ const translations = {
       <br/>BIC: REVOGB21\
       <br/>Beneficiary: Lucas Rodriguez Diaz</p>",
       rsvpTitle: "RSVP",
-      rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.</p>",
+      rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.<br/> If anything changes, you can re-submit your RSVP at any time before the deadline.</p>",
       preWeddingSectionTitle: "Pre-Wedding Days",
       preWeddingSectionDescription: "<p align=\"left\">We will do three activities before the wedding:\
       <h4 align=\"left\" style=\"padding-top:10px;\">UK Stag Do</h4>\

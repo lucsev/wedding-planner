@@ -71,7 +71,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
     e.preventDefault();
     console.log('submit called');
 
-    const apiUrl = 'http://localhost:8080/api/rsvp';
+    const apiUrl = 'https://wedding-api-7gclh5lvja-uc.a.run.app/api/rsvp';
     let formData = {
       guests: [],
       partyID: rsvpData.partyID,
