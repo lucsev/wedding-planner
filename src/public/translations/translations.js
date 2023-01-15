@@ -3,6 +3,14 @@
 const translations = {
   en: {
     translation: {
+      signInWelcomeTitle: "Welcome!",
+      signInGuestCode: "Guest Code",
+      signInEnterButton: "Enter",
+      signInDontHaveACode: "Don't have a code? Contact the grooms!",
+      signInErroNoInput: "Please enter your Guest Code before clicking the Enter button.",
+      signInErrorWrongCode: "We couldn't find your Guest Code. Please check it carefully or contact the grooms.",
+      signInErrorSystemFailure: "Something went wrong. Please check with the grooms.",
+      signOutLink: "Sign Out",
       mainTitle: "We're getting married!",
       mainSignature: "Ashley & Lucas",
       theWeddingTitle: "The Wedding",
@@ -73,36 +81,22 @@ const translations = {
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Not sure",
       rsvpResponseYes: "Yes",
-      localCurrencySymbol: "£",
-      donationSliderLabel: "Donation",
+      rsvpSubmittedCorrectly: "¡RSVP Received! If anything changes, you can update your RSVP and send it again.",
+      rsvpFailedToSubmit: "Something went wrong. Please check with the grooms.",
       rsvpSpecialRequirementsLabel: "Any special requests? Allergies, dietary requirements, logistics help, etc.",
-      rsvpMusicSuggestionsLabel: "Any music suggestions?",
-      faqTitle: "Frequently Asked Questions",
-      travelFAQ: [
-        {title: "Do guests have to arrange their own transportation and accommodation?", detail: "Yes. See FAQs below for recommended flights and hotels."},
-      ],
-      onTheDayFAQ: [
-        {title: "Is there a stag do?", detail: ""},
-      ],
-      statsTitle: "Stats",
-      statsRsvpChartTitle: "RSVP",
-      statsRsvpChartConfirmedYes: "Confirmed",
-      statsRsvpChartConfirmedNo: "Declined",
-      statsRsvpChartConfirmedNotSure: "Not Sure",
-      statsRsvpChartUnconfirmed: "Unconfirmed",
-      statsRsvpChartUKFriends: "UK Friends",
-      statsRsvpChartUKFamily: "UK Family",
-      statsRsvpChartESFriends: "ES Friends",
-      statsRsvpChartESFamily: "ES Family",
-      statsDonationsChartTitle: "Donations (£)",
-      statsDonationsChartUKPerPerson: "UK Per Party",
-      statsDonationsChartESPerPerson: "ES Per Party",
-      statsDonationsChartFriends: "Friends",
-      statsDonationsChartFamily: "Family"
+      rsvpMusicSuggestionsLabel: "Any music suggestions?"
     }
   },
   es: {
     translation: {
+      signInWelcomeTitle: "Bienvenido!",
+      signInGuestCode: "Código de Invitado",
+      signInEnterButton: "Entrar",
+      signInDontHaveACode: "¿No tienes un código? ¡Contacta con los novios!",
+      signInErroNoInput: "Por favor introduce tu código de invitado antes de hacer clic en el botón de Entrar.",
+      signInErrorWrongCode: "No hemos encontrado tu código de invitado. Por favor verifica con cuidado que el código es correcto o contacta con los novios.",
+      signInErrorSystemFailure: "Algo ha fallado. Por favor contacta con los novios.",
+      signOutLink: "Cerrar Sesión",
       mainTitle: "¡Nos casamos!",
       mainSignature: "Ashley & Lucas",
       theWeddingTitle: "La Boda",
@@ -117,31 +111,10 @@ const translations = {
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Inseguro",
       rsvpResponseYes: "Sí",
-      localCurrencySymbol: "€",
-      donationSliderLabel: "Donativo",
+      rsvpSubmittedCorrectly: "¡Respuesta recibida! Si cambiara algo, puedes actualizar la respuesta y enviarla de nuevo.",
+      rsvpFailedToSubmit: "Algo ha fallado. Por favor contacta con los novios.",
       rsvpSpecialRequirementsLabel: "¿Algún requisito especial? Alergias, requisitos dietéticos, ayuda logística, etc.",
-      rsvpMusicSuggestionsLabel: "¿Alguna sugerencia de música?",
-      faqTitle: "Preguntas Frecuentes",
-      faqAccordion: [
-        {title: "¿Hay un código de vestimenta?", detail: "No. Puedes llevar la ropa con la que te sientas cómodo."},
-        {title: "¿Tienen los invitados que organizar su propio transporte y alojamiento?", detail: "Sí. Pero tenemos algunas sugerencias (link to suggestions question)"},
-        {title: "¿Qué regalos de boda son apropiados?", detail: "Debido a nuestra situación, os pedimos evitar regalos físicos en lo posible. <strong>Sin embargo</strong>, estaríamos encantados si pudieras hacer un donativo para ayudarnos a traer a nuestro primer hijo al mundo. Necesitaremos 30-50 mil libras por hijo, ¡pero no esperamos financiarlo todo con donativos!"}
-      ],
-      statsTitle: "Estadísticas",
-      statsRsvpChartTitle: "Confirmación de Asistencia",
-      statsRsvpChartConfirmedYes: "Confirmado",
-      statsRsvpChartConfirmedNo: "Rechazado ",
-      statsRsvpChartConfirmedNotSure: "Inseguro",
-      statsRsvpChartUnconfirmed: "No confirmado",
-      statsRsvpChartUKFriends: "Amigos UK",
-      statsRsvpChartUKFamily: "Familia UK",
-      statsRsvpChartESFriends: "Amigos ES",
-      statsRsvpChartESFamily: "Familia ES",
-      statsDonationsChartTitle: "Donativos (€)",
-      statsDonationsChartUKPerPerson: "UK Por Invitación",
-      statsDonationsChartESPerPerson: "ES Por Invitación",
-      statsDonationsChartFriends: "Amigos",
-      statsDonationsChartFamily: "Familia"
+      rsvpMusicSuggestionsLabel: "¿Alguna sugerencia de música?"
     }
   }
 };

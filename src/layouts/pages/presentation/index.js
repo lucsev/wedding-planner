@@ -18,6 +18,6 @@ Coded by www.creative-tim.com
 
 import Presentation from "pages/Presentation";
 
-export default function PresentationPage({appLanguage, setAppLanguage}) {
-  return <Presentation appLanguage={appLanguage} setAppLanguage={setAppLanguage} />;
+export default function PresentationPage({appLanguage, setAppLanguage, spanishSignIn}) {
+  return <Presentation appLanguage={appLanguage} setAppLanguage={setAppLanguage} spanishSignIn={spanishSignIn} />;
 }

@@ -81,13 +81,18 @@ const theme2 = createTheme({
   },
 });
 
-export default function Presentation({appLanguage, setAppLanguage}) {
+export default function Presentation({appLanguage, setAppLanguage, spanishSignIn}) {
   const { t } = useTranslation();
   const [rsvpInitialised, setrsvpInitialised] = useState(false);
   const [rsvpRerenderKey, setrsvpRerenderKey] = useState(false);
   
   const [guestCodeIsValid, setGuestCodeIsValidParent] = useState('');
   const [rsvpData, setrsvpData] = useState();
+
+  const handleSignout = () => {
+    localStorage.removeItem("guestCode");
+    window.location.reload();
+  };
 
   return (
     
@@ -104,7 +109,7 @@ export default function Presentation({appLanguage, setAppLanguage}) {
         sticky
       />
       */}
-      <WeddingSignIn setGuestCodeIsValidParent={setGuestCodeIsValidParent} setrsvpData={setrsvpData} setAppLanguage={setAppLanguage}/>
+      <WeddingSignIn setGuestCodeIsValidParent={setGuestCodeIsValidParent} setrsvpData={setrsvpData} setAppLanguage={setAppLanguage} spanishSignIn={spanishSignIn} />
       <div style={{display: guestCodeIsValid ? 'block' : 'none' }}>
       <MKBox
         minHeight="75vh"
@@ -386,6 +391,12 @@ export default function Presentation({appLanguage, setAppLanguage}) {
       
 
       </Card> */}
+
+          <MKBox mt={3} mb={1} textAlign="center">
+              <MKTypography variant="button" color="link" onClick={handleSignout}>
+              <a href="/">{t('signOutLink')}</a>
+              </MKTypography>
+          </MKBox>
       </div>
     </>
   );

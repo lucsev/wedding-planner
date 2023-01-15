@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { createServer } from 'miragejs';
+import { createServer, Response } from 'miragejs';
 
 export function makeServer() {
   let server = createServer({
@@ -48,7 +48,7 @@ export function makeServer() {
         }
       });
 
-      this.get("/rsvp", () => {
+      /*this.get("/rsvp", () => {
         return {
           "guests": [
               {
@@ -68,9 +68,32 @@ export function makeServer() {
           "subGroup": "Groom & Groom",
           "eligibleToDonate": "no",
           "specialRequests": "",
-          "musicSuggestions": "",
-          "amountDonatedLocalCurrency": 0
+          "musicSuggestions": ""
       }
+      });*/
+
+      this.get('/rsvp', () => {
+        return new Response(200, { some: 'header' }, {
+            "guests": [
+                {
+                    "guestID": 1,
+                    "firstName": "Ashley",
+                    "isAttending": ""
+                },
+                {
+                    "guestID": 2,
+                    "firstName": "Lucas",
+                    "isAttending": ""
+                }
+            ],
+            "partyID": 1,
+            "country": "UK",
+            "group": "Family",
+            "subGroup": "Groom & Groom",
+            "eligibleToDonate": "no",
+            "specialRequests": "",
+            "musicSuggestions": ""
+        });
       });
     },
   });

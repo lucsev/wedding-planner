@@ -28,7 +28,6 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import CheckboxFormGroup from "components/Custom/CheckboxFormGroup";
-import DiscreteSliderValues from "components/Custom/DiscreteSliderValues";
 
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -37,6 +36,8 @@ import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 
 export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpData, setrsvpData}) {
+  const [showErrorFailedToSubmit, setShowErrorFailedToSubmit] = useState(false);
+  const [showRSVPSubmittedCorrectly, setShowRSVPSubmittedCorrectly] = useState(false);
   const { t } = useTranslation();  
 
   const handleAttendanceChange = (guestID, firstName, isAttending) => {
@@ -91,7 +92,20 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
       },
       body: JSON.stringify(formData),
     })
-    .then(response => response.json())
+    .then(response => {
+      console.log(response);
+      if(response.status == 200) {
+        setShowErrorFailedToSubmit(false);
+        setShowRSVPSubmittedCorrectly(true);
+        return response.json();
+      }
+      else {
+         // Something went wrong, please check with the grooms
+        setShowErrorFailedToSubmit(true);
+        setShowRSVPSubmittedCorrectly(false);
+        return Promise.reject(response);
+      }
+    })
     .then(data => {
       console.log('Success:', data);
       setrsvpRerenderKey(!rsvpRerenderKey);
@@ -148,6 +162,23 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
                   */}
 
                 </Grid>
+
+                <div style={{display: showRSVPSubmittedCorrectly ? 'block' : 'none' }}>
+                <Grid item xs={12}>
+                  <MKTypography mb={1} variant="button" color="success">
+                    {parse(t('rsvpSubmittedCorrectly'))}
+                  </MKTypography>
+                </Grid>
+                </div>
+
+                <div style={{display: showErrorFailedToSubmit ? 'block' : 'none' }}>
+                <Grid item xs={12}>
+                  <MKTypography mb={1} variant="button" color="success">
+                    {parse(t('rsvpFailedToSubmit'))}
+                  </MKTypography>
+                </Grid>
+                </div>
+
                 <Grid container item justifyContent="center" xs={12} my={2}>
                   <MKButton type="submit" variant="gradient" color="dark" fullWidth>
                     {t('rsvpSubmit')}
