@@ -4,7 +4,7 @@ import { createServer, Response } from 'miragejs';
 export function makeServer() {
   let server = createServer({
     routes() {
-      this.urlPrefix = 'https://wedding-api-7gclh5lvja-uc.a.run.app/api';
+      this.urlPrefix = 'https://api.ashleyandlucas.com/api';
       this.namespace = "";
   
       this.get("/stats", () => {

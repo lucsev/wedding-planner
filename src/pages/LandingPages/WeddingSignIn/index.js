@@ -75,7 +75,7 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage, 
   };
 
   const callSignInAPI = (isStartUpCall) => {
-    const apiUrl = 'https://wedding-api-7gclh5lvja-uc.a.run.app/api/rsvp';
+    const apiUrl = 'https://api.ashleyandlucas.com/api/rsvp';
 
     if (guestCodeInput.length < 3 && !isStartUpCall) {
       setShowErrorCodeNotInput(true);

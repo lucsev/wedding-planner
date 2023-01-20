@@ -72,7 +72,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
     e.preventDefault();
     console.log('submit called');
 
-    const apiUrl = 'https://wedding-api-7gclh5lvja-uc.a.run.app/api/rsvp';
+    const apiUrl = 'https://api.ashleyandlucas.com/api/rsvp';
     let formData = {
       guests: [],
       partyID: rsvpData.partyID,
