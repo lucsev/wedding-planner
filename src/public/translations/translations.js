@@ -27,7 +27,7 @@ const translations = {
                                  <br/> <span>&#8226;</span> On foot: It takes around 30 minutes if you are staying near the Cathedral and you don't stop for pictures. It's a very nice walk along the city, the Plaza de España and the Parque de Maria Luisa, but don't be late! \
                                  <br/> <span>&#8226;</span> By Taxi: There is a taxi rank next to the <a href=\"https://goo.gl/maps/4C1xuXBqvYmbxac37\">Cathedral</a>, and another next to the <a href=\"https://goo.gl/maps/92EYsPtYXFvyz6VY8\">Puerta de Jerez</a>. If you are staying in the city centre, those are probably the closest to you. If you give the driver the address (Avenida Manuel Siurot, 1), they'll know where it is. They take Euros or credit/debit card payments. A trip from the city centre should be around €6-8 and take 8 minutes. \
                                  <br/> <span>&#8226;</span> By Shuttle: to be confirmed.</p>\
-                                 <h4 align=\"left\" style=\"padding-top:10px;\">Choosing accommodation</h4>\
+                                 <h4 align=\"left\" style=\"padding-top:10px;\">Accommodation</h4>\
                                  <p align=\"left\">We recommend that you stay at a hotel or apartment within the city centre. Don't worry about being close to the venue, as you will want to be closer to the city centre most other days. Some recommendations: \
                                  <br/> <span>&#8226;</span> <a href=\"https://www.booking.com/Share-ZC3yHL\">La Abadia de Giralda</a>: next to the cathedral, around £100 per night and double room.\
                                  <br/> <span>&#8226;</span> <a href=\"https://www.welldonehotels.com/nuestros-hoteles/\">One of the WellDone hotels or apartments</a>: They can be cheap or expensive. All the locations are very central.\
@@ -76,6 +76,18 @@ const translations = {
       <p align=\"left\">To be announced.</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Golf Match</h4>\
       <p align=\"left\">We will organise an 18-hole golf match on date TBD. Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested.</p>",
+      whatToDoSectionTitle: "What To Do In Seville",
+      whatToDoSectionDescription: "<p align=\"left\">\
+      Seville is a lovely city to walk, eat out and enjoy the weather. Some of the highlights:\
+      <br/><span>&#8226;</span> <a href=\"\">Plaza de España</a>. A very instagrammable square that you can't miss! If you want, you can rent a rowing boat, walk to the upstair balconies or watch the flamenco show. At night, the fountain is illuminated with different colours. It was also a filming location for a Naboo scene in Star Wars II. No tickets required. \
+      <br/><span>&#8226;</span> <a href=\"\">Cathedral and the Giralda</a>. The largest Gothic cathedral in the world, hosting the tomb of Christopher Columbus. Walking to the top of the Giralda tower is very beautiful and worth doing, but bear in mind that there is no lift and you may not be able to walk up depending on your fitness. <a href=\"https://catedraldesevilla.entradasdemuseos.com/\">Tickets</a>  \
+      <br/><span>&#8226;</span> <a href=\"https://www.tripadvisor.co.uk/Attraction_Review-g187443-d191139-Reviews-Real_Alcazar_de_Sevilla-Seville_Province_of_Seville_Andalucia.html\">Alcázar</a>. World Heritage royal residence with Moorish and Christian architecture. <a href=\"https://www.alcazarsevilla.org/en/\">Tickets</a>. If you really like it, write down <a href=\"https://www.tripadvisor.co.uk/Attraction_Review-g187430-d243774-Reviews-Mezquita_Cathedral_de_Cordoba-Cordoba_Province_of_Cordoba_Andalucia.html\">Córdoba's Mosque-Cathedral</a> and <a href=\"https://www.tripadvisor.co.uk/Attraction_Review-g187441-d191078-Reviews-The_Alhambra-Granada_Province_of_Granada_Andalucia.html\">Granada's Alhambra</a> on your bucket list for a longer trip.  \
+      <br/><span>&#8226;</span> <a href=\"https://www.tripadvisor.co.uk/Attraction_Review-g187443-d1015407-Reviews-Setas_de_Sevilla_Metropol_Parasol-Seville_Province_of_Seville_Andalucia.html\">The Mushrooms</a>. Picturesque building in the city centre. You only need a <a href=\"https://setasdesevilla.com/en/buy-tickets\">ticket</a> if you want to go up for the views, or if you want to see the <a href=\"https://setasdesevilla.com/en/web/setas-de-sevilla/the-levels#article6\">Roman ruins</a> that were found under the building (sold in person only, 2.5€).\
+      <br/><span>&#8226;</span> The river. You can either walk alongside it or take a river <a href=\"https://www.tripadvisor.co.uk/AttractionProductReview-g187443-d18923953-Guadalquivir_River_Cruise_Seville-Seville_Province_of_Seville_Andalucia.html\">cruise</a> (or both!) \
+      <br/><span>&#8226;</span> Any of the tapas bars around!\
+      <br/><span>&#8226;</span> <a href=\"https://www.tripadvisor.co.uk/Attraction_Review-g652112-d1569191-Reviews-Archaeological_Ensemble_of_Italica-Santiponce_Province_of_Seville_Andalucia.html\">Itálica</a>. Remains of the first Roman city outside Italy, and a filming location of Games of Thrones (so is the Alcázar!).  \
+      <br/><span>&#8226;</span> Other <a href=\"https://www.tripadvisor.co.uk/Attractions-g187443-Activities-Seville_Province_of_Seville_Andalucia.html\">Tripadvisor</a> recommendations.\
+      <br/><span>&#8226;</span> Ask us if you want to know more!</p>",
       rsvpWhosComing: "Who is coming?",
       rsvpSubmit: "Submit",
       rsvpResponseNo: "No",
@@ -106,6 +118,16 @@ const translations = {
       theWeddingDateComment: "La fecha ya está CONFIRMADA.",
       travelSectionTitle: "Viaje",
       rsvpTitle: "Confirmación de Asistencia",
+      preWeddingSectionTitle: "Pre-Wedding Days",
+      preWeddingSectionDescription: "<p align=\"left\">We will do three activities before the wedding:\
+      <h4 align=\"left\" style=\"padding-top:10px;\">UK Stag Do</h4>\
+      <p align=\"left\">To be announced.</p>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">ES Stag Do</h4>\
+      <p align=\"left\">To be announced.</p>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">Golf Match</h4>\
+      <p align=\"left\">We will organise an 18-hole golf match on date TBD. Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested.</p>",
+      whatToDoSectionTitle: "",
+      whatToDoSectionDescription: " ",
       rsvpWhosComing: "¿Quién va a venir?",
       rsvpSubmit: "Enviar",
       rsvpResponseNo: "No",
