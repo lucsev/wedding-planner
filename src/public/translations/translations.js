@@ -42,9 +42,9 @@ const translations = {
       onTheDaySectionTitle: "On The Day",
       onTheDaySectionDescription: "<p align=\"left\"><strong>Please make sure that you arrive at the venue between TBD and TBD.</strong></p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Itinerary (to be confirmed)</h4>\
-      <p align=\"left\">12:00-13:00 <strong>Wedding Photos</strong><br/>The grooms and the most immediate family members will be taking wedding photos before going to the venue.<br/>13:00-13:45 <strong>Reception</strong><br/>We will serve drinks (not alcoholic just yet!) and a big selection of appetisers. Both the Reception and the Ceremony will be outdoors. The ceremony will be outdoors. We will make sure that there is enough shade, fans or ACs if the day is hot. <br/>14:00-15:00 <strong>Wedding Ceremony</strong><br/>By the fountain. <br/>15:15-17:30 <strong>Wedding Breakfast</strong><br/>We will have a sit-down meal with a starter, a main, a dessert and unlimited drinks, including alcohol. We will aim to do it outside, but we may do it indoors if the day is too hot.<br/>18:00-00:00 <strong>Reception</strong><br/>We will set up a dance floor at the Columns Patio, next to the open bar and a chillout room. All drinks will continue to be free and unlimited. You will also be able to go out to the garden if you need some air.<br/>00:00 <strong>Onwards</strong></br>The official event ends here. Some guests may decide to go to nearby bars or clubs.</p> \
+      <p align=\"left\">12:00-13:00 <strong>Wedding Photos</strong><br/>The grooms and the most immediate family members will be taking wedding photos before going to the venue.<br/>13:00-13:45 <strong>Cocktail</strong><br/>We will serve drinks (including alcoholic) and a big selection of appetisers. Both the Cocktail and the Ceremony will be outdoors. We will make sure that there is enough shade, fans or ACs if the day is hot. <br/>14:00-15:00 <strong>Wedding Ceremony</strong><br/>By the fountain. <br/>15:15-17:30 <strong>Wedding Breakfast</strong><br/>We will have a sit-down meal with a starter, a main, a dessert and unlimited drinks, including alcohol. We will aim to do it outside if the weather allows.<br/>18:00-00:00 <strong>Reception</strong><br/>We will set up a dance floor at the Columns Patio, next to the open bar and a chillout room. There will also be tables and chairs in the garden for those that would like to be outdoors. All drinks will continue to be free and unlimited.<br/>00:00 <strong>Onwards</strong></br>The official event ends here. Some guests may decide to go to nearby bars or clubs.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Drinks</h4>\
-      <p align=\"left\">We will cover unlimited drinks, including alcoholic, during the Breakfast and the Dance (around 8 hours in total). During the meal, they will serve the following drinks: TBD.<br/><br/>During the Reception, there will be different drinks available (TBC):  White Martini, White and Añejo Rum, Pacharán, Strawberry Gin SK, Vodka, Tequila, Creams, alcoholic and non-alcoholic liquors, beer, soft drinks, juices.</p> \
+      <p align=\"left\">We will cover unlimited drinks, including alcoholic, during the Breakfast and the Dance (around 8 hours in total). During the meal, they will serve the following drinks: TBC.<br/><br/>During the Reception, there will be different drinks available (TBC).</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Food</h4>\
       <p align=\"left\"><span>&#8226;</span> At the Cocktail, we will have various nibbles.\
       <br/><span>&#8226;</span> At the Breakfast, the menu will consist of:</p>\
@@ -61,10 +61,6 @@ const translations = {
       <br/><br/>For transfers in pounds:\
       <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
       <br/>Account Number: 15718395\
-      <br/>Beneficiary: Lucas Rodriguez Diaz\
-      <br/><br/>For transfers in Euros:\
-      <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
-      <br/>BIC: REVOGB21\
       <br/>Beneficiary: Lucas Rodriguez Diaz</p>",
       rsvpTitle: "RSVP",
       rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.<br/> If anything changes, you can re-submit your RSVP at any time before the deadline.</p>",
@@ -115,27 +111,59 @@ const translations = {
       theWeddingLocation: "En Sevilla, España",
       theWeddingVenue: "En Villa Luisa.",
       theWeddingDate: "Domingo, 2 de Junio de 2024",
-      theWeddingDateComment: "La fecha ya está CONFIRMADA.",
+      theWeddingDateComment: "La fecha está CONFIRMADA.",
       travelSectionTitle: "Viaje",
+      travelSectionDescription: "<p align=\"left\"><strong>La boda es en <strong>Sevilla</strong>. Es recomendable que reserves tu medio de transporte y alojamiento pronto para evitar que los precios suban más tarde.</strong></p> \
+                                 <h4 align=\"left\" style=\"padding-top:10px;\">Vuelos</h4>\
+                                 <p align=\"left\">El aeropuerto más cercano es Sevilla (SVQ). Hay vuelos directos frecuentes desde la mayoría de aeropuertos principales en España. En <a href=\"https://www.google.com/flights?hl=es\">Google Vuelos</a> puedes buscar o reservar tus vuelos.</p> \
+                                 <h4 align=\"left\" style=\"padding-top:10px;\">Cómo Llegar</h4>\
+                                 <p align=\"left\">La boda será en <a href=\"https://www.villaluisa.com/\">Villa Luisa</a>, situada en <a href=\"https://goo.gl/maps/Svwe3juagYinef7f9\">\"Avenida Manuel Siurot, 1\"</a>. Se puede llegar: \
+                                 <br/> <span>&#8226;</span> A pie: Se tarda una media hora desde el centro, ¡sin parar para fotos! Es un paseo agradable por la ciudad, la plaza de España y el parque de Maria Luisa. \
+                                 <br/> <span>&#8226;</span> En taxi: Hay una parada de taxi al lado de la <a href=\"https://goo.gl/maps/4C1xuXBqvYmbxac37\">catedral</a> y otra en la <a href=\"https://goo.gl/maps/92EYsPtYXFvyz6VY8\">Puerta de Jerez</a>. \
+                                 <br/> <span>&#8226;</span> En lanzadera: a confirmar.</p>",
+      onTheDaySectionTitle: "Durante El Día",
+      onTheDaySectionDescription: "<p align=\"left\"><strong>Por favor, aseguráte de llegar entre las [a confirmar] y [a confirmar].</strong></p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Horario (a confirmar)</h4>\
+      <p align=\"left\">12:00-13:00 <strong>Fotos de Boda</strong><br/>Los novios y la familia más inmediata estarán haciéndose fotos antes de ir a Villa Luisa.<br/>13:00-13:45 <strong>Cocktail</strong><br/>Serviremos bebidas y una gran selección de aperitivos. El cocktail y la ceremonia serán al aire libre. Nos aseguraremos de que haya suficiente sombra, ventiladores o aire acondicionado si el día es caluroso. <br/>14:00-15:00 <strong>Ceremonia</strong><br/>Junto a la fuente. <br/>15:15-17:30 <strong>Almuerzo</strong><br/>Almorzaremos un primer, segundo plato y postre. Intentaremos almorzar al aire libre si el tiempo lo permite.<br/>18:00-00:00 <strong>Baile</strong><br/>Prepararemos una zona de baile en el patio de las columnas, junto a la barra libre y una sala de relax. Habrá mesas y sillas en el jardín para los que quieran tomar el aire. Todas las bebidas continuarán siendo gratuitas e ilimitadas.<br/>00:00 <strong>Después</strong></br>La boda oficialmente acaba aquí. Algunos invitados quizás decidan ir a algún bar o discoteca cercano.</p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Bebidas</h4>\
+      <p align=\"left\">Cubriremos bebidas ilimitadas, incluidas bebidas alcóholicas, durante el cocktail, almuerzo y baile (unas 8 horas en total). Durante el almuerzo servirán las siguientes bebidas: a confirmar.<br/><br/>Durante el baile, serviremos las siguientes bebidas: a confirmar.</p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Comida</h4>\
+      <p align=\"left\"><span>&#8226;</span> Durante el cocktail, serviremos los siguientes aperitivos: a confirmar.\
+      <br/><span>&#8226;</span> El almuerzo será:</p>\
+      <div style=\"margin-left: 20px; text-align: left;\">-Primero: A confirmar\
+      <br/>-Segundo: A confirmar\
+      <br/>-Postre: A confirmar\
+      <br/>Si algún invitado tiene alguna alergia o no puede comer algún ingrediente (nueces, gluten, carne, pescado, cerdo, leche etc), por favor hacédnoslo saber e intentaremos hacer lo posible.</div>\
+      <p align=\"left\"><span>&#8226;</span> Unas horas después del almuerzo, habrá otra ronda de aperitivos a confirmar.</p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Etiqueta</h4>\
+      <p align=\"left\">Muchas mujeres se pondrán un vestido, corto o largo, y los hombres un traje o blazer, con o sin corbata. Si decides llevar un vestido largo, ten en cuenta que el suelo del jardín es de albero y podría manchar el vestido. Si quieres una referencia de etiqueta, puedes echar un vistazo al <a href=\"https://www-brides-com.translate.goog/semi-formal-wedding-attire-4800687?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=en-US&_x_tr_pto=wapp\">atuendo semi-formal/cocktail</a>.</p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Regalos de Boda</h4>\
+      <p align=\"left\">Vuestra presencia en la boda ya es un regalo para nosotros, y entendemos que viajar a Sevilla puede ser costoso. No esperamos regalos de boda de todos los grupos de invitados.\
+      <br/>Si de verdad queréis hacer un regalo de boda, os pediríamos que evitéis regalos físicos si es posible, debido a nuestra situación internacional. Sin embargo, queremos recaudar fondos para tener hijos y estaríamos encantados si nos ayudárais a conseguirlo.\
+      <br/><br/>Para transferencias en euros:\
+      <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
+      <br/>BIC: REVOGB21\
+      <br/>Beneficiario: Lucas Rodriguez Diaz</p>",
       rsvpTitle: "Confirmación de Asistencia",
-      preWeddingSectionTitle: "Pre-Wedding Days",
-      preWeddingSectionDescription: "<p align=\"left\">We will do three activities before the wedding:\
-      <h4 align=\"left\" style=\"padding-top:10px;\">UK Stag Do</h4>\
-      <p align=\"left\">To be announced.</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">ES Stag Do</h4>\
-      <p align=\"left\">To be announced.</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">Golf Match</h4>\
-      <p align=\"left\">We will organise an 18-hole golf match on date TBD. Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested.</p>",
-      whatToDoSectionTitle: "",
-      whatToDoSectionDescription: " ",
-      rsvpWhosComing: "¿Quién va a venir?",
+      rsvpDescription: "<p id=\"rsvpDescription\">Si no lo has hecho aún, por favor confirma tu asistencia en el formulario antes de [fecha a confirmar]. Sólo podremos acomodar a las personas listadas en el formulario, debido a restricciones en el presupuesto. Si crees que nos hemos olvidado de alguien, por favor contacta con nosotros.<br/> Si tu situación cambia, puedes reenviar el formulario en cualquier momento y tantas veces como quieras antes de la fecha límite.</p>",
+      preWeddingSectionTitle: "Eventos Pre-Boda",
+      preWeddingSectionDescription: "<p align=\"left\">Organizaremos tres eventos antes de la boda:\
+      <h4 align=\"left\" style=\"padding-top:10px;\">Despedida de solteros en UK</h4>\
+      <p align=\"left\">A confirmar.</p>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">Despedida de solteros en España</h4>\
+      <p align=\"left\">A confirmar.</p>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">Partida de golf</h4>\
+      <p align=\"left\">Organizaremos una partida de golf de 18 hoyos, con fecha a confirmar. Cualquiera que sepa jugar al golf es bienvenido. Por favor contacta con Lucas si estás interesado.</p>",
+      whatToDoSectionTitle: "Qué Hacer En Sevilla",
+      whatToDoSectionDescription: "",
+      rsvpWhosComing: "¿Quién viene?",
       rsvpSubmit: "Enviar",
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Inseguro",
       rsvpResponseYes: "Sí",
-      rsvpSubmittedCorrectly: "¡Respuesta recibida! Si cambiara algo, puedes actualizar la respuesta y enviarla de nuevo.",
+      rsvpSubmittedCorrectly: "¡Respuesta recibida! Si algo cambia, puedes actualizar tu respuesta y enviarla de nuevo.",
       rsvpFailedToSubmit: "Algo ha fallado. Por favor contacta con los novios.",
-      rsvpSpecialRequirementsLabel: "¿Algún requisito especial? Alergias, requisitos dietéticos, ayuda logística, etc.",
+      rsvpSpecialRequirementsLabel: "¿Alguna petición especial? Alergias, requisitos nutricionales, ayuda logística, etc.",
       rsvpMusicSuggestionsLabel: "¿Alguna sugerencia de música?"
     }
   }

@@ -181,7 +181,8 @@ function WeddingSignIn({setGuestCodeIsValidParent, setrsvpData, setAppLanguage, 
               <MKBox pt={4} pb={3} px={3}>
                 <MKBox component="form" role="form">
                   <MKBox mb={2}>
-                    <MKInput type="text" label={t('signInGuestCode')} fullWidth onChange={handleGuestCodeInputChange} />
+                    <MKInput type="text" label={t('signInGuestCode')} fullWidth onChange={handleGuestCodeInputChange}
+                             onKeyPress={(e) => {(e.key === 'Enter' ? handleSubmit(e) : null)}} />
                   </MKBox>
 
                   <div style={{display: showErrorCodeNotInput ? 'block' : 'none' }}>
