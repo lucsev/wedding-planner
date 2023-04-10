@@ -28,12 +28,26 @@ import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 import MKTypography from "components/MKTypography";
 import { useTranslation } from 'react-i18next';
 import GlobalStyles from '@mui/material/GlobalStyles';
+import { useEffect } from 'react';
 
 import HotelCarousel from "components/Custom/HotelCarousel"
 import parse from 'html-react-parser';
 
 function OnTheDaySection() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "weatherwidget.js";
+    script.async = true;
+  
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
 
   return (
     <MKBox component="section" py={6} my={6} sx={{ margin: "0px", padding: "12px 0px 12px 0px" }}  >

@@ -61,7 +61,9 @@ const translations = {
       <br/><br/>For transfers in pounds:\
       <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
       <br/>Account Number: 15718395\
-      <br/>Beneficiary: Lucas Rodriguez Diaz</p>",
+      <br/>Beneficiary: Lucas Rodriguez Diaz</p>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">7-Day Weather Forecast</h4>\
+      <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLE\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLE</a>",
       rsvpTitle: "RSVP",
       rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.<br/> If anything changes, you can re-submit your RSVP at any time before the deadline.</p>",
       preWeddingSectionTitle: "Pre-Wedding Days",
@@ -143,7 +145,9 @@ const translations = {
       <br/><br/>Para transferencias en euros:\
       <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
       <br/>BIC: REVOGB21\
-      <br/>Beneficiario: Lucas Rodriguez Diaz</p>",
+      <br/>Beneficiario: Lucas Rodriguez Diaz</p>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">Previsión del Tiempo a 7 Días</h4>\
+      <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLA\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLA</a>",
       rsvpTitle: "Confirmación de Asistencia",
       rsvpDescription: "<p id=\"rsvpDescription\">Si no lo has hecho aún, por favor confirma tu asistencia en el formulario antes de [fecha a confirmar]. Sólo podremos acomodar a las personas listadas en el formulario, debido a restricciones en el presupuesto. Si crees que nos hemos olvidado de alguien, por favor contacta con nosotros.<br/> Si tu situación cambia, puedes reenviar el formulario en cualquier momento y tantas veces como quieras antes de la fecha límite.</p>",
       preWeddingSectionTitle: "Eventos Pre-Boda",

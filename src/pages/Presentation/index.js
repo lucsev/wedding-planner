@@ -408,7 +408,7 @@ export default function Presentation({appLanguage, setAppLanguage, spanishSignIn
       </Card> */}
 
           <MKBox mt={3} mb={1} textAlign="center">
-              <MKTypography variant="button" color="link" onClick={handleSignout}>
+              <MKTypography variant="button" onClick={handleSignout}>
               <a href="/">{t('signOutLink')}</a>
               </MKTypography>
           </MKBox>
