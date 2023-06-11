@@ -21,12 +21,12 @@ const translations = {
       travelSectionTitle: "Travel",
       travelSectionDescription: "<p align=\"left\"><strong>The wedding will be in Spain. It's important that you arrange your transportation and accommodation as soon as possible to avoid prices going up.</strong></p> \
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Flights</h4>\
-                                 <p align=\"left\">The closest airport is Seville (SVQ). There are regular non-stop flights from Stansted (Ryanair), Luton (Ryanair) and Gatwick (BA/Iberia, EasyJet, Vueling). In <a href=\"https://www.google.com/travel/flights\">Google Flights</a> you can browse or book your flights.</p> \
+                                 <p align=\"left\">The closest airport is Seville (SVQ). There are regular non-stop flights from Stansted (Ryanair), Luton (Ryanair) and Gatwick (BA/Iberia, EasyJet, Vueling). You can browse or book your flights on <a href=\"https://www.google.com/travel/flights\">Google Flights</a>. <strong>As the dates are far away, the flights are not available yet. They should be released in June/July.</strong> We will let you know once flights are released.</p> \
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Venue Directions</h4>\
                                  <p align=\"left\">The venue will be <a href=\"https://www.villaluisa.com/en\">Villa Luisa</a>, located at <a href=\"https://goo.gl/maps/Svwe3juagYinef7f9\">\"Avenida Manuel Siurot, 1\"</a>. You can get there: \
                                  <br/> <span>&#8226;</span> On foot: It takes around 30 minutes if you are staying near the Cathedral and you don't stop for pictures. It's a very nice walk along the city, the Plaza de España and the Parque de Maria Luisa, but don't be late! \
-                                 <br/> <span>&#8226;</span> By Taxi: There is a taxi rank next to the <a href=\"https://goo.gl/maps/4C1xuXBqvYmbxac37\">Cathedral</a>, and another next to the <a href=\"https://goo.gl/maps/92EYsPtYXFvyz6VY8\">Puerta de Jerez</a>. If you are staying in the city centre, those are probably the closest to you. If you give the driver the address (Avenida Manuel Siurot, 1), they'll know where it is. They take Euros or credit/debit card payments. A trip from the city centre should be around €6-8 and take 8 minutes. \
-                                 <br/> <span>&#8226;</span> By Shuttle: to be confirmed.</p>\
+                                 <br/> <span>&#8226;</span> By taxi: There is a taxi rank next to the <a href=\"https://goo.gl/maps/4C1xuXBqvYmbxac37\">Cathedral</a>, and another next to the <a href=\"https://goo.gl/maps/92EYsPtYXFvyz6VY8\">Puerta de Jerez</a>. If you are staying in the city centre, those are probably the closest to you. If you give the driver the address (Avenida Manuel Siurot, 1), they'll know where it is. They take Euros or credit/debit card payments. A trip from the city centre should be around €6-8 and take 8 minutes. \
+                                 <br/> <span>&#8226;</span> By car: The venue does not have its own parking. There are some car parks <a href=\"https://www.google.com/maps/search/parking/@37.3691788,-5.9897126,16z?entry=ttu\">nearby</a> and streets where you may be able to park.</p>\
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Accommodation</h4>\
                                  <p align=\"left\">We recommend that you stay at a hotel or apartment within the city centre. Don't worry about being close to the venue, as you will want to be closer to the city centre most other days. Some recommendations: \
                                  <br/> <span>&#8226;</span> <a href=\"https://www.booking.com/Share-ZC3yHL\">La Abadia de Giralda</a>: next to the cathedral, around £100 per night and double room.\
@@ -54,15 +54,15 @@ const translations = {
       <br/>If you have any allergies or can't eat any of the ingredients (nuts, gluten, meat, fish, pork, dairy), please let us know and we will try to accommodate your request.</div>\
       <p align=\"left\"><span>&#8226;</span> A few hours after the Breakfast, there will be an additional round of nibbles.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Etiquette</h4>\
-      <p align=\"left\">Most women will wear a dress, short or long, and men a suit or just a blazer, with or without tie. If you decide to wear a long dress, be aware that the floor outside the venue is similar to compressed sand and could easily stain long dresses. If you want a style reference, you can have a look at a <a href=\"https://www.brides.com/semi-formal-wedding-attire-4800687\">semi-formal/cocktail attire</a>.</p> \
+      <p align=\"left\">Most women will wear a dress, short or long, and men a suit or blazer, with or without tie. If you decide to wear a long dress, be aware that the floor outside the venue is similar to compressed sand and could easily stain long dresses. If you want a style reference, you can have a look at a <a href=\"https://www.brides.com/semi-formal-wedding-attire-4800687\">semi-formal/cocktail attire</a>.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Wedding Gifts</h4>\
       <p align=\"left\">Your presence at the wedding is already a gift to us, and we understand that your international travel can be costly. We therefore do not expect a wedding gift from every group of guests.\
-      <br/>If you do want to make a wedding gift, we would ask that you avoid physical gifts if possible, due to our international situation. However, we want to raise funds towards the process for us to have children, and we would be delighted if you would help us financially to achieve that goal.\
+      <br/>If you do want to make a wedding gift, we would ask that you avoid physical gifts if possible, due to our international situation. However, we want to raise funds towards the process for us to have children, and we would be delighted if you would help us financially to achieve that beautiful goal.\
       <br/><br/>For transfers in pounds:\
       <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
       <br/>Account Number: 15718395\
       <br/>Beneficiary: Lucas Rodriguez Diaz</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">7-Day Weather Forecast</h4>\
+      <h4 align=\"left\" style=\"padding-top:10px;\">Weather Forecast From Today</h4>\
       <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLE\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLE</a>",
       rsvpTitle: "RSVP",
       rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by DATE TBD. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.<br/> If anything changes, you can re-submit your RSVP at any time before the deadline.</p>",
@@ -117,12 +117,12 @@ const translations = {
       travelSectionTitle: "Viaje",
       travelSectionDescription: "<p align=\"left\"><strong>La boda es en <strong>Sevilla</strong>. Es recomendable que reserves tu medio de transporte y alojamiento pronto para evitar que los precios suban más tarde.</strong></p> \
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Vuelos</h4>\
-                                 <p align=\"left\">El aeropuerto más cercano es Sevilla (SVQ). Hay vuelos directos frecuentes desde la mayoría de aeropuertos principales en España. En <a href=\"https://www.google.com/flights?hl=es\">Google Vuelos</a> puedes buscar o reservar tus vuelos.</p> \
+                                 <p align=\"left\">El aeropuerto más cercano es Sevilla (SVQ). Hay vuelos directos frecuentes desde la mayoría de aeropuertos principales en España. Puedes buscar o reservar tus vuelos en <a href=\"https://www.google.com/flights?hl=es\">Google Vuelos</a>. Es posible que no puedas reservar los vuelos hasta junio o julio de 2023 dependiendo de la aerolínea.</p> \
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Cómo Llegar</h4>\
                                  <p align=\"left\">La boda será en <a href=\"https://www.villaluisa.com/\">Villa Luisa</a>, situada en <a href=\"https://goo.gl/maps/Svwe3juagYinef7f9\">\"Avenida Manuel Siurot, 1\"</a>. Se puede llegar: \
                                  <br/> <span>&#8226;</span> A pie: Se tarda una media hora desde el centro, ¡sin parar para fotos! Es un paseo agradable por la ciudad, la plaza de España y el parque de Maria Luisa. \
                                  <br/> <span>&#8226;</span> En taxi: Hay una parada de taxi al lado de la <a href=\"https://goo.gl/maps/4C1xuXBqvYmbxac37\">catedral</a> y otra en la <a href=\"https://goo.gl/maps/92EYsPtYXFvyz6VY8\">Puerta de Jerez</a>. \
-                                 <br/> <span>&#8226;</span> En lanzadera: a confirmar.</p>",
+                                 <br/> <span>&#8226;</span> En coche: Villa Luisa no tiene aparcamiento propio. Hay algunos aparcamientos <a href=\"https://www.google.com/maps/search/parking/@37.3691788,-5.9897126,16z?entry=ttu\">alrededor</a> y calles donde quizás puedas aparcar.</p>",
       onTheDaySectionTitle: "Durante El Día",
       onTheDaySectionDescription: "<p align=\"left\"><strong>Por favor, aseguráte de llegar entre las [a confirmar] y [a confirmar].</strong></p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Horario (a confirmar)</h4>\
