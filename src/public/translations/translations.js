@@ -62,8 +62,8 @@ const translations = {
       <br/><br/>For transfers in pounds:\
       <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
       <br/>Account Number: 15718395\
-      <br/>Beneficiary: Lucas Rodriguez Diaz</p>\
-      <br/>Or if you prefer to use a debit card: <a href=\"https://revolut.me/lucasu0z\">https://revolut.me/lucasu0z</a>\
+      <br/>Beneficiary: Lucas Rodriguez Diaz\
+      <br/>Or if you prefer to use a debit card: <a href=\"https://revolut.me/lucasu0z\">https://revolut.me/lucasu0z</a></p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Weather Forecast From Today</h4>\
       <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLE\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLE</a>",
       rsvpTitle: "RSVP",
@@ -147,8 +147,8 @@ const translations = {
       <br/><br/>Para transferencias en euros:\
       <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
       <br/>BIC: REVOGB21\
-      <br/>Beneficiario: Lucas Rodriguez Diaz</p>\
-      <br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\">https://revolut.me/lucasu0z</a>\
+      <br/>Beneficiario: Lucas Rodriguez Diaz\
+      <br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\">https://revolut.me/lucasu0z</a></p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Previsión del Tiempo a 7 Días</h4>\
       <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLA\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLA</a>",
       rsvpTitle: "Confirmación de Asistencia",
