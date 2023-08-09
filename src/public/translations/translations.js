@@ -148,7 +148,7 @@ const translations = {
       <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
       <br/>BIC: REVOGB21\
       <br/>Beneficiario: Lucas Rodriguez Diaz\
-      <br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a></p>\
+      <br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a> (aseguraos de seleccionar EUR, no GBP)</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Previsión del Tiempo a 7 Días</h4>\
       <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLA\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLA</a>",
       rsvpTitle: "Confirmación de Asistencia",
