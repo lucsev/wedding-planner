@@ -74,7 +74,7 @@ const translations = {
       <h4 align=\"left\" style=\"padding-top:10px;\">ES Stag Do</h4>\
       <p align=\"left\">To be announced.</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Golf Match</h4>\
-      <p align=\"left\">We will organise an 18-hole golf match on date TBD. Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested.</p>",
+      <p align=\"left\">We will organise an 18-hole golf match on the day before the wedding at <a href=\"https://goo.gl/maps/YNVH29CRS1ngRDRw5\">Zaudin Golf Club</a>. We can arrange for one of the other players to pick you up. There will be a prize for the winner! Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested. We may also have lunch at the golf course.</p>",
       whatToDoSectionTitle: "What To Do In Seville",
       whatToDoSectionDescription: "<p align=\"left\">\
       Seville is a lovely city to walk, eat out and enjoy the weather. Some of the highlights:\
@@ -158,7 +158,7 @@ const translations = {
       <h4 align=\"left\" style=\"padding-top:10px;\">Despedida de solteros en España</h4>\
       <p align=\"left\">A confirmar.</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Partida de golf</h4>\
-      <p align=\"left\">Organizaremos una partida de golf de 18 hoyos, con fecha a confirmar. Cualquiera que sepa jugar al golf es bienvenido. Por favor contacta con Lucas si estás interesado.</p>",
+      <p align=\"left\">Organizaremos una partida de golf de 18 hoyos el día anterior a la boda el día anterior a la boda en <a href=\"https://goo.gl/maps/YNVH29CRS1ngRDRw5\">Club de Golf Zaudín</a>. ¡Habrá un premio para el ganador! Cualquiera que sepa jugar al golf es bienvenido. Por favor contacta con Lucas si estás interesado. Quizás también almorzemos en el campo de golf.</p>",
       whatToDoSectionTitle: "Qué Hacer En Sevilla",
       whatToDoSectionDescription: "",
       rsvpWhosComing: "¿Quién viene?",
