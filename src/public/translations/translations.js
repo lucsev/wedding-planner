@@ -150,7 +150,7 @@ const translations = {
       <br/>Beneficiario: Lucas Rodriguez Diaz\
       <br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a> (aseguraos de seleccionar EUR, no GBP)</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Previsión del Tiempo a 7 Días</h4>\
-      <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLA\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLA</a>",
+      <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLE\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLE</a>",
       rsvpTitle: "Confirmación de Asistencia",
       rsvpDescription: "<p id=\"rsvpDescription\">Si no lo has hecho aún, por favor confirma tu asistencia en el formulario antes de [fecha a confirmar]. Sólo podremos acomodar a las personas listadas en el formulario, debido a restricciones en el presupuesto. Si crees que nos hemos olvidado de alguien, por favor contacta con nosotros.<br/> Si tu situación cambia, puedes reenviar el formulario en cualquier momento y tantas veces como quieras antes de la fecha límite.</p>",
       preWeddingSectionTitle: "Eventos Pre-Boda",
