@@ -145,6 +145,7 @@ export default function Presentation({appLanguage, setAppLanguage, spanishSignIn
                    fontWeight: 10,
                    [breakpoints.down("sm")]: {
                     fontSize: 55,
+                    marginBottom: -15,
                    },
                   },          
                 })}
@@ -160,7 +161,7 @@ export default function Presentation({appLanguage, setAppLanguage, spanishSignIn
                 mb={1}
                 textAlign="center"
                 sx={({ breakpoints }) => ({
-                  paddingTop: '10px',
+                  paddingTop: '0px',
                   
                   typography: {
                     fontFamily: [

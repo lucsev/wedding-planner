@@ -40,11 +40,11 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
   const [showRSVPSubmittedCorrectly, setShowRSVPSubmittedCorrectly] = useState(false);
   const { t } = useTranslation();  
 
-  const handleAttendanceChange = (guestID, firstName, isAttending) => {
+  const handleAttendanceChange = (guestID, firstName, isAttending, starter, main, dessert) => {
     var newState = { ...rsvpData };
 
     const index = newState.guests ? newState.guests.findIndex(object => object.guestID === guestID) : -1;
-    const newValue = {"guestID": guestID, "firstName": firstName, "isAttending": isAttending};
+    const newValue = {"guestID": guestID, "firstName": firstName, "isAttending": isAttending, "starter": starter, "main": main, "dessert": dessert};
     if(index === -1) {
       if(!newState.guests) { newState.guests = []; }
       newState.guests.push(newValue);
@@ -80,7 +80,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
       musicSuggestions: rsvpData.musicSuggestions,
   };
   rsvpData.guests.forEach(attendee => {
-    formData.guests.push({ guestID: attendee.guestID, isAttending: attendee.isAttending });
+    formData.guests.push({ guestID: attendee.guestID, isAttending: attendee.isAttending, starter: attendee.starter, main: attendee.main, dessert: attendee.dessert });
   });
   console.log(formData);
 
@@ -136,7 +136,7 @@ export default function ResponseForm({rsvpRerenderKey, setrsvpRerenderKey, rsvpD
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
                     <CheckboxFormGroup rsvpData={rsvpData} handleAttendanceChange={handleAttendanceChange} />
-                  </Grid>            
+                  </Grid>
                   
                   <Grid item xs={12}>
                     <MKInput variant="standard" label={t('rsvpSpecialRequirementsLabel')} value={rsvpData.specialRequests} onChange={handleSpecialRequestsChange} multiline fullWidth rows={6} />

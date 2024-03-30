@@ -41,17 +41,34 @@ const translations = {
                                  <h4 align=\"left\" style=\"padding-top:10px;\">Travel Documents <span style=\"color:red\">(important)</span></h4>\
                                  <p align=\"left\">You will need two documents to enter Spain:<br/><span>&#8226;</span>A <strong>passport</strong>, which needs to be valid for a minimum of 3 months from the day of expected <u>return</u> to the UK. You must bring the <u>original</u>, physical document. <br/><span>&#8226;</span>Your <strong>boarding pass</strong> for the flight. This can be printed or loaded on your your airline's phone app. Remember to <u>check in</u> on the airline's website or app to get your boarding pass!<br/><br/>You need to take <u>both</u> documents with you when you fly to Spain.<br/>Note: The <a href=\"https://www.spainvisa.eu/visa-types/etias/\">ETIAS</a> visa scheme for non-EU nationals to enter the EU won't start until 2025. You don't need to apply for a visa.</p>",
       onTheDaySectionTitle: "On The Day",
-      onTheDaySectionDescription: "<p align=\"left\"><strong>Please make sure that you arrive at the venue between TBD and TBD.</strong></p> \
-      <h4 align=\"left\" style=\"padding-top:10px;\">Itinerary (to be confirmed)</h4>\
-      <p align=\"left\">12:00-13:00 <strong>Wedding Photos</strong><br/>The grooms and the most immediate family members will be taking wedding photos before going to the venue.<br/>13:00-13:45 <strong>Canapés</strong><br/>We will serve drinks (including alcoholic) and a big selection of appetisers. Both the Canapés and the Ceremony will be outdoors. We will make sure that there is enough shade, fans or ACs if the day is hot. <br/>14:00-15:00 <strong>Wedding Ceremony</strong><br/>By the fountain. <br/>15:15-17:30 <strong>Wedding Breakfast</strong><br/>We will have a sit-down meal with a starter, a main, a dessert and unlimited drinks, including alcohol. We will aim to do it outside if the weather allows.<br/>18:00-00:00 <strong>Reception</strong><br/>We will set up a dance floor at the Columns Patio, next to the open bar and a chillout room. There will also be tables and chairs in the garden for those that would like to be outdoors. All drinks will continue to be free and unlimited.<br/>00:00 <strong>Onwards</strong></br>The wedding officially ends here. Some guests may decide to go to nearby bars or clubs.</p> \
+      onTheDaySectionDescription: "<p align=\"left\"><strong>Please make sure that you arrive at the venue around 12:30 (to be confirmed).</strong></p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Schedule</h4>\
+      <p align=\"left\">12:30 <strong>Guest arrival time</strong><br/>Please try to arrive around this time.<br/>12:30 - 13:00 <strong>Welcome drinks</strong><br/>We will serve alcoholic and non alcoholic drinks while we welcome guests. The venue staff will give you directions.<br/>13:00 - 14:00 <strong>Canapés</strong><br/>We will serve drinks (including alcoholic) and a big selection of appetisers. The canapés, the ceremony and the meal will be outdoors, with shade. <br/>14:00 - 14:40 <strong>Wedding Ceremony</strong><br/>By the fountain. <br/>14:40 - 15:00 <strong>Photos</strong><br/>While people chat about the ceremony and sit down for the meal, we will be taking wedding photos. We will call you when it's time to take a picture with you.<br/>15:00 - 17:30 <strong>Wedding Breakfast</strong><br/>We will have a sit-down meal with a starter, a main, a dessert and unlimited drinks, including wine. We will aim to do it outside if the weather allows.<br/>17:45 - 23:45 <strong>Reception</strong><br/>We will set up a dance floor at the Columns Patio, next to the open bar and a chillout room. There will also be tables and chairs in the garden for those that would like to be outdoors. All drinks will continue to be free and unlimited.<br/>18:30 - 18:45 <strong>First dance</strong><br/>We will first dance together as husband and husband, then with our mums and then everyone can join in.<br/>19:15 <strong>Sandwiches, sweets and snacks</strong><br/>20:00 - 20:10 <strong>Cutting the wedding cake</strong><br/>20:45 <strong>More sandwiches, sweets and snacks</strong> <br/>00:00 <strong>Onwards</strong></br>The wedding officially ends here. Some guests may decide to go to nearby bars or clubs.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Drinks</h4>\
-      <p align=\"left\">We will cover unlimited drinks, including alcoholic, during the Breakfast and the Dance (around 8 hours in total). During the meal, they will serve the following drinks: TBC.<br/><br/>During the Reception, there will be different drinks available (TBC).</p> \
+      <p align=\"left\">We will cover unlimited drinks, including alcoholic, for the whole duration of the wedding. During the meal, we will serve the following drinks:\
+      <br/>- Soft drinks\
+      <br/>- Water\
+      <br/>- Juices\
+      <br/>- Wine (red, semi-sweet white, oloroso, manzanilla, fino, cava)\
+      <br/>- Beer\
+      <br/>- Coffee<br/>\
+      <br/>During the Reception, there will be additional drinks:\
+      <br/>- Whisky: Johnnie Walker and Ballantines\
+      <br/>- Rum: Barceló and Brugal\
+      <br/>- Gin: Bombay, Tanqueray and strawberry gin\
+      <br/>- White Martini\
+      <br/>- White and aged rum\
+      <br/>- Pacharán\
+      <br/>- Vodka\
+      <br/>- Tequila\
+      <br/>- Irish cream\
+      <br/>- Shots of anything above\
       <h4 align=\"left\" style=\"padding-top:10px;\">Food</h4>\
-      <p align=\"left\"><span>&#8226;</span> At the Canapés, we will have various nibbles.\
-      <br/><span>&#8226;</span> At the Breakfast, the menu will consist of:</p>\
-      <div style=\"margin-left: 20px; text-align: left;\">-Starter: TBD\
-      <br/>-Main: TBD\
-      <br/>-Dessert: TBD\
+      <p align=\"left\"><span>&#8226;</span> At the Canapés, we will serve drinks and a large selection of nibbles.\
+      <br/><span>&#8226;</span> At the Breakfast, the menu will be:</p>\
+      <div style=\"margin-left: 20px; text-align: left;\">-Starter: your choice between creamy rice with pork cheeks or cod loin marinated in virgin olive oil\
+      <br/>-Main: your choice between sea bass fillet with sautéed vegetables or roast beef with caramelised onion, potato and cheese \"cake\" and almond and oloroso sauce\
+      <br/>-Dessert: your choice between thin warm apple tart with vanilla ice cream or chocolate brownie with walnuts, almonds and vanilla ice cream\
       <br/>If you have any allergies or can't eat any of the ingredients (nuts, gluten, meat, fish, pork, dairy), please let us know and we will try to accommodate your request.</div>\
       <p align=\"left\"><span>&#8226;</span> A few hours after the Breakfast, there will be an additional round of nibbles.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Etiquette</h4>\
@@ -69,13 +86,8 @@ const translations = {
       rsvpTitle: "RSVP",
       rsvpDescription: "<p id=\"rsvpDescription\">If you haven't already, please submit your RSVP by May 6th. We will only be able to accommodate the people explicitly listed below, due to budget constraints. If you think we have missed someone, please do get in touch.<br/> If anything changes, you can re-submit your RSVP at any time before the deadline.</p>",
       preWeddingSectionTitle: "Pre-Wedding Days",
-      preWeddingSectionDescription: "<p align=\"left\">We will do three activities before the wedding:\
-      <h4 align=\"left\" style=\"padding-top:10px;\">UK Stag Do</h4>\
-      <p align=\"left\">To be announced.</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">ES Stag Do</h4>\
-      <p align=\"left\">To be announced.</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">Golf Match</h4>\
-      <p align=\"left\">We will organise an 18-hole golf match on the day before the wedding at <a href=\"https://goo.gl/maps/YNVH29CRS1ngRDRw5\">Zaudin Golf Club</a>. We can arrange for one of the other players to pick you up. There will be a prize for the winner! Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested. We may also have lunch at the golf course.</p>",
+      preWeddingSectionDescription: "<h4 align=\"left\" style=\"padding-top:10px;\">Golf Match</h4>\
+      <p align=\"left\">We will organise an afternoon 18-hole golf match on the day before the wedding at <a href=\"https://goo.gl/maps/YNVH29CRS1ngRDRw5\">Zaudin Golf Club</a>. We can arrange for one of the other players to pick you up. There will be a prize for the winner! Anyone that knows how to play golf is welcome (Top Golf doesn't count!). Please reach out to Lucas if you are interested.</p>",
       whatToDoSectionTitle: "What To Do In Seville",
       whatToDoSectionDescription: "<p align=\"left\">\
       Seville is a lovely city to walk, eat out and enjoy the weather. Some of the highlights:\
@@ -88,7 +100,17 @@ const translations = {
       <br/><span>&#8226;</span> <a href=\"https://www.tripadvisor.co.uk/Attraction_Review-g652112-d1569191-Reviews-Archaeological_Ensemble_of_Italica-Santiponce_Province_of_Seville_Andalucia.html\">Itálica</a>. Remains of the first Roman city outside Italy, and a filming location of Games of Thrones (so is the Alcázar!).  \
       <br/><span>&#8226;</span> Other <a href=\"https://www.tripadvisor.co.uk/Attractions-g187443-Activities-Seville_Province_of_Seville_Andalucia.html\">Tripadvisor</a> recommendations.\
       <br/><span>&#8226;</span> Ask us if you want to know more!</p>",
-      rsvpWhosComing: "Who is coming?",
+      rsvpWhosComing: "Who is coming and what are you eating?",
+      rsvpStarter: "Starter",
+      rsvpStarter1: "Creamy rice with pork cheeks",
+      rsvpStarter2: "Cod loin marinated in virgin olive oil",
+      rsvpStarter3: "N/A, see comments",
+      rsvpMain: "Main",
+      rsvpMain1: "Sea bass fillet with sautéed vegetables",
+      rsvpMain2: "Roast beef with caramelised onion, potato and cheese cake and almond and oloroso sauce",
+      rsvpDessert: "Dessert",
+      rsvpDessert1: "Thin warm apple tart with vanilla ice cream",
+      rsvpDessert2: "Chocolate brownie with walnuts, almonds and vanilla ice cream",
       rsvpSubmit: "Submit",
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Not sure",
@@ -126,17 +148,34 @@ const translations = {
                                  <br/> <span>&#8226;</span> En taxi: Hay una parada de taxi al lado de la <a href=\"https://goo.gl/maps/4C1xuXBqvYmbxac37\">catedral</a> y otra en la <a href=\"https://goo.gl/maps/92EYsPtYXFvyz6VY8\">Puerta de Jerez</a>. \
                                  <br/> <span>&#8226;</span> En coche: Villa Luisa no tiene aparcamiento propio. Hay algunos aparcamientos <a href=\"https://www.google.com/maps/search/parking/@37.3691788,-5.9897126,16z?entry=ttu\">alrededor</a> y calles donde quizás puedas aparcar.</p>",
       onTheDaySectionTitle: "Durante El Día",
-      onTheDaySectionDescription: "<p align=\"left\"><strong>Por favor, aseguráte de llegar entre las [a confirmar] y [a confirmar].</strong></p> \
-      <h4 align=\"left\" style=\"padding-top:10px;\">Horario (a confirmar)</h4>\
-      <p align=\"left\">12:30 <strong>Hora de llegada de los invitados</strong><br/>Por favor intentad llegar sobre esta hora.<br/>12:30 - 13:00 <strong>Copa de bienvenida</strong><br/>Serviremos bebidas al llegar. El personal os indicará a dónde ir.<br/>13:00 - 14:00 <strong>Cocktail</strong><br/>Serviremos bebidas y una gran selección de aperitivos. El cocktail, la ceremonia y la comida serán al aire libre, con sombra. <br/>14:00 - 14:40 <strong>Ceremonia</strong><br/>Junto a la fuente. <br/>14:40 - 15:00 <strong>Fotos</strong><br/>Mientras la gente va charlando sobre la ceremonia y sentándose para la comida haremos algunas fotos junto a la fuente. Os llamaremos cuando nos toque foto con vosotros<br/>15:00 - 17:30 <strong>Almuerzo</strong><br/>Almorzaremos un primer, segundo plato y postre. Almorzaremos al aire libre si el tiempo lo permite.<br/>17:45 - 23:45 <strong>Barra libre y baile</strong><br/>Prepararemos una zona de baile en el patio de las columnas, junto a la barra libre y una sala de relax. Habrá mesas y sillas en el jardín para los que quieran tomar el aire. Todas las bebidas continuarán siendo gratuitas e ilimitadas.<br/>18:30 - 18:45 <strong>Baile nupcial</strong><br/>Primero bailaremos los novios, luego nuestras madres también, y finalmente todo el mundo.<br/>19:15 <strong>Sándwiches</strong><br/>20:00 - 20:10 <strong>Corte de la tarta</strong> <br/>20:45 <strong>Más sandwiches</strong> <br/>00:00 <strong>Después</strong></br>La boda oficialmente acaba aquí. Algunos invitados quizás decidan ir a algún bar o discoteca cercano.</p> \
+      onTheDaySectionDescription: "<p align=\"left\"><strong>Por favor, aseguráte de llegar sobre las 12:30 (a confirmar).</strong></p> \
+      <h4 align=\"left\" style=\"padding-top:10px;\">Horario</h4>\
+      <p align=\"left\">12:30 <strong>Hora de llegada de los invitados</strong><br/>Por favor intentad llegar sobre esta hora.<br/>12:30 - 13:00 <strong>Copa de bienvenida</strong><br/>Serviremos bebidas al llegar. El personal os indicará a dónde ir.<br/>13:00 - 14:00 <strong>Cocktail</strong><br/>Serviremos bebidas y una gran selección de aperitivos. El cocktail, la ceremonia y la comida serán al aire libre, con sombra. <br/>14:00 - 14:40 <strong>Ceremonia</strong><br/>Junto a la fuente. <br/>14:40 - 15:00 <strong>Fotos</strong><br/>Mientras la gente va charlando sobre la ceremonia y sentándose para la comida haremos algunas fotos junto a la fuente. Os llamaremos cuando nos toque foto con vosotros<br/>15:00 - 17:30 <strong>Almuerzo</strong><br/>Almorzaremos un primer, segundo plato y postre. Almorzaremos al aire libre si el tiempo lo permite.<br/>17:45 - 23:45 <strong>Barra libre y baile</strong><br/>Prepararemos una zona de baile en el patio de las columnas, junto a la barra libre y una sala de relax. Habrá mesas y sillas en el jardín para los que quieran tomar el aire. Todas las bebidas continuarán siendo gratuitas e ilimitadas.<br/>18:30 - 18:45 <strong>Baile nupcial</strong><br/>Primero bailaremos los novios, luego nuestras madres también, y finalmente todo el mundo.<br/>19:15 <strong>Sándwiches, chuches y snacks</strong><br/>20:00 - 20:10 <strong>Corte de la tarta</strong> <br/>20:45 <strong>Más sandwiches, chuches y snacks</strong> <br/>00:00 <strong>Después</strong></br>La boda oficialmente acaba aquí. Algunos invitados quizás decidan ir a algún bar o discoteca cercano.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Bebidas</h4>\
-      <p align=\"left\">Cubriremos bebidas ilimitadas, incluidas bebidas alcóholicas, durante el cocktail, almuerzo y baile (unas 8 horas en total). Durante el almuerzo servirán las siguientes bebidas: a confirmar.<br/><br/>Durante el baile, serviremos las siguientes bebidas: a confirmar.</p> \
+      <p align=\"left\">Cubriremos bebidas ilimitadas, incluidas bebidas alcóholicas, durante toda la boda. Durante el almuerzo servirán las siguientes bebidas:<br/>\
+      <br/>- Refrescos\
+      <br/>- Agua\
+      <br/>- Zumos\
+      <br/>- Vino (tinto, blanco semi-dulce, oloroso, manzanilla, fino, cava)\
+      <br/>- Cerveza\
+      <br/>- Café\
+      <br/>Durante el baile, serviremos las siguientes bebidas adicionales:</p> \
+      <br/>- Whisky: Johnnie Walker y Ballantines\
+      <br/>- Ron: Barceló y Brugal\
+      <br/>- Ginebra: Bombay, Tanqueray y ginebra de fresa\
+      <br/>- Martini blanco\
+      <br/>- Ron blanco y añejo\
+      <br/>- Pacharán\
+      <br/>- Vodka\
+      <br/>- Tequila\
+      <br/>- Crema de whisky\
+      <br/>- Chupitos de las bebidas mencionadas\
       <h4 align=\"left\" style=\"padding-top:10px;\">Comida</h4>\
       <p align=\"left\"><span>&#8226;</span> Durante el cocktail, serviremos bebidas y una gran selección de aperitivos.\
       <br/><span>&#8226;</span> El almuerzo será:</p>\
-      <div style=\"margin-left: 20px; text-align: left;\">-Primero a elegir entre arroz meloso con carrillera y lomo de bacalao macerado en aceite de oliva virgen.\
-      <br/>-Segundo a elegir entre lubina a la espalda con verduras al wok  y roast beef con charlotas caramelizadas, pastel espárragos con parmesano y salsa de almendras y oloroso.\
-      <br/>-Postre a elegir entre tarta fina de manzana templada con helado de vainilla y brownie de chocolate y nueces con tulipa de almendras y helado de vainilla\
+      <div style=\"margin-left: 20px; text-align: left;\">-Primero a elegir entre arroz meloso con carrillera o lomo de bacalao macerado en aceite de oliva virgen. Los dos están muy ricos. El bacalao está muy tierno y el arroz es más caldoso que meloso.\
+      <br/>-Segundo a elegir entre lubina a la espalda con verduras al wok o roast beef con charlotas caramelizadas, pastel espárragos con parmesano y salsa de almendras y oloroso. Nos gustó más el roast beef. La lubina tiene espinas.\
+      <br/>-Postre a elegir entre tarta fina de manzana templada con helado de vainilla o brownie de chocolate, nueces, almendras y helado de vainilla\
       <br/>Si algún invitado tiene alguna alergia o no puede comer algún ingrediente (nueces, gluten, carne, pescado, cerdo, leche etc), por favor hacédnoslo saber antes de la boda e intentaremos hacer lo posible.</div>\
       <p align=\"left\"><span>&#8226;</span> Durante la tarde y noche tendremos sandwiches y la tarta nupcial de tres sabores.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Etiqueta</h4>\
@@ -154,16 +193,21 @@ const translations = {
       rsvpTitle: "Confirmación de Asistencia",
       rsvpDescription: "<p id=\"rsvpDescription\">Si no lo has hecho aún, por favor confirma tu asistencia en el formulario antes del 6 de mayo. Sólo podremos acomodar a las personas listadas en el formulario, debido a restricciones en el presupuesto. Si crees que nos hemos olvidado de alguien, por favor contacta con nosotros.<br/> Si tu situación cambia, puedes reenviar el formulario en cualquier momento y tantas veces como quieras antes de la fecha límite.</p>",
       preWeddingSectionTitle: "Eventos Pre-Boda",
-      preWeddingSectionDescription: "<p align=\"left\">Organizaremos tres eventos antes de la boda:\
-      <h4 align=\"left\" style=\"padding-top:10px;\">Despedida de solteros en UK</h4>\
-      <p align=\"left\">A confirmar.</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">Despedida de solteros en España</h4>\
-      <p align=\"left\">A confirmar.</p>\
-      <h4 align=\"left\" style=\"padding-top:10px;\">Partida de golf</h4>\
-      <p align=\"left\">Organizaremos una partida de golf de 18 hoyos el día anterior a la boda el día anterior a la boda en <a href=\"https://goo.gl/maps/YNVH29CRS1ngRDRw5\">Club de Golf Zaudín</a>. ¡Habrá un premio para el ganador! Cualquiera que sepa jugar al golf es bienvenido. Por favor contacta con Lucas si estás interesado. Quizás también almorzemos en el campo de golf.</p>",
+      preWeddingSectionDescription: "<h4 align=\"left\" style=\"padding-top:10px;\">Partida de golf</h4>\
+      <p align=\"left\">Organizaremos una partida de golf de 18 hoyos la tarde anterior al día de la boda en <a href=\"https://goo.gl/maps/YNVH29CRS1ngRDRw5\">Club de Golf Zaudín</a>. ¡Habrá un premio para el ganador! Cualquiera que sepa jugar al golf es bienvenido. Por favor contacta con Lucas si estás interesado.</p>",
       whatToDoSectionTitle: "Qué Hacer En Sevilla",
       whatToDoSectionDescription: "",
-      rsvpWhosComing: "¿Quién viene?",
+      rsvpWhosComing: "¿Quién viene y qué váis a comer?",
+      rsvpStarter: "Primero",
+      rsvpStarter1: "Arroz meloso con carrillada",
+      rsvpStarter2: "Lomo de bacalao macerado en aceite de oliva",
+      rsvpStarter3: "N/A, ver comentarios",
+      rsvpMain: "Segundo ",
+      rsvpMain1: "Lubina a la espalda con verduras al wok",
+      rsvpMain2: "Roast beef con cebolla caramelizada, pastel de espárragos con parmesano y salsa de almendras y oloroso",
+      rsvpDessert: "Postre",
+      rsvpDessert1: "Tarta fina de manzana templada con helado de vainilla",
+      rsvpDessert2: "Brownie de chocolate, nueces, almendras y helado de vainilla",
       rsvpSubmit: "Enviar",
       rsvpResponseNo: "No",
       rsvpResponseNotSure: "Inseguro",
