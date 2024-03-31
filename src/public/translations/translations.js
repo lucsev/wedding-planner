@@ -152,13 +152,13 @@ const translations = {
       <h4 align=\"left\" style=\"padding-top:10px;\">Horario</h4>\
       <p align=\"left\">12:30 <strong>Hora de llegada de los invitados</strong><br/>Por favor intentad llegar sobre esta hora.<br/>12:30 - 13:00 <strong>Copa de bienvenida</strong><br/>Serviremos bebidas al llegar. El personal os indicará a dónde ir.<br/>13:00 - 14:00 <strong>Cocktail</strong><br/>Serviremos bebidas y una gran selección de aperitivos. El cocktail, la ceremonia y la comida serán al aire libre, con sombra. <br/>14:00 - 14:40 <strong>Ceremonia</strong><br/>Junto a la fuente. <br/>14:40 - 15:00 <strong>Fotos</strong><br/>Mientras la gente va charlando sobre la ceremonia y sentándose para la comida haremos algunas fotos junto a la fuente. Os llamaremos cuando nos toque foto con vosotros<br/>15:00 - 17:30 <strong>Almuerzo</strong><br/>Almorzaremos un primer, segundo plato y postre. Almorzaremos al aire libre si el tiempo lo permite.<br/>17:45 - 23:45 <strong>Barra libre y baile</strong><br/>Prepararemos una zona de baile en el patio de las columnas, junto a la barra libre y una sala de relax. Habrá mesas y sillas en el jardín para los que quieran tomar el aire. Todas las bebidas continuarán siendo gratuitas e ilimitadas.<br/>18:30 - 18:45 <strong>Baile nupcial</strong><br/>Primero bailaremos los novios, luego nuestras madres también, y finalmente todo el mundo.<br/>19:15 <strong>Sándwiches, chuches y snacks</strong><br/>20:00 - 20:10 <strong>Corte de la tarta</strong> <br/>20:45 <strong>Más sandwiches, chuches y snacks</strong> <br/>00:00 <strong>Después</strong></br>La boda oficialmente acaba aquí. Algunos invitados quizás decidan ir a algún bar o discoteca cercano.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Bebidas</h4>\
-      <p align=\"left\">Cubriremos bebidas ilimitadas, incluidas bebidas alcóholicas, durante toda la boda. Durante el almuerzo servirán las siguientes bebidas:<br/>\
+      <p align=\"left\">Cubriremos bebidas ilimitadas, incluidas bebidas alcóholicas, durante toda la boda. Durante el almuerzo servirán las siguientes bebidas:\
       <br/>- Refrescos\
       <br/>- Agua\
       <br/>- Zumos\
       <br/>- Vino (tinto, blanco semi-dulce, oloroso, manzanilla, fino, cava)\
       <br/>- Cerveza\
-      <br/>- Café\
+      <br/>- Café<br/>\
       <br/>Durante el baile, serviremos las siguientes bebidas adicionales:\
       <br/>- Whisky: Johnnie Walker y Ballantines\
       <br/>- Ron: Barceló y Brugal\
