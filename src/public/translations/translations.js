@@ -62,7 +62,7 @@ const translations = {
       <br/>- Vodka\
       <br/>- Tequila\
       <br/>- Irish cream\
-      <br/>- Shots of anything above\
+      <br/>- Shots of anything above</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Food</h4>\
       <p align=\"left\"><span>&#8226;</span> At the Canapés, we will serve drinks and a large selection of nibbles.\
       <br/><span>&#8226;</span> At the Breakfast, the menu will be:</p>\
@@ -159,7 +159,7 @@ const translations = {
       <br/>- Vino (tinto, blanco semi-dulce, oloroso, manzanilla, fino, cava)\
       <br/>- Cerveza\
       <br/>- Café\
-      <br/>Durante el baile, serviremos las siguientes bebidas adicionales:</p> \
+      <br/>Durante el baile, serviremos las siguientes bebidas adicionales:\
       <br/>- Whisky: Johnnie Walker y Ballantines\
       <br/>- Ron: Barceló y Brugal\
       <br/>- Ginebra: Bombay, Tanqueray y ginebra de fresa\
@@ -169,7 +169,7 @@ const translations = {
       <br/>- Vodka\
       <br/>- Tequila\
       <br/>- Crema de whisky\
-      <br/>- Chupitos de las bebidas mencionadas\
+      <br/>- Chupitos de las bebidas mencionadas</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Comida</h4>\
       <p align=\"left\"><span>&#8226;</span> Durante el cocktail, serviremos bebidas y una gran selección de aperitivos.\
       <br/><span>&#8226;</span> El almuerzo será:</p>\
