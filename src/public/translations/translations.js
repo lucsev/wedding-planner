@@ -183,11 +183,12 @@ const translations = {
       <h4 align=\"left\" style=\"padding-top:10px;\">Regalos de Boda</h4>\
       <p align=\"left\">Vuestra presencia en la boda ya es un regalo para nosotros, y entendemos que viajar a Sevilla puede ser costoso. No esperamos regalos de boda de todos los grupos de invitados.\
       <br/>Si de verdad queréis hacer un regalo de boda, os pediríamos que evitéis regalos físicos si es posible, debido a nuestra situación internacional. Sin embargo, queremos recaudar fondos de cara a tener hijos y estaríamos encantados si nos ayudárais a conseguirlo.\
-      <br/><br/>Para transferencias en euros:\
+      <br/><br/>Lo más sencillo es un Bizum al 664 594 291 (Lucas)\
+      <br/><br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a> (aseguraos de seleccionar EUR, no GBP)\
+      <br/><br/>O para transferencias (transferencia nacional en euros, es una cuenta española!):\
       <br/>IBAN: GB48 REVO 0099 7012 4276 28 (Revolut)\
       <br/>BIC: REVOGB21\
-      <br/>Beneficiario: Lucas Rodriguez Diaz\
-      <br/>O si preferís usar una tarjeta de débito: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a> (aseguraos de seleccionar EUR, no GBP)</p>\
+      <br/>Beneficiario: Lucas Rodriguez Diaz</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Previsión del Tiempo a 7 Días</h4>\
       <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLE\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLE</a>",
       rsvpTitle: "Confirmación de Asistencia",
