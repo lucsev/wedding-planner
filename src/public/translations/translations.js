@@ -80,7 +80,8 @@ const translations = {
       <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
       <br/>Account Number: 15718395\
       <br/>Beneficiary: Lucas Rodriguez Diaz\
-      <br/>Or if you prefer to use a debit card: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a></p>\
+      <br/>Or if you prefer to use a debit card: <a href=\"https://revolut.me/lucasu0z\" target=\"_blank\">https://revolut.me/lucasu0z</a>\
+      <br/>If you would like to give us a card, please send it to 14 Maida Vale, Monkston Park, Milton Keynes, MK10 9RF.</p>\
       <h4 align=\"left\" style=\"padding-top:10px;\">Weather Forecast From Today</h4>\
       <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/37d39n5d98/seville/\" data-label_1=\"SEVILLE\" data-font=\"Roboto\" data-icons=\"Climacons Animated\" data-highcolor=\"#e48736\" data-lowcolor=\"#0da4ff\" data-suncolor=\"#ffcf00\" data-mooncolor=\"#c6c6c6\" data-cloudcolor=\"#9d9d9d\" data-cloudfill=\"#c6c6c6\" data-raincolor=\"#0da4ff\" data-snowcolor=\"#0da4ff\" >SEVILLE</a>",
       rsvpTitle: "RSVP",
