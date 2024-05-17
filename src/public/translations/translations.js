@@ -75,7 +75,7 @@ const translations = {
       <p align=\"left\">Most women will wear a dress, short or long, and men a suit or blazer, with or without tie. If you decide to wear a long dress, be aware that the floor outside the venue is similar to compressed sand and could easily stain long dresses. If you want a style reference, you can have a look at a <a href=\"https://www.brides.com/semi-formal-wedding-attire-4800687\">semi-formal/cocktail attire</a>.</p> \
       <h4 align=\"left\" style=\"padding-top:10px;\">Wedding Gifts</h4>\
       <p align=\"left\">Your presence at the wedding is already a gift to us, and we understand that your international travel can be costly. We therefore do not expect a wedding gift from every group of guests.\
-      <br/>If you do want to make a wedding gift, we would ask that you avoid physical gifts if possible, due to our international situation. However, we want to raise funds towards the process for us to have children, and we would be delighted if you would help us financially to achieve that beautiful goal.\
+      <br/><br/><strong>If you do want to make a wedding gift, we would ask that you avoid physical gifts if possible, due to our international situation. However, we want to raise funds towards the process for us to have children, and we would be delighted if you would help us financially to achieve that beautiful goal.</strong>\
       <br/><br/>For transfers in pounds:\
       <br/>Sort Code: 04-00-75 (Modulr Fs Limited, Revolut)\
       <br/>Account Number: 15718395\
